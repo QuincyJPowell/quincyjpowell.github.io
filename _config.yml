@@ -13,3 +13,6 @@ header_pages:
 
 sass:
   style: compressed
+
+include:
+  - assets
