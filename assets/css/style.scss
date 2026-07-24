@@ -1,0 +1,59 @@
+---
+---
+
+@import "minima";
+
+body {
+  background: #F7F4EC;
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.site-header {
+  background: #2F5D3A;
+  border-top: none;
+  border-bottom: none;
+}
+
+.site-title,
+.site-title:visited {
+  color: white;
+  font-weight: 700;
+}
+
+.site-nav .page-link {
+  color: white;
+}
+
+.site-nav .page-link:hover {
+  color: #DCE9D8;
+}
+
+a {
+  color: #3F7A4C;
+}
+
+a:hover {
+  color: #295134;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #2F5D3A;
+}
+
+.wrapper {
+  max-width: 900px;
+}
+
+.page-content {
+  padding-top: 40px;
+}
+
+.post-content {
+  font-size: 1.05rem;
+}
