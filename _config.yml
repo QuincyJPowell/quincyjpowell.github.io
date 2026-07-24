@@ -1,0 +1,11 @@
+title: Quincy Powell
+description: Portfolio and personal website
+theme: minima
+
+url: "https://quincyjpowell.github.io"
+baseurl: ""
+
+header_pages:
+  - about.md
+  - projects.md
+  - cv.md
