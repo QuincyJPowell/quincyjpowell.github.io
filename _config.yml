@@ -8,4 +8,5 @@ baseurl: ""
 header_pages:
   - about.md
   - projects.md
-  - cv.md
+  - resume.md
+  - contact.md
