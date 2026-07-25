@@ -5,20 +5,26 @@ title: Home
 
 # Quincy Powell
 
-Marketing professional with a passion for data, technology, and problem solving.
+## SEO, Digital Marketing, and Content Strategy
 
-I'm interested in digital marketing, analytics, business strategy, and web development. This site showcases my projects, coursework, and professional experience as I continue building my skills.
+Welcome to my portfolio.
 
-## Featured Projects
+I’m Quincy Powell, a digital marketing professional focused on search engine optimization, content strategy, and creating useful online experiences.
 
-- Personal Portfolio Website (this site)
-- Marketing Campaign Analyses
-- Data Visualization Projects
-- Web Development Experiments
+This site showcases my projects, professional experience, and ongoing work in digital marketing.
 
-## Explore
+## What I Do
 
-- Learn more **About Me**
-- View my **Projects**
-- Read my **CV**
-- Get in **Contact**
+- SEO strategy and website optimization
+- Content planning and development
+- Website structure and accessibility improvements
+- Digital marketing research and analysis
+
+## Explore My Work
+
+Browse my:
+
+- [Projects](/projects/)
+- [About Me](/about/)
+- [Resume](/resume/)
+- [Contact](/contact/)

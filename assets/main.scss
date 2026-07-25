@@ -133,3 +133,47 @@ code {
   border-radius: 8px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
+
+/* Cozy portfolio styling */
+
+.wrapper {
+  max-width: 1000px;
+}
+
+.post-content,
+.page-content {
+  line-height: 1.7;
+}
+
+h1 {
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  margin-top: 2.5rem;
+}
+
+blockquote {
+  background-color: var(--light-green);
+  border-left: 4px solid var(--sage);
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.site-header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.site-title {
+  font-family: Georgia, serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body {
+  font-size: 17px;
+}
