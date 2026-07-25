@@ -297,3 +297,35 @@ p {
   }
 
 }
+
+/* Homepage Cards */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin: 35px 0;
+}
+
+.home-card {
+  background-color: var(--warm-white);
+  padding: 25px;
+  border-radius: 12px;
+  border-top: 4px solid var(--sage);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.home-card h3 {
+  margin-top: 0;
+}
+
+
+/* Mobile cards */
+
+@media screen and (max-width: 800px) {
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
