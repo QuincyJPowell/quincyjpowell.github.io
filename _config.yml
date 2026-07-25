@@ -1,5 +1,8 @@
 title: Quincy Powell
-description: Portfolio and personal website
+description: SEO Strategist and Digital Content Specialist portfolio
+author:
+  name: Quincy Powell
+
 theme: minima
 
 url: "https://quincyjpowell.github.io"
@@ -14,5 +17,10 @@ header_pages:
 sass:
   style: compressed
 
-include:
-  - assets
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+social:
+  links:
+    - https://github.com/quincyjpowell
