@@ -22,27 +22,18 @@ I believe the best websites balance three things:
 <div class="home-grid">
 
 <div class="home-card">
-
-### Search Engine Optimization
-
-Creating strategies that improve visibility, usability, and organic search performance.
-
+  <h3>Search Engine Optimization</h3>
+  <p>Creating strategies that improve visibility, usability, and organic search performance.</p>
 </div>
 
 <div class="home-card">
-
-### Content Strategy
-
-Developing clear, helpful content based on audience needs and search intent.
-
+    <h3>Content Strategy</h3>
+    <p>Developing clear, helpful content based on audience needs and search intent.</p>
 </div>
 
 <div class="home-card">
-
-### Digital Experience
-
-Building websites that are accessible, readable, and enjoyable to use.
-
+    <h3>Digital Experience</h3>
+    <p>Building websites that are accessible, readable, and enoyable to use.</p>
 </div>
 
 </div>
