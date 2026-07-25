@@ -3,24 +3,47 @@
 
 @import "minima";
 
-/* Quincy Powell Custom Theme */
+/* ==========================================
+   Quincy Powell Portfolio Theme
+   Cozy Cottagecore + Professional
+   ========================================== */
 
 :root {
   --cream: #F7F1E3;
   --forest: #1F4D3A;
   --sage: #6B8E6E;
+  --light-sage: #E8EFE8;
+  --warm-white: #FFFDF8;
+  --brown: #5B4636;
   --dark: #2B2B2B;
-  --light-green: #E8EFE8;
+  --border: #D8D2C4;
 }
 
-/* Overall page */
+
+/* ==========================================
+   Global Styling
+   ========================================== */
+
 body {
   background-color: var(--cream);
   color: var(--dark);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
 }
 
-/* Header / navigation */
+
+/* Improve readability */
+
+.wrapper {
+  max-width: 1100px;
+}
+
+
+/* ==========================================
+   Header / Navigation
+   ========================================== */
+
 .site-header {
   background-color: var(--forest);
   border-top: none;
@@ -30,7 +53,8 @@ body {
 .site-title,
 .site-title:visited {
   color: white;
-  font-weight: 700;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .site-nav .page-link {
@@ -39,40 +63,66 @@ body {
 }
 
 .site-nav .page-link:hover {
-  color: #D8E8D8;
+  color: #DCE8DC;
 }
 
-/* Mobile menu icon */
+
+/* Mobile menu */
+
 .site-nav .menu-icon > svg {
   fill: white;
 }
 
-/* Page content */
+
+/* ==========================================
+   Main Content
+   ========================================== */
+
 .page-content {
-  padding-top: 40px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
-.post-title,
-.post-title:visited,
-.page-heading {
-  color: var(--forest);
-  font-weight: 700;
-}
+
+/* Headings */
 
 h1,
 h2,
 h3,
 h4 {
   color: var(--forest);
-  font-weight: 700;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 2.5rem;
 }
 
 h2 {
-  border-bottom: 2px solid var(--sage);
+  margin-top: 2.5rem;
   padding-bottom: 8px;
+  border-bottom: 2px solid var(--sage);
 }
 
-/* Links */
+h3 {
+  margin-top: 2rem;
+}
+
+
+/* Page titles */
+
+.post-title,
+.post-title:visited,
+.page-heading {
+  color: var(--forest);
+}
+
+
+/* ==========================================
+   Links
+   ========================================== */
+
 a {
   color: var(--forest);
   font-weight: 600;
@@ -82,19 +132,77 @@ a:hover {
   color: var(--sage);
 }
 
-/* Home page intro */
+
+/* ==========================================
+   Homepage Hero
+   ========================================== */
+
 .home h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-/* Code blocks */
+.home p:first-of-type {
+  font-size: 1.2rem;
+  color: var(--brown);
+}
+
+
+/* ==========================================
+   Cards / Portfolio Sections
+   ========================================== */
+
+.project-card {
+  background-color: var(--warm-white);
+  border-left: 5px solid var(--forest);
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.08);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+
+/* ==========================================
+   Buttons
+   ========================================== */
+
+.button {
+  display: inline-block;
+  background-color: var(--forest);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--sage);
+  color: white;
+}
+
+
+/* ==========================================
+   Code Blocks
+   ========================================== */
+
 pre,
 code {
-  background-color: var(--light-green);
+  background-color: var(--light-sage);
   border-radius: 6px;
 }
 
-/* Footer */
+
+/* ==========================================
+   Footer
+   ========================================== */
+
 .site-footer {
   background-color: var(--forest);
   color: white;
@@ -109,185 +217,45 @@ code {
   color: white;
 }
 
-/* Buttons (if you add any later) */
-.button {
-  display: inline-block;
-  background-color: var(--forest);
-  color: white;
-  padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
+
+/* ==========================================
+   Accessibility Improvements
+   ========================================== */
+
+/* Better keyboard focus */
+
+a:focus,
+button:focus {
+  outline: 3px solid var(--sage);
+  outline-offset: 3px;
 }
 
-.button:hover {
-  background-color: var(--sage);
-  color: white;
-}
 
-/* Project cards (useful for your portfolio page) */
-.project-card {
-  background-color: white;
-  border-left: 5px solid var(--forest);
-  padding: 20px;
-  margin-bottom: 20px;
+/* Better image defaults */
+
+img {
   border-radius: 8px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  max-width: 100%;
 }
 
-/* Cozy portfolio styling */
 
-.wrapper {
-  max-width: 1000px;
-}
+/* ==========================================
+   SEO / AI Readability Helpers
+   ========================================== */
+
+/*
+Keep text areas comfortable to read.
+This improves user experience and readability metrics.
+*/
 
 .post-content,
 .page-content {
-  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
-h1 {
-  letter-spacing: -0.5px;
-}
 
-h2 {
-  margin-top: 2.5rem;
-}
-
-blockquote {
-  background-color: var(--light-green);
-  border-left: 4px solid var(--sage);
-  padding: 15px 20px;
-  border-radius: 8px;
-}
-
-.site-header {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
-
-.site-title {
-  font-family: Georgia, serif;
-}
-
-h1,
-h2,
-h3 {
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-body {
-  font-size: 17px;
-}
-
-/* Typography Upgrade */
-
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  font-size: 17px;
-}
-
-h1,
-h2,
-h3,
-h4,
-.site-title {
-  font-family: Georgia, "Times New Roman", serif;
-  letter-spacing: -0.02em;
-}
-
-h1 {
-  font-size: 2.8rem;
-}
-
-h2 {
-  margin-top: 3rem;
-}
+/* Prevent giant text blocks */
 
 p {
-  margin-bottom: 1.25rem;
-}
-
-.wrapper {
-  max-width: 1100px;
-}
-
-/* Header Upgrade */
-
-.site-header {
-  padding: 15px 0;
-}
-
-.site-title {
-  font-size: 1.6rem;
-}
-
-.site-nav .page-link {
-  transition: color 0.2s ease;
-}
-
-.site-nav .page-link:hover {
-  text-decoration: none;
-}
-
-/* ------------------------------
-   Cozy Cottagecore Enhancements
------------------------------- */
-
-.wrapper {
-  max-width: 1100px;
-}
-
-/* Softer typography */
-body {
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-}
-
-/* Main content cards */
-.page-content .wrapper {
-  background: rgba(255,255,255,0.55);
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(31,77,58,0.08);
-}
-
-/* Softer headings */
-h1 {
-  font-size: 2.8rem;
-  letter-spacing: -0.03em;
-}
-
-h2 {
-  margin-top: 2.5rem;
-}
-
-/* Navigation polish */
-.site-header {
-  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-}
-
-.site-title {
-  letter-spacing: 0.03em;
-}
-
-/* Links feel more editorial */
-a {
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
-}
-
-/* Footer softer */
-.site-footer {
-  margin-top: 60px;
-}
-
-/* Mobile spacing */
-@media screen and (max-width: 600px) {
-  .page-content .wrapper {
-    padding: 25px;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
+  max-width: 75ch;
 }
