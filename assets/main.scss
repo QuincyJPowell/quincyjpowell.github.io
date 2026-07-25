@@ -2,11 +2,14 @@
 ---
 
 @import "minima";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+
 
 /* ==========================================
    Quincy Powell Portfolio Theme
    Cozy Cottagecore + Professional
    ========================================== */
+
 
 :root {
   --cream: #F7F1E3;
@@ -27,13 +30,11 @@
 body {
   background-color: var(--cream);
   color: var(--dark);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont,
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.7;
+  font-size: 17px;
 }
-
-
-/* Improve readability */
 
 .wrapper {
   max-width: 1100px;
@@ -48,12 +49,14 @@ body {
   background-color: var(--forest);
   border-top: none;
   border-bottom: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 .site-title,
 .site-title:visited {
   color: white;
-  font-weight: 800;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
@@ -64,10 +67,8 @@ body {
 
 .site-nav .page-link:hover {
   color: #DCE8DC;
+  text-decoration: none;
 }
-
-
-/* Mobile menu */
 
 .site-nav .menu-icon > svg {
   fill: white;
@@ -84,19 +85,32 @@ body {
 }
 
 
-/* Headings */
+/* Give pages a softer card-like appearance */
+
+.page-content .wrapper {
+  background-color: rgba(255,255,255,0.55);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(31,77,58,0.08);
+}
+
+
+/* ==========================================
+   Typography
+   ========================================== */
 
 h1,
 h2,
 h3,
 h4 {
   color: var(--forest);
-  font-weight: 750;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 h2 {
@@ -109,9 +123,6 @@ h3 {
   margin-top: 2rem;
 }
 
-
-/* Page titles */
-
 .post-title,
 .post-title:visited,
 .page-heading {
@@ -119,26 +130,10 @@ h3 {
 }
 
 
-/* ==========================================
-   Links
-   ========================================== */
-
-a {
-  color: var(--forest);
-  font-weight: 600;
-}
-
-a:hover {
-  color: var(--sage);
-}
-
-
-/* ==========================================
-   Homepage Hero
-   ========================================== */
+/* Homepage */
 
 .home h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -149,22 +144,18 @@ a:hover {
 
 
 /* ==========================================
-   Cards / Portfolio Sections
+   Links
    ========================================== */
 
-.project-card {
-  background-color: var(--warm-white);
-  border-left: 5px solid var(--forest);
-  padding: 22px;
-  margin-bottom: 25px;
-  border-radius: 10px;
-
-  box-shadow:
-    0 4px 12px rgba(0,0,0,0.08);
+a {
+  color: var(--forest);
+  font-weight: 600;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
-.project-card:hover {
-  transform: translateY(-2px);
+a:hover {
+  color: var(--sage);
 }
 
 
@@ -176,20 +167,52 @@ a:hover {
   display: inline-block;
   background-color: var(--forest);
   color: white;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 8px;
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .button:hover {
   background-color: var(--sage);
   color: white;
+  transform: translateY(-2px);
 }
 
 
 /* ==========================================
-   Code Blocks
+   Portfolio Cards
+   ========================================== */
+
+.project-card {
+  background-color: var(--warm-white);
+  border-left: 5px solid var(--forest);
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   Blockquotes / Editorial Details
+   ========================================== */
+
+blockquote {
+  border-left: 4px solid var(--sage);
+  background-color: var(--light-sage);
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+
+/* ==========================================
+   Code
    ========================================== */
 
 pre,
@@ -206,6 +229,7 @@ code {
 .site-footer {
   background-color: var(--forest);
   color: white;
+  margin-top: 60px;
 }
 
 .footer-heading {
@@ -219,10 +243,19 @@ code {
 
 
 /* ==========================================
-   Accessibility Improvements
+   Images
    ========================================== */
 
-/* Better keyboard focus */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+/* ==========================================
+   Accessibility
+   ========================================== */
 
 a:focus,
 button:focus {
@@ -231,31 +264,36 @@ button:focus {
 }
 
 
-/* Better image defaults */
-
-img {
-  border-radius: 8px;
-  max-width: 100%;
-}
-
-
 /* ==========================================
-   SEO / AI Readability Helpers
+   Readability / SEO-Friendly Content Width
    ========================================== */
-
-/*
-Keep text areas comfortable to read.
-This improves user experience and readability metrics.
-*/
 
 .post-content,
 .page-content {
   font-size: 1.05rem;
 }
 
-
-/* Prevent giant text blocks */
-
 p {
   max-width: 75ch;
+}
+
+
+/* ==========================================
+   Mobile Adjustments
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .page-content .wrapper {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
 }
