@@ -5,24 +5,33 @@ title: Home
 
 # Quincy Powell
 
-## SEO, Digital Marketing, and Content Strategy
+## SEO Strategy | Digital Marketing | Content Development
 
-Welcome to my portfolio.
+I’m a digital marketing professional focused on creating search-friendly, accessible, and useful online experiences.
 
-I’m Quincy Powell, a digital marketing professional focused on search engine optimization, content strategy, and creating useful online experiences.
+This portfolio showcases my work in SEO, content strategy, website optimization, and digital marketing projects.
 
-This site showcases my projects, professional experience, and ongoing work in digital marketing.
+---
 
 ## What I Do
 
-- SEO strategy and website optimization
-- Content planning and development
-- Website structure and accessibility improvements
-- Digital marketing research and analysis
+### Search Engine Optimization
 
-## Explore My Work
+I enjoy analyzing websites, improving structure, and creating content strategies that help people find the information they need.
 
-Browse my:
+### Content Strategy
+
+I create organized, audience-focused content designed to balance user experience with search visibility.
+
+### Website Optimization
+
+I’m interested in the intersection of design, accessibility, and technical SEO.
+
+---
+
+## Featured Work
+
+Explore my projects, experience, and professional background:
 
 - [Projects](/projects/)
 - [About Me](/about/)
