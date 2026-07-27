@@ -15,16 +15,19 @@ Projects focused on website development, responsive design, accessibility, and d
 
 <div class="portfolio-grid">
 
-<a class="portfolio-card" href="/portfolio/quincy-portfolio-website/">
+<div class="portfolio-card">
+<a href="/portfolio/quincy-portfolio-website/">
 
-<h3>Personal Portfolio Website</h3>
+<h3>Building My Personal Portfolio Website</h3>
 
 <p>
-A custom Jekyll website built with Markdown, SCSS, and GitHub Pages.
+A custom Jekyll website designed to showcase professional work while demonstrating SEO strategy, accessibility, responsive design, and thoughtful information architecture.
 </p>
 
-<span>View Case Study →</span>
+<span>Read Case Study →</span>
 
 </a>
+
+</div>
 
 </div>
