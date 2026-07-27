@@ -163,18 +163,24 @@ a:hover {
    Buttons
    ========================================== */
 
+/* Buttons */
+
 .button {
   display: inline-block;
   background-color: var(--forest);
   color: white !important;
-  padding: 12px 22px;
-  border-radius: 8px;
+  padding: 14px 26px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
+  letter-spacing: 0.03em;
   transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(31, 77, 58, 0.15);
 }
 
-.button:visited {
+.button:link,
+.button:visited,
+.button:active {
   color: white !important;
 }
 
@@ -182,8 +188,8 @@ a:hover {
   background-color: var(--sage);
   color: white !important;
   transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(31, 77, 58, 0.2);
 }
-
 
 /* ==========================================
    Portfolio Cards
