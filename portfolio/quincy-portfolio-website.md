@@ -1,13 +1,9 @@
-
-
-
-
-⸻
-
+---
 layout: page
 title: Building My Personal Portfolio Website
 permalink: /portfolio/quincy-portfolio-website/
 description: Case study documenting the design, development, SEO strategy, accessibility, and information architecture behind my personal portfolio website.
+---
 
 Building My Personal Portfolio Website
 
