@@ -383,3 +383,25 @@ button:focus {
   }
 
 }
+
+/* Remove Minima mobile menu button box */
+
+@media screen and (max-width: 600px) {
+
+  .site-nav label[for="nav-trigger"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .site-nav .menu-icon {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .site-nav {
+    background: transparent !important;
+  }
+
+}
