@@ -661,3 +661,42 @@ button:focus {
   }
 
 }
+
+/* Portfolio card test */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.portfolio-card {
+  display: block;
+  background: #FFFDF8;
+  border-left: 5px solid #1F4D3A;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+}
+
+.portfolio-card a {
+  text-decoration: none;
+  color: #2B2B2B;
+}
+
+.portfolio-card h3 {
+  color: #1F4D3A;
+  margin-top: 0;
+}
+
+.portfolio-card span {
+  color: #6B8E6E;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
