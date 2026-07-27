@@ -48,3 +48,9 @@ A downloadable PDF version of my resume is available below.
 - Problem Solving
 - Communication
 - Team Collaboration
+
+---
+
+Looking for a more comprehensive overview of my academic background, research interests, writing, and professional development?
+
+<a class="button" href="/cv/">View My Academic CV</a>
