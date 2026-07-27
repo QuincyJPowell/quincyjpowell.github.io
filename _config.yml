@@ -11,7 +11,9 @@ baseurl: ""
 header_pages:
   - about.md
   - portfolio.md
+  - writing.md
   - resume.md
+  - cv.md
   - contact.md
 
 sass:
