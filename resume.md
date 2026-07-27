@@ -4,6 +4,10 @@ title: Resume
 permalink: /resume/
 ---
 
+This page provides a concise overview of my professional experience, skills, and qualifications.
+
+<a class="button" href="/cv/">Looking for my full Academic CV?</a>
+
 ## Resume
 
 A downloadable PDF version of my resume is available below.
@@ -48,9 +52,3 @@ A downloadable PDF version of my resume is available below.
 - Problem Solving
 - Communication
 - Team Collaboration
-
----
-
-Looking for a more comprehensive overview of my academic background, research interests, writing, and professional development?
-
-<a class="button" href="/cv/">View My Academic CV</a>
