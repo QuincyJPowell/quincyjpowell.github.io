@@ -529,3 +529,33 @@ button:focus {
   }
 
 }
+
+/* ==========================================
+   Final Mobile Dropdown Position Reset
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .site-header .wrapper {
+    position: relative;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  .site-nav .trigger {
+    position: absolute;
+    top: 54px;
+    right: 0;
+    width: 220px;
+    background-color: var(--forest);
+    padding: 10px 0;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  }
+
+}
