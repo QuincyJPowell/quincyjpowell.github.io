@@ -500,3 +500,32 @@ button:focus {
   }
 
 }
+
+/* ==========================================
+   Mobile Dropdown Position Fix
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .site-nav .trigger {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    width: 220px;
+    background-color: var(--forest);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    padding: 10px 0;
+  }
+
+  .site-nav .trigger .page-link {
+    padding: 12px 20px;
+    color: white !important;
+  }
+
+  .site-nav .trigger .page-link:hover {
+    color: var(--sage) !important;
+    background-color: rgba(255,255,255,.05);
+  }
+
+}
