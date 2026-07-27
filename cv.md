@@ -5,6 +5,10 @@ permalink: /cv/
 description: Academic curriculum vitae showcasing research, writing, projects, professional development, and academic experience.
 ---
 
+This curriculum vitae provides a comprehensive overview of my academic work, research, writing, and professional development.
+
+<a class="button" href="/resume/">Looking for my one-page Resume?</a>
+
 # Curriculum Vitae
 
 A comprehensive overview of my academic background, research interests, writing experience, professional development, and selected projects.
