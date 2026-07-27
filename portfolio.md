@@ -16,56 +16,48 @@ I believe strong digital work sits at the intersection of people, information, a
 
 <div class="portfolio-grid">
 
-<a class="portfolio-card" href="/portfolio/seo-projects/">
-
+<div class="portfolio-card">
+<a href="/portfolio/seo-projects/">
 <h3>Search Engine Optimization</h3>
-
 <p>
 Projects focused on improving search visibility through keyword research, technical optimization, content strategy, and website analysis.
 </p>
-
 <span>Explore SEO Projects →</span>
-
 </a>
+</div>
 
 
-<a class="portfolio-card" href="/portfolio/marketing-projects/">
-
+<div class="portfolio-card">
+<a href="/portfolio/marketing-projects/">
 <h3>Marketing & Content Strategy</h3>
-
 <p>
 Campaign planning, audience research, messaging strategy, and content development projects.
 </p>
-
 <span>Explore Marketing Projects →</span>
-
 </a>
+</div>
 
 
-<a class="portfolio-card" href="/portfolio/web-projects/">
-
+<div class="portfolio-card">
+<a href="/portfolio/web-projects/">
 <h3>Web & Technical Projects</h3>
-
 <p>
 Website development, accessibility improvements, information architecture, and digital experience projects.
 </p>
-
 <span>Explore Web Projects →</span>
-
 </a>
+</div>
 
 
-<a class="portfolio-card" href="/portfolio/academic-projects/">
-
+<div class="portfolio-card">
+<a href="/portfolio/academic-projects/">
 <h3>Academic Work</h3>
-
 <p>
 Research, coursework, writing, and academic projects that shaped my approach to communication and analysis.
 </p>
-
 <span>Explore Academic Work →</span>
-
 </a>
+</div>
 
 </div>
 
