@@ -559,3 +559,39 @@ button:focus {
   }
 
 }
+
+/* ==========================================
+   Mobile Dropdown Final Position Fix
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .site-header {
+    position: sticky;
+  }
+
+  .site-nav {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .site-nav .trigger {
+    position: fixed;
+    top: 58px;
+    right: 15px;
+    width: 220px;
+    background-color: var(--forest);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .site-nav .trigger .page-link {
+    color: white !important;
+    padding: 12px 20px;
+  }
+
+}
