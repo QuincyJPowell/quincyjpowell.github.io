@@ -452,3 +452,51 @@ button:focus {
   }
 
 }
+
+/* ==========================================
+   Remove Minima Hamburger Container
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .site-nav label,
+  .site-nav .menu-icon,
+  .site-nav .menu-icon:before {
+    background-color: transparent !important;
+    background-image: none;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .site-nav label {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .site-nav .menu-icon {
+    width: 44px;
+    height: 44px;
+    padding: 0 !important;
+  }
+
+  .site-nav .menu-icon::before {
+    width: 24px;
+    height: 16px;
+    background:
+      linear-gradient(
+        to bottom,
+        white 0,
+        white 2px,
+        transparent 2px,
+        transparent 7px,
+        white 7px,
+        white 9px,
+        transparent 9px,
+        transparent 14px,
+        white 14px,
+        white 16px
+      ) !important;
+  }
+
+}
