@@ -1,21 +1,3 @@
-<div class="portfolio-grid">
-
-<div class="portfolio-card">
-<a href="/portfolio/seo-projects/">
-
-<h3>Search Engine Optimization</h3>
-
-<p>
-Projects focused on improving search visibility through keyword research, technical optimization, content strategy, and website analysis.
-</p>
-
-<span>Explore SEO Projects →</span>
-
-</a>
-</div>
-
-</div>
-
 ---
 layout: page
 title: Portfolio
