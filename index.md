@@ -62,8 +62,8 @@ I am continually expanding my skills in:
 - Web development
 - Information architecture
 
-## Let’s Connect
+## Let's Work Together
 
-Interested in working together or learning more about my work?
+Whether you're looking for someone to help improve search visibility, create thoughtful content, or simply want to connect, I'd love to hear from you.
 
-Get in Touch
+<a class="button" href="/contact/">Contact Me</a>
