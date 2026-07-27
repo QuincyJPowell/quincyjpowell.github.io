@@ -191,13 +191,6 @@ a:hover {
 
 /* Homepage Grid */
 
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 28px;
-  margin: 40px 0;
-}
-
 .home-card {
   display: block;
   background: var(--warm-white);
@@ -205,9 +198,27 @@ a:hover {
   border-radius: 12px;
   padding: 28px;
   text-decoration: none;
-  color: inherit;
+
+  color: var(--dark);
   box-shadow: 0 6px 18px rgba(0,0,0,.08);
   transition: transform .2s ease, box-shadow .2s ease;
+}
+
+/* Override ALL link states */
+
+.home-card:link,
+.home-card:visited,
+.home-card:active {
+  color: var(--dark);
+}
+
+.home-card h3 {
+  color: var(--forest);
+  margin-top: 0;
+}
+
+.home-card strong {
+  color: var(--sage);
 }
 
 .home-card:hover {
@@ -215,20 +226,9 @@ a:hover {
   box-shadow: 0 10px 24px rgba(0,0,0,.12);
 }
 
-.home-card h3 {
-  margin-top: 0;
-  margin-bottom: 12px;
-  color: var(--forest);
-}
-
-.home-card p:last-child {
-  margin-bottom: 0;
-  color: var(--forest);
-}
-
 .home-card:hover h3,
-.home-card:hover p:last-child {
-  color: var(--sage);
+.home-card:hover strong {
+  color: var(--forest);
 }
 
 /* ==========================================
