@@ -595,3 +595,69 @@ button:focus {
   }
 
 }
+
+/* ==========================================
+   Portfolio Page Cards
+   ========================================== */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 40px 0;
+}
+
+
+.portfolio-card {
+  display: block;
+  background-color: var(--warm-white);
+  border-left: 5px solid var(--forest);
+  border-radius: 12px;
+  padding: 30px;
+  text-decoration: none;
+  color: var(--dark);
+
+  box-shadow: 0 6px 18px rgba(0,0,0,.08);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+
+.portfolio-card:visited {
+  color: var(--dark);
+}
+
+
+.portfolio-card h3 {
+  margin-top: 0;
+  color: var(--forest);
+}
+
+
+.portfolio-card span {
+  color: var(--sage);
+  font-weight: 700;
+}
+
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.12);
+}
+
+
+.portfolio-card:hover h3,
+.portfolio-card:hover span {
+  color: var(--forest);
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
