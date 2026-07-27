@@ -5,11 +5,11 @@ title: "Home"
 
 # Quincy Powell
 
-## SEO, Content Strategy, and Digital Marketing
+## Helping people find, understand, and connect with information online.
 
 Welcome to my portfolio.
 
-I’m a marketing professional passionate about building digital experiences that connect people with useful information. My work combines search engine optimization, content strategy, analytics, and thoughtful web design.
+I’m a digital marketing professional with interests in search engine optimization, content strategy, accessibility, analytics, and thoughtful web design. I enjoy building digital experiences that are useful for people first while remaining discoverable through search.
 
 I believe the best websites balance three things:
 
@@ -21,30 +21,33 @@ I believe the best websites balance three things:
 
 <div class="home-grid">
 
-<div class="home-card">
-  <h3>Search Engine Optimization</h3>
-  <p>Creating strategies that improve visibility, usability, and organic search performance.</p>
-</div>
+<a class="home-card" href="/portfolio/">
+<h3>Portfolio</h3>
+<p>Explore professional projects, marketing work, SEO case studies, and academic projects that demonstrate my experience and approach.</p>
+<p><strong>View Portfolio →</strong></p>
+</a>
 
-<div class="home-card">
-    <h3>Content Strategy</h3>
-    <p>Developing clear, helpful content based on audience needs and search intent.</p>
-</div>
+<a class="home-card" href="/writing/">
+<h3>Writing</h3>
+<p>Read articles, research, and reflections on SEO, digital marketing, accessibility, and other topics I'm exploring.</p>
+<p><strong>Read My Writing →</strong></p>
+</a>
 
-<div class="home-card">
-    <h3>Digital Experience</h3>
-    <p>Building websites that are accessible, readable, and enoyable to use.</p>
-</div>
+<a class="home-card" href="/resume/">
+<h3>Resume & CV</h3>
+<p>View my professional resume, academic CV, education, experience, and qualifications.</p>
+<p><strong>View Credentials →</strong></p>
+</a>
 
 </div>
 
 ---
 
-## Featured Work
+## What I Believe
 
-Explore projects that showcase my approach to SEO, marketing, and digital strategy.
+Great marketing starts with helping people.
 
-[View Projects](/projects/){: .button}
+The best digital experiences balance thoughtful content, accessibility, search engine optimization, and user experience. My goal is to create work that is useful, discoverable, and built to last.
 
 ---
 
@@ -57,3 +60,10 @@ I am continually expanding my skills in:
 - Analytics
 - Content optimization
 - Web development
+- Information architecture
+
+## Let’s Connect
+
+Interested in working together or learning more about my work?
+
+Get in Touch
