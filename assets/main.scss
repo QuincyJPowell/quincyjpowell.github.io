@@ -405,3 +405,50 @@ button:focus {
   }
 
 }
+
+/* ==========================================
+   Remove Minima Mobile Menu Button Styling
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .site-nav {
+    border: none !important;
+  }
+
+  .site-nav .nav-trigger {
+    display: none;
+  }
+
+  .site-nav .menu-icon {
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  .site-nav label {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .site-nav .menu-icon::before {
+    background:
+      linear-gradient(
+        to bottom,
+        white 0,
+        white 2px,
+        transparent 2px,
+        transparent 7px,
+        white 7px,
+        white 9px,
+        transparent 9px,
+        transparent 14px,
+        white 14px,
+        white 16px
+      ) !important;
+  }
+
+}
