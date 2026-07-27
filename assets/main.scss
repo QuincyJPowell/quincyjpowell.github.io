@@ -367,3 +367,45 @@ p {
   }
 
 }
+
+/* ==========================================
+   Mobile Navigation
+   ========================================== */
+
+.site-nav {
+  background-color: var(--forest);
+}
+
+.site-nav .menu-icon {
+  color: white;
+}
+
+.site-nav .menu-icon svg {
+  fill: white;
+}
+
+.site-nav input:checked ~ .trigger {
+  background-color: var(--forest);
+  border: none;
+}
+
+.site-nav .trigger {
+  background-color: var(--forest);
+}
+
+.site-nav .trigger .page-link {
+  display: block;
+  color: white !important;
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  text-decoration: none;
+}
+
+.site-nav .trigger .page-link:visited {
+  color: white !important;
+}
+
+.site-nav .trigger .page-link:hover {
+  color: var(--sage) !important;
+  background-color: rgba(255,255,255,0.05);
+}
