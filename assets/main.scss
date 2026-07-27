@@ -467,3 +467,33 @@ p {
   }
 
 }
+
+/* Mobile hamburger alignment fix */
+
+@media screen and (max-width: 600px) {
+
+  .site-header .wrapper {
+    position: relative;
+    min-height: 55px;
+  }
+
+  .site-nav {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .site-nav .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+  }
+
+  .site-nav .menu-icon svg {
+    display: block;
+  }
+
+}
+
