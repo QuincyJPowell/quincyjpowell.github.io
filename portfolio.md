@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Portfolio
+permalink: /portfolio/
 ---
 
-## Projects
+## Portfolio
 
 This page highlights projects that demonstrate my technical and professional skills.
 
