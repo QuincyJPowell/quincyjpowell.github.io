@@ -2,14 +2,13 @@
 ---
 
 @import "minima";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap');
 
 
 /* ==========================================
    Quincy Powell Portfolio Theme
    Cozy Cottagecore + Professional
    ========================================== */
-
 
 :root {
   --cream: #F7F1E3;
@@ -19,19 +18,17 @@
   --warm-white: #FFFDF8;
   --brown: #5B4636;
   --dark: #2B2B2B;
-  --border: #D8D2C4;
 }
 
 
 /* ==========================================
-   Global Styling
+   Global
    ========================================== */
 
 body {
   background-color: var(--cream);
   color: var(--dark);
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
   line-height: 1.7;
   font-size: 17px;
 }
@@ -42,70 +39,141 @@ body {
 
 
 /* ==========================================
-   Header / Navigation
+   Header
    ========================================== */
 
 .site-header {
   background-color: var(--forest);
-  border-top: none;
-  border-bottom: none;
+  border: none;
   box-shadow: 0 4px 14px rgba(0,0,0,.08);
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
+
 
 .site-title,
 .site-title:visited {
   color: white;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: .02em;
-  text-decoration: none;
 }
+
 
 .site-nav .page-link {
   color: white;
   font-weight: 600;
   text-decoration: none;
   margin-left: 20px;
-  transition: color .2s ease;
+  position: relative;
 }
 
-.site-nav .page-link:visited {
-  color: white;
-}
 
 .site-nav .page-link:hover {
   color: var(--sage);
 }
 
-.site-nav .page-link {
-  position: relative;
-}
 
 .site-nav .page-link::after {
   content: "";
   position: absolute;
-  left: 0;
   bottom: -4px;
-  width: 0;
+  left: 0;
   height: 2px;
+  width: 0;
   background: var(--sage);
   transition: width .25s ease;
 }
+
 
 .site-nav .page-link:hover::after {
   width: 100%;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
 
 /* ==========================================
-   Main Content
+   Mobile Navigation
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .site-header {
+    padding: 14px 0;
+  }
+
+  .site-nav {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+  }
+
+
+  /* Hide Minima SVG */
+  .site-nav .menu-icon svg {
+    display: none;
+  }
+
+
+  /* Custom hamburger */
+  .site-nav .menu-icon {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+  }
+
+
+  .site-nav .menu-icon::before {
+    content: "";
+    width: 24px;
+    height: 16px;
+    background:
+      linear-gradient(
+        to bottom,
+        white 0,
+        white 2px,
+        transparent 2px,
+        transparent 7px,
+        white 7px,
+        white 9px,
+        transparent 9px,
+        transparent 14px,
+        white 14px,
+        white 16px
+      );
+  }
+
+
+  /* Dropdown */
+
+  .site-nav .trigger {
+    background-color: var(--forest);
+  }
+
+  .site-nav .trigger .page-link {
+    color: white !important;
+    padding: 12px 16px;
+    display: block;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+
+  .site-nav .trigger .page-link:hover {
+    color: var(--sage) !important;
+  }
+
+}
+
+
+/* ==========================================
+   Content
    ========================================== */
 
 .page-content {
@@ -113,13 +181,12 @@ body {
   padding-bottom: 60px;
 }
 
-/* Give pages a softer card-like appearance */
 
 .page-content .wrapper {
-  background-color: rgba(255,255,255,0.55);
+  background-color: rgba(255,255,255,.55);
   padding: 40px;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(31,77,58,0.08);
+  box-shadow: 0 8px 25px rgba(31,77,58,.08);
 }
 
 
@@ -132,38 +199,27 @@ h2,
 h3,
 h4 {
   color: var(--forest);
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 700;
-  letter-spacing: -0.02em;
 }
+
 
 h1 {
   font-size: 3rem;
 }
 
+
 h2 {
-  margin-top: 2.5rem;
-  padding-bottom: 8px;
   border-bottom: 2px solid var(--sage);
+  padding-bottom: 8px;
+  margin-top: 2.5rem;
 }
 
-h3 {
-  margin-top: 2rem;
-}
-
-.post-title,
-.post-title:visited,
-.page-heading {
-  color: var(--forest);
-}
-
-
-/* Homepage */
 
 .home h1 {
   font-size: 3.2rem;
-  margin-bottom: 0.5rem;
 }
+
 
 .home p:first-of-type {
   font-size: 1.2rem;
@@ -178,9 +234,8 @@ h3 {
 a {
   color: var(--forest);
   font-weight: 600;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
 }
+
 
 a:hover {
   color: var(--sage);
@@ -191,8 +246,6 @@ a:hover {
    Buttons
    ========================================== */
 
-/* Buttons */
-
 .button {
   display: inline-block;
   background-color: var(--forest);
@@ -201,29 +254,27 @@ a:hover {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  transition: all 0.2s ease;
-  box-shadow: 0 4px 10px rgba(31, 77, 58, 0.15);
+  box-shadow: 0 4px 10px rgba(31,77,58,.15);
 }
 
-.button:link,
-.button:visited,
-.button:active {
-  color: white !important;
-}
 
 .button:hover {
   background-color: var(--sage);
   color: white !important;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(31, 77, 58, 0.2);
 }
 
+
 /* ==========================================
-   Portfolio Cards
+   Homepage Cards
    ========================================== */
 
-/* Homepage Grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 40px 0;
+}
+
 
 .home-card {
   display: block;
@@ -232,41 +283,43 @@ a:hover {
   border-radius: 12px;
   padding: 28px;
   text-decoration: none;
-
   color: var(--dark);
   box-shadow: 0 6px 18px rgba(0,0,0,.08);
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition: transform .2s ease;
 }
 
-/* Override ALL link states */
 
-.home-card:link,
-.home-card:visited,
-.home-card:active {
+.home-card:visited {
   color: var(--dark);
 }
+
+
+.home-card:hover {
+  transform: translateY(-4px);
+}
+
 
 .home-card h3 {
   color: var(--forest);
-  margin-top: 0;
 }
+
 
 .home-card strong {
   color: var(--sage);
 }
 
-.home-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 24px rgba(0,0,0,.12);
+
+@media screen and (max-width: 800px) {
+
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
-.home-card:hover h3,
-.home-card:hover strong {
-  color: var(--forest);
-}
 
 /* ==========================================
-   Blockquotes / Editorial Details
+   Editorial Details
    ========================================== */
 
 blockquote {
@@ -277,14 +330,9 @@ blockquote {
 }
 
 
-/* ==========================================
-   Code
-   ========================================== */
-
 pre,
 code {
   background-color: var(--light-sage);
-  border-radius: 6px;
 }
 
 
@@ -295,27 +343,17 @@ code {
 .site-footer {
   background-color: var(--forest);
   color: white;
-  margin-top: 60px;
 }
+
 
 .footer-heading {
   color: white;
 }
 
+
 .contact-list,
 .social-media-list {
   color: white;
-}
-
-
-/* ==========================================
-   Images
-   ========================================== */
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
 }
 
 
@@ -331,21 +369,7 @@ button:focus {
 
 
 /* ==========================================
-   Readability / SEO-Friendly Content Width
-   ========================================== */
-
-.post-content,
-.page-content {
-  font-size: 1.05rem;
-}
-
-p {
-  max-width: 75ch;
-}
-
-
-/* ==========================================
-   Mobile Adjustments
+   Mobile
    ========================================== */
 
 @media screen and (max-width: 600px) {
@@ -358,116 +382,4 @@ p {
     font-size: 2.3rem;
   }
 
-  .home h1 {
-    font-size: 2.5rem;
-  }
-
 }
-
-/* Homepage Cards */
-
-.home-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin: 35px 0;
-}
-
-.home-card {
-  background-color: var(--warm-white);
-  padding: 25px;
-  border-radius: 12px;
-  border-top: 4px solid var(--sage);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-}
-
-.home-card h3 {
-  margin-top: 0;
-}
-
-
-/* Mobile cards */
-
-@media screen and (max-width: 800px) {
-
-  .home-grid {
-    grid-template-columns: 1fr;
-  }
-
-}
-
-/* ==========================================
-   Mobile Navigation
-   ========================================== */
-
-.site-nav {
-  background-color: var(--forest);
-}
-
-.site-nav .menu-icon {
-  color: white;
-}
-
-.site-nav .menu-icon svg {
-  fill: white;
-}
-
-.site-nav input:checked ~ .trigger {
-  background-color: var(--forest);
-  border: none;
-}
-
-.site-nav .trigger {
-  background-color: var(--forest);
-}
-
-.site-nav .trigger .page-link {
-  display: block;
-  color: white !important;
-  padding: 12px 16px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  text-decoration: none;
-}
-
-.site-nav .trigger .page-link:visited {
-  color: white !important;
-}
-
-.site-nav .trigger .page-link:hover {
-  color: var(--sage) !important;
-  background-color: rgba(255,255,255,0.05);
-}
-
-/* ==========================================
-   Mobile Header Alignment
-   ========================================== */
-
-@media screen and (max-width: 600px) {
-
-  .site-header {
-    padding: 14px 0;
-  }
-
-  .site-nav {
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-  }
-
-  .site-nav .menu-icon {
-    padding-top: 0;
-    margin-top: 0;
-    line-height: 1;
-  }
-
-  .site-nav .menu-icon svg {
-    width: 22px;
-    height: 22px;
-    vertical-align: middle;
-  }
-
-middle;
-  }
-
-}
-
