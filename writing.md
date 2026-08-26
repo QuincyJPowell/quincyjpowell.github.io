@@ -2,14 +2,14 @@
 layout: page
 title: Writing
 permalink: /writing/
-description: Writing on SEO, digital strategy, accessibility, academic research, and personal reflections.
+description: Professional and academic writing on digital strategy, research, communication, and the intersection between people and technology.
 ---
 
-# Writing
+# Professional & Academic Writing
 
-A collection of professional, academic, and personal writing exploring topics related to digital strategy, research, communication, and the intersection between people and technology.
+A collection of professional and academic writing exploring topics related to digital strategy, research, communication, and the intersection between people and technology.
 
-I believe good writing does more than share information. It creates understanding. Whether writing for users, search engines, or academic audiences, my goal is to make complex ideas clearer and more accessible.
+Good writing does more than share information. It creates understanding and connection. Whether writing for users, search engines, or academic audiences, my goal is to make complex ideas clearer and more accessible.
 
 ---
 
@@ -35,7 +35,7 @@ Articles and insights about search engine optimization, content strategy, websit
 <h3>Accessibility & Web Design</h3>
 
 <p>
-Writing about inclusive design, accessibility practices, and building websites that work for a wider range of users.
+Writing about inclusive design, accessibility practices, and building websites that work for a wide range of users.
 </p>
 
 <span>Explore Accessibility Writing →</span>
@@ -59,26 +59,6 @@ Academic writing, research projects, and analytical work demonstrating critical 
 </p>
 
 <span>Explore Academic Writing →</span>
-
-</a>
-
-</div>
-
----
-
-## Personal Writing
-
-<div class="writing-grid">
-
-<a class="writing-card" href="/writing/personal/">
-
-<h3>Personal Essays</h3>
-
-<p>
-Reflections, observations, and personal writing exploring ideas, experiences, and creativity.
-</p>
-
-<span>Explore Personal Writing →</span>
 
 </a>
 
