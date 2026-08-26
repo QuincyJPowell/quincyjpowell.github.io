@@ -768,7 +768,7 @@ button:focus {
 }
 
 /* ==========================================
-   Credentials Navigation Dropdown
+   Credentials Navigation
    ========================================== */
 
 .nav-credentials {
@@ -776,21 +776,12 @@ button:focus {
   position: relative;
 }
 
-.nav-credentials summary {
-  list-style: none;
-  cursor: pointer;
-}
-
-.nav-credentials summary::-webkit-details-marker {
-  display: none;
-}
-
-.nav-credentials summary::after {
-  content: " ▾";
-  font-size: 0.75em;
+.nav-credentials-title {
+  display: inline-block;
 }
 
 .nav-submenu {
+  display: none;
   position: absolute;
   top: 100%;
   right: 0;
@@ -800,6 +791,11 @@ button:focus {
   box-shadow: 0 8px 20px rgba(0,0,0,.15);
   padding: 8px 0;
   z-index: 1001;
+}
+
+.nav-credentials:hover .nav-submenu,
+.nav-credentials:focus-within .nav-submenu {
+  display: block;
 }
 
 .nav-submenu .page-link {
@@ -821,7 +817,7 @@ button:focus {
 
 
 /* ==========================================
-   Mobile Credentials Dropdown
+   Mobile Credentials Navigation
    ========================================== */
 
 @media screen and (max-width: 600px) {
@@ -830,17 +826,15 @@ button:focus {
     display: block;
   }
 
-  .nav-credentials summary {
+  .nav-credentials-title {
+    display: block;
     padding: 12px 20px !important;
     margin-left: 0 !important;
     border-bottom: 1px solid rgba(255,255,255,.1);
   }
 
-  .nav-credentials summary::after {
-    float: right;
-  }
-
   .nav-submenu {
+    display: block;
     position: static;
     min-width: 0;
     background-color: rgba(0,0,0,.12);
