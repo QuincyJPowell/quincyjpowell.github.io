@@ -1,8 +1,8 @@
 ---
 layout: page
-title: SEO Projects
+title: Search Engine Optimization Projects
 permalink: /portfolio/seo-projects/
-description: Search engine optimization projects showcasing keyword research, technical SEO, content strategy, and website optimization.
+description: SEO projects focused on improving website visibility, content performance, and user experience.
 ---
 
 # Search Engine Optimization Projects
@@ -15,21 +15,7 @@ My SEO approach combines technical analysis, audience research, content strategy
 
 ## Featured Projects
 
-<div class="portfolio-grid">
-
-<a class="portfolio-card" href="/portfolio/quincy-portfolio-website/">
-
-<h3>Personal Portfolio Website</h3>
-
-<p>
-Designed and developed a custom portfolio website focused on SEO-friendly structure, accessibility, responsive design, and clear information architecture.
-</p>
-
-<span>View Case Study →</span>
-
-</a>
-
-</div>
+More Information Coming Soon
 
 ---
 
@@ -48,6 +34,6 @@ Designed and developed a custom portfolio website focused on SEO-friendly struct
 
 ## SEO Philosophy
 
-Effective SEO is not just about rankings. It is about creating useful, organized, and accessible information that helps people find what they need.
+Effective SEO is not just about rankings. It is about creating useful, organized, and accessible information that helps people find what they need in a timely manner.
 
-I focus on building websites that serve both audiences and search engines through thoughtful structure, clear writing, and strong user experiences.
+I focus on building and optimizing websites that serve consumers and search engines through thoughtful structure, clear writing, and strong user experiences.
