@@ -5,160 +5,96 @@ permalink: /cv/
 description: Academic curriculum vitae showcasing research, writing, projects, professional development, and academic experience.
 ---
 
+# Academic CV
+
 This curriculum vitae provides a comprehensive overview of my academic work, research, writing, and professional development.
 
-<a class="button" href="/resume/">Looking for my one-page Resume?</a>
+<a class="button" href="/cv.pdf">Download My CV</a>
 
-# Curriculum Vitae
-
-A comprehensive overview of my academic background, research interests, writing experience, professional development, and selected projects.
-
-This page highlights the experiences that have shaped my approach to communication, research, technology, and digital strategy.
+<a class="button" href="/resume/">Looking For My Resume?</a>
 
 ---
 
 ## Education
 
-### [Degree Name]
-**[University Name]**  
-[Location]  
-[Graduation Date]
+### Montana State University Billings
 
-Relevant areas of study:
-- Research and analytical writing
-- Communication and information systems
-- Digital media and technology
-- [Add additional coursework]
+August 2020–December 2022
+
+- Bachelor’s Degree in Business Administration Management
+- Minor in History
+- Interdisciplinary Honors Minor
+
+### University of Montana
+
+January 2023–June 2024
+
+- Master’s Degree in Business Administration
 
 ---
 
 ## Research Interests
 
-My academic interests focus on the relationship between people, information, and technology.
-
-Areas of interest include:
-
-- Digital communication
-- Information accessibility
-- User-centered design
-- Search behavior and information discovery
-- Content strategy
-- The role of technology in improving access to information
+- Technical SEO
+- AI Visibility and GEO
+- Website Accessibility
+- Information Architecture
+- Content Optimization
+- Web Development
+- Game Development
+- Marketing Research
+- Consumer Behavior
 
 ---
 
 ## Academic Writing & Research
 
-### Selected Research Projects
-
-**[Project Title]**  
-[Course / Department / Year]
-
-Brief description of the research question, methodology, and findings.
-
----
-
-**[Project Title]**  
-[Course / Department / Year]
-
-Brief description of the project and its significance.
+More Information Coming Soon
 
 ---
 
 ## Professional Projects
 
-### Digital Strategy & SEO Portfolio
-
-Selected projects demonstrating practical application of:
-
-- Search engine optimization
-- Website structure and information architecture
-- Content development
-- Accessibility-focused design
-- Digital communication strategy
+More Information Coming Soon
 
 ---
 
 ## Writing Experience
 
-### Professional Writing
-
-Topics include:
-
-- SEO strategy
-- Digital marketing
-- Accessibility
-- Web development
-- Content organization
-
----
-
-### Academic Writing
-
-Experience producing:
-
-- Research papers
-- Analytical essays
-- Literature reviews
-- Critical analysis
+More Information Coming Soon
 
 ---
 
 ## Presentations & Publications
 
-### [Presentation Title]
-
-**Event / Organization**  
-[Date]
-
-Description of presentation, topic, and audience.
+More Information Coming Soon
 
 ---
 
 ## Professional Development
 
-Selected skills and continuing development areas:
-
-- Search Engine Optimization
-- Web Accessibility
-- HTML/CSS
-- Jekyll and GitHub Pages
-- Content Management Systems
-- Digital Marketing Strategy
-- Data-informed decision making
+More Information Coming Soon
 
 ---
 
 ## Technical Skills
 
-**Web Development**
-- HTML
-- CSS / SCSS
-- Markdown
-- Jekyll
-- GitHub Pages
-
-**SEO & Digital Strategy**
-- Keyword research
-- Content optimization
-- Technical SEO fundamentals
-- Website audits
-- Information architecture
-
-**Research & Communication**
-- Academic research
-- Data analysis
-- Professional writing
-- Content strategy
+- Search engine optimization (SEO)
+- Search engine marketing (SEM/PPC)
+- Social media marketing
+- Video and display advertising
+- Google Analytics
+- Google Tag Manager
+- WordPress
 
 ---
 
 ## Awards & Recognition
 
-[Add scholarships, honors, awards, or recognitions here.]
+More Information Coming Soon
 
 ---
 
 ## References
 
-Available upon request.
+Available Upon Request
