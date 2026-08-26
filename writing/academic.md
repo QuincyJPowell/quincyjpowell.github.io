@@ -1,30 +1,16 @@
 ---
 layout: page
-title: Academic Writing
+title: Research & Analysis
 permalink: /writing/academic/
-description: Academic research, essays, and analytical writing.
+description: Academic writing and research covering a variety of topics of interest.
 ---
 
-# Academic Writing
+# Research & Analysis
 
-This section contains research papers, analytical essays, and academic writing that reflects my interests in communication, technology, and information.
+Check out my academic writing and research covering a variety of topics of interest.
 
 ---
 
-## Featured Work
+## Featured Articles
 
-<div class="portfolio-grid">
-
-<div class="portfolio-card">
-
-<h3>Research Projects</h3>
-
-<p>
-Selected academic work demonstrating research, analysis, and professional writing.
-</p>
-
-<span>Coming Soon</span>
-
-</div>
-
-</div>
+More Information Coming Soon
