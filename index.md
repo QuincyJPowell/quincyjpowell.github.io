@@ -39,7 +39,7 @@ I am a digital marketing specialist focused on providing meaningful value to my 
 <p><strong>Support The Publishing Process →</strong></p>
 </a>
 
-<a class="home-card" href="/resume/">
+<a class="home-card" href="/credentials/">
 <h3>Resume & CV</h3>
 <p>View my professional resume and academic CV to better understand my education, experience, and qualifications.</p>
 <p><strong>View Credentials →</strong></p>
