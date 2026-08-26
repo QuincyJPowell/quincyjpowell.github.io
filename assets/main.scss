@@ -766,3 +766,92 @@ button:focus {
   }
 
 }
+
+/* ==========================================
+   Credentials Navigation Dropdown
+   ========================================== */
+
+.nav-credentials {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-credentials summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-credentials summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-credentials summary::after {
+  content: " ▾";
+  font-size: 0.75em;
+}
+
+.nav-submenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 170px;
+  background-color: var(--forest);
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  padding: 8px 0;
+  z-index: 1001;
+}
+
+.nav-submenu .page-link {
+  display: block;
+  margin-left: 0;
+  padding: 10px 18px;
+  color: white !important;
+  white-space: nowrap;
+}
+
+.nav-submenu .page-link::after {
+  display: none;
+}
+
+.nav-submenu .page-link:hover {
+  color: var(--sage) !important;
+  background-color: rgba(255,255,255,.05);
+}
+
+
+/* ==========================================
+   Mobile Credentials Dropdown
+   ========================================== */
+
+@media screen and (max-width: 600px) {
+
+  .nav-credentials {
+    display: block;
+  }
+
+  .nav-credentials summary {
+    padding: 12px 20px !important;
+    margin-left: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+
+  .nav-credentials summary::after {
+    float: right;
+  }
+
+  .nav-submenu {
+    position: static;
+    min-width: 0;
+    background-color: rgba(0,0,0,.12);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .nav-submenu .page-link {
+    padding: 10px 35px !important;
+    border-bottom: 1px solid rgba(255,255,255,.05);
+  }
+
+}
