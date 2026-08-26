@@ -30,12 +30,11 @@ My website is the perfect example for technical web development, utilizing a var
 
 ## Video Game Development
 
-<div class="portfolio-grid">
-
 <div class="portfolio-card">
 <a href="/development/seven-oaks-farm/">
-<h3>Seven Oaks Farm</h3>
+<h3>Video Game Development</h3>
 <p>
+<strong>Seven Oaks Farm</strong><br>
 Your new favorite cozy farming game, with a twist! Welcome to Seven Oaks!
 </p>
 <span>Explore The Farm →</span>
