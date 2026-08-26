@@ -1,28 +1,16 @@
 ---
 layout: page
-title: Academic Projects
+title: Academic Work
 permalink: /portfolio/academic-projects/
-description: Academic research, writing, and analytical projects.
+description: Academic research, writing, and analytical projects demonstrating critical thinking, communication, and subject expertise.
 ---
 
-# Academic Projects
+# Academic Work
 
 A collection of research, writing, and analytical projects demonstrating critical thinking, communication, and subject expertise.
 
 ---
 
-## Featured Projects
+## Featured Work
 
-<div class="portfolio-grid">
-
-<div class="portfolio-card">
-
-<h3>Coming Soon</h3>
-
-<p>
-Academic research, coursework, and writing projects will be added here.
-</p>
-
-</div>
-
-</div>
+More Information Coming Soon
