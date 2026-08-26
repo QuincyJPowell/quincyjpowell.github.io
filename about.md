@@ -6,13 +6,13 @@ permalink: /about/
 
 ## About Me
 
-Hi, I'm Quincy Powell.
+I’m Quincy Powell.
 
-I enjoy solving problems through a combination of creativity and analytical thinking. My interests span digital marketing, data analysis, business strategy, and web development. I like understanding how systems work and finding practical ways to improve them.
+I am a business and marketing professional with my Master’s degree in Business Administration.
 
-I'm continually learning new technologies and applying them to personal projects, coursework, and professional development. Building this website has been part of that process.
+It’s my goal to understand how consumers behave and interact with businesses and brands. By understanding business goals and consumer behavior, solutions for maximizing the ideal can be narrowed down into useful, actionable plans. My interests span digital marketing, business planning and consulting, consumer psychology, and data analysis. I like understanding how systems work and finding practical ways to improve them.
 
-Outside of work and school, I enjoy technology, gaming, Magic: The Gathering, and exploring new ideas through side projects.
+I’m continually learning new technologies, practices, and strategies to apply to my personal, academic, and professional work. Building this website has been a part of that process.
 
 ## Current Interests
 
@@ -20,9 +20,10 @@ Outside of work and school, I enjoy technology, gaming, Magic: The Gathering, an
 - Marketing Analytics
 - Data Visualization
 - Business Strategy
-- Web Development
 - Artificial Intelligence
+- Web Development
+- Game Development
 
 ## Goals
 
-My goal is to build a career where I can combine analytical thinking with creative problem solving to help organizations make better decisions and communicate more effectively.
+My goal is to build a career where I can combine analytical thinking with creative problem solving to help organizations make better decisions and communicate more effectively. I also want to explore creative personal projects to focus on storytelling.
