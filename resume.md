@@ -4,51 +4,71 @@ title: Resume
 permalink: /resume/
 ---
 
-This page provides a concise overview of my professional experience, skills, and qualifications.
+# Resume
 
-<a class="button" href="/cv/">Looking for my full Academic CV?</a>
+Explore my professional experience, skills, and qualifications.
 
-## Resume
+<a class="button" href="/resume.pdf">Download My Resume</a>
 
-A downloadable PDF version of my resume is available below.
-
-**Download Resume (PDF)**
+<a class="button" href="/cv/">Looking For My Academic CV?</a>
 
 ---
 
 ## Experience
 
-(Add your professional experience here.)
+### Online Grocery Associate
+
+**Laurel Walmart**  
+May 2020–August 2022
+
+### Human Resources Assistant
+
+**imagine360**  
+November 2021–May 2022
+
+### Social Media Intern
+
+**AARP Montana**  
+August 2022–May 2024
+
+### Digital Media Specialist
+
+**Zee Creative**  
+June 2024–Present
 
 ---
 
 ## Education
 
-(Add your education.)
+### Montana State University Billings
+
+August 2020–December 2022
+
+- Bachelor’s Degree in Business Administration Management
+- Minor in History
+- Interdisciplinary Honors Minor
+
+### University of Montana
+
+January 2023–June 2024
+
+- Master’s Degree in Business Administration
 
 ---
 
 ## Skills
 
-### Marketing
-
-- Digital Marketing
-- Content Creation
-- Social Media
-- Marketing Strategy
-
-### Technical
-
-- Microsoft Excel
-- Google Sheets
-- HTML
-- CSS
-- Git
-- GitHub
-- Jekyll
-
-### Other
-
-- Problem Solving
+- Search engine optimization (SEO)
+- Search engine marketing (SEM/PPC)
+- Social media marketing
+- Video and display advertising
+- Google Analytics
+- Google Tag Manager
+- WordPress
+- Customer service
 - Communication
-- Team Collaboration
+- Project management
+- Account management
+- Administrative support
+- Metric analysis
+- Conversational Spanish
