@@ -40,5 +40,3 @@ Your new favorite cozy farming game, with a twist! Welcome to Seven Oaks!
 <span>Explore The Farm →</span>
 </a>
 </div>
-
-</div>
