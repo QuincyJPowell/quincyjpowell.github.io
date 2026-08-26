@@ -6,9 +6,9 @@ permalink: /portfolio/
 
 # Portfolio
 
-A collection of professional, technical, and academic projects that showcase my experience with search engine optimization, content strategy, digital marketing, web development, and research.
+A collection of professional and academic projects that showcase my experience with search engine optimization, content strategy, digital marketing, web development, and research.
 
-I believe strong digital work sits at the intersection of people, information, and technology. Each project below highlights my approach to solving problems, improving user experiences, and creating meaningful outcomes.
+I believe strong digital work sits at the intersection of people, information, and technology. Each project below highlights my approach to problem solving, improving user experience, and creating meaningful outcomes.
 
 ---
 
@@ -65,9 +65,7 @@ Research, coursework, writing, and academic projects that shaped my approach to 
 
 ## My Approach
 
-Every project begins with understanding the audience.
-
-Whether optimizing a website, creating content, or researching a topic, I focus on making information easier to find, understand, and use.
+Each project begins with understanding the audience and scope. I focus on making information easier to find, understand, and use.
 
 My work combines:
 
@@ -80,6 +78,6 @@ My work combines:
 
 ---
 
-## Interested in Working Together?
+## Interested In Working Together?
 
-<a class="button" href="/contact/">Get in Touch</a>
+<a class="button" href="/contact/">Get In Touch</a>
