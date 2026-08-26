@@ -1,28 +1,16 @@
 ---
 layout: page
-title: Marketing Projects
+title: Marketing & Content Strategy Projects
 permalink: /portfolio/marketing-projects/
-description: Marketing and content strategy projects showcasing audience research, campaign planning, and communication strategy.
+description: Marketing and content strategy projects focused on audience research, targeting, messaging, and campaign development.
 ---
 
 # Marketing & Content Strategy Projects
 
-A collection of projects focused on audience research, messaging, campaign development, and strategic communication.
+A collection of projects that focus on audience research and segmenting, effective targeting and messaging, and campaign development.
 
 ---
 
 ## Featured Projects
 
-<div class="portfolio-grid">
-
-<div class="portfolio-card">
-
-<h3>Coming Soon</h3>
-
-<p>
-Marketing strategy, campaign planning, and content development projects will be added here.
-</p>
-
-</div>
-
-</div>
+More Information Coming Soon
