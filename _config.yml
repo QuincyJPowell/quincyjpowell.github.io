@@ -11,11 +11,12 @@ baseurl: ""
 header_pages:
   - about.md
   - portfolio.md
+  - development.md
   - writing.md
-  - resume.md
-  - cv.md
+  - creative.md
+  - credentials.md
   - contact.md
-
+  
 sass:
   style: compressed
 
