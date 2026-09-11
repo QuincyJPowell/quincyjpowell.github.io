@@ -87,26 +87,216 @@ Truly, even the way I think of problems has completely changed. It was a gradual
 
 <div class="problem-progression" aria-label="The evolution of my thinking about problems">
 
-  <div class="problem-step">
-    <span class="problem-number">01</span>
-    <p>Problems have solutions.</p>
+  <div class="problem-progression-header">
+    <span>THE EVOLUTION OF A PROBLEM</span>
+    <span>HOW MY THINKING CHANGED</span>
   </div>
 
-  <div class="problem-arrow" aria-hidden="true">↓</div>
+  <div class="problem-timeline">
 
-  <div class="problem-step">
-    <span class="problem-number">02</span>
-    <p>Problems are nuanced and multifaceted. Sometimes they can't be solved.</p>
-  </div>
+    <div class="problem-step">
+      <div class="problem-marker">01</div>
+      <div class="problem-content">
+        <p>Problems have solutions.</p>
+      </div>
+    </div>
 
-  <div class="problem-arrow" aria-hidden="true">↓</div>
+    <div class="problem-step">
+      <div class="problem-marker">02</div>
+      <div class="problem-content">
+        <p>Problems are nuanced and multifaceted. Sometimes they can't be solved.</p>
+      </div>
+    </div>
 
-  <div class="problem-step problem-step-final">
-    <span class="problem-number">03</span>
-    <p>Problems are nuanced and multifaceted, but they're also opportunities for improvement, growth, and change.</p>
+    <div class="problem-step problem-step-final">
+      <div class="problem-marker">03</div>
+      <div class="problem-content">
+        <span class="problem-final-label">WHERE I LANDED</span>
+        <p>Problems are nuanced and multifaceted, but they're also opportunities for improvement, growth, and change.</p>
+      </div>
+    </div>
+
   </div>
 
 </div>
+
+.problem-progression {
+  margin: 4rem 0 4.5rem;
+  padding: 2.25rem 2rem 2.5rem;
+  background: var(--warm-white);
+  border: 1px solid rgba(31, 77, 58, 0.16);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(31, 77, 58, 0.06);
+}
+
+.problem-progression-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(31, 77, 58, 0.15);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+}
+
+.problem-progression-header span:last-child {
+  color: var(--brown);
+  font-weight: 400;
+}
+
+.problem-timeline {
+  position: relative;
+  padding-top: 1.25rem;
+}
+
+/* The line connecting the evolution */
+.problem-timeline::before {
+  content: "";
+  position: absolute;
+  top: 1.25rem;
+  bottom: 2rem;
+  left: 24px;
+  width: 1px;
+  background: rgba(107, 142, 110, 0.45);
+}
+
+.problem-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1.25rem;
+  padding: 1.5rem 0;
+}
+
+.problem-marker {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  border: 1px solid var(--sage);
+  border-radius: 50%;
+
+  background: var(--warm-white);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--sage);
+}
+
+.problem-content {
+  padding-top: 0.35rem;
+}
+
+.problem-content p {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  color: var(--forest);
+}
+
+/* Final destination */
+.problem-step-final {
+  margin-top: 0.5rem;
+  padding: 1.5rem;
+
+  background: var(--light-sage);
+  border-radius: 12px;
+}
+
+.problem-step-final .problem-marker {
+  margin-left: -0.25rem;
+  background: var(--forest);
+  border-color: var(--forest);
+  color: var(--warm-white);
+}
+
+.problem-step-final .problem-content {
+  padding-top: 0.15rem;
+}
+
+.problem-final-label {
+  display: block;
+  margin-bottom: 0.65rem;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--sage);
+}
+
+.problem-step-final .problem-content p {
+  font-size: 1.65rem;
+  line-height: 1.22;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .problem-progression {
+    margin: 3rem 0 3.5rem;
+    padding: 1.5rem 1.25rem 1.75rem;
+    border-radius: 15px;
+  }
+
+  .problem-progression-header {
+    display: block;
+  }
+
+  .problem-progression-header span {
+    display: block;
+  }
+
+  .problem-progression-header span:last-child {
+    margin-top: 0.35rem;
+  }
+
+  .problem-timeline::before {
+    left: 20px;
+  }
+
+  .problem-step {
+    grid-template-columns: 40px 1fr;
+    gap: 1rem;
+    padding: 1.25rem 0;
+  }
+
+  .problem-marker {
+    width: 40px;
+    height: 40px;
+    font-size: 0.65rem;
+  }
+
+  .problem-content p {
+    font-size: 1.4rem;
+  }
+
+  .problem-step-final {
+    padding: 1.25rem;
+  }
+
+  .problem-step-final .problem-marker {
+    margin-left: -0.1rem;
+  }
+
+  .problem-step-final .problem-content p {
+    font-size: 1.5rem;
+  }
+}
 
 <p>
 There are so many ways to think about problems and solutions and opportunities, and they're all an interconnected web that's all tangled together. Not just when it comes to the business world! The way we think about things has a profound impact on how we talk, how we strategize, how we take action, in every aspect of our lives across the board.
