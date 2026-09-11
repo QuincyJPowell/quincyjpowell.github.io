@@ -1135,3 +1135,79 @@ button:focus {
     font-size: 1.5rem;
   }
 }
+
+/* ==========================================
+   Decorative Page Headings
+   ========================================== */
+
+/* Hide Minima's automatically generated page title */
+.page-heading,
+.post-header {
+  display: none;
+}
+
+/* Main visible page heading */
+.page-content h1 {
+  position: relative;
+  margin: 0 0 3rem;
+  padding: 0 1rem 1.4rem;
+
+  text-align: center;
+
+  color: var(--forest);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* Delicate divider line */
+.page-content h1::before {
+  content: "";
+  position: absolute;
+
+  left: 12%;
+  right: 12%;
+  bottom: 0.35rem;
+
+  height: 1px;
+  background: rgba(107, 142, 110, 0.28);
+}
+
+/* Small botanical ornament */
+.page-content h1::after {
+  content: "❧";
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  transform: translateX(-50%);
+
+  padding: 0 0.7rem;
+
+  background: rgba(255, 255, 255, 0.55);
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+
+  color: var(--sage);
+}
+
+/* Mobile page headings */
+@media screen and (max-width: 600px) {
+
+  .page-content h1 {
+    margin-bottom: 2.5rem;
+    padding: 0 0.5rem 1.25rem;
+    font-size: 2.3rem;
+  }
+
+  .page-content h1::before {
+    left: 5%;
+    right: 5%;
+  }
+
+}
