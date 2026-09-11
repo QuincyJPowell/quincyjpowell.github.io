@@ -5,6 +5,8 @@ permalink: /writing/personal/an-mba-changed-the-way-i-think/
 description: A personal reflection on how graduate study changed the way I approach learning, collaboration, problems, and opportunities.
 ---
 
+# An MBA Changed The Way I Think
+
 <article class="longform-article">
 
 <p class="article-intro">
