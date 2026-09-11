@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Personal Reflections
-permalink: /writing/personal/
+permalink: /creative/blog/
 description: Personal reflections on education, work, learning, creativity, and the experiences that shape how I think.
 ---
 
