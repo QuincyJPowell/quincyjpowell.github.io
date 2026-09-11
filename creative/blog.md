@@ -13,7 +13,9 @@ Writing about the experiences, ideas, and questions that shape how I think about
 
 ## Featured Articles
 
-<a class="writing-card" href="/writing/personal/an-mba-changed-the-way-i-think/">
+<div class="writing-grid">
+
+<a class="writing-card" href="{{ '/writing/personal/an-mba-changed-the-way-i-think/' | relative_url }}">
 
 <h3>An MBA Changed The Way I Think</h3>
 
@@ -24,3 +26,5 @@ A personal reflection on how graduate study changed the way I approach learning,
 <span>Read the Article →</span>
 
 </a>
+
+</div>
