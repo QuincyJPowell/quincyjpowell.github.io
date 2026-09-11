@@ -4,7 +4,7 @@ title: Contact
 permalink: /contact/
 ---
 
-## Contact
+# Contact
 
 If you’d like to connect, discuss opportunities, or ask questions about my work, feel free to reach out.
 
