@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-## About Me
+# About Me
 
 I’m Quincy Powell.
 
