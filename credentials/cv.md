@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Academic CV
-permalink: /cv/
+permalink: /credentials/cv/
 description: Academic curriculum vitae showcasing research, writing, projects, professional development, and academic experience.
 ---
 
@@ -9,9 +9,9 @@ description: Academic curriculum vitae showcasing research, writing, projects, p
 
 This curriculum vitae provides a comprehensive overview of my academic work, research, writing, and professional development.
 
-<a class="button" href="/cv.pdf">Download My CV</a>
+<a class="button" href="{{ '/cv.pdf' | relative_url }}">Download My CV</a>
 
-<a class="button" href="/resume/">Looking For My Resume?</a>
+<a class="button" href="{{ '/credentials/resume/' | relative_url }}">Looking For My Resume?</a>
 
 ---
 

@@ -1,8 +1,15 @@
 ---
-layout: page
+layout: project
 title: Progenitor
-permalink: /creative/progenitor/
-description: Progenitor, a science fiction dystopian novel by Quincy Powell.
+description: A science fiction dystopian novel about humanity's struggle to survive against engineered biological weapons known as Apexes.
+project_types:
+  - writing
+topics:
+  - fiction
+  - science-fiction
+  - dystopian-fiction
+format: novel
+featured: false
 ---
 
 # Progenitor

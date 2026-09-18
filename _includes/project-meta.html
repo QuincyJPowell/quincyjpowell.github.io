@@ -1,0 +1,55 @@
+<div class="project-meta">
+
+  {% if project.project_types %}
+    <div class="project-meta-item">
+      <span class="project-meta-label">Type</span>
+
+      <div class="project-meta-values">
+        {% for type in project.project_types %}
+          <span class="project-meta-value">
+            {{ type | replace: "-", " " | capitalize }}
+          </span>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if project.topics %}
+    <div class="project-meta-item">
+      <span class="project-meta-label">Topics</span>
+
+      <div class="project-meta-values">
+        {% for topic in project.topics %}
+          <span class="project-meta-value">
+            {{ topic | replace: "-", " " | capitalize }}
+          </span>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if project.format %}
+    <div class="project-meta-item">
+      <span class="project-meta-label">Format</span>
+
+      <div class="project-meta-values">
+        <span class="project-meta-value">
+          {{ project.format | replace: "-", " " | capitalize }}
+        </span>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if project.date %}
+    <div class="project-meta-item">
+      <span class="project-meta-label">Date</span>
+
+      <div class="project-meta-values">
+        <span class="project-meta-value">
+          {{ project.date | date: "%B %Y" }}
+        </span>
+      </div>
+    </div>
+  {% endif %}
+
+</div>
