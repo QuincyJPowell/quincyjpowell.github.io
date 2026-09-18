@@ -1,7 +1,8 @@
 title: Quincy Powell
+
 description: >-
-  Quincy Powell's portfolio showcasing SEO, digital marketing,
-  content strategy, analytics, and web projects.
+  The personal website of Quincy Powell, exploring academic research,
+  professional work, writing, development, art, and creative projects.
 
 theme: minima
 
@@ -10,27 +11,35 @@ baseurl: ""
 
 header_pages:
   - about.md
-  - portfolio.md
-  - development.md
-  - writing.md
-  - creative.md
-  - credentials.md
+  - academic/index.md
+  - professional/index.md
+  - writing/index.md
+  - development/index.md
+  - art/index.md
+  - portfolio/index.md
+  - credentials/index.md
   - contact.md
-  
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+
 sass:
   style: compressed
 
 plugins:
+  - jekyll-feed
   - jekyll-seo-tag
 
 markdown: kramdown
 
 kramdown:
   input: GFM
-
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-sass:
-  style: compressed
