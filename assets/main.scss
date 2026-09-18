@@ -3155,31 +3155,58 @@ li + li {
 
 }
 
-.nav-toggle {
-  appearance: none;
-  -webkit-appearance: none;
+/* =========================================================
+   FINAL MOBILE MENU BUTTON RESET
+   ========================================================= */
 
-  display: none;
+.site-header .site-nav .nav-toggle {
+  appearance: none !important;
+  -webkit-appearance: none !important;
 
-  width: 42px;
-  height: 42px;
+  display: none !important;
 
-  padding: 9px;
+  width: 42px !important;
+  height: 42px !important;
 
-  border: 0;
-  border-radius: 0;
+  margin: 0 !important;
+  padding: 9px !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  outline: none;
 
   background: transparent !important;
+  background-color: transparent !important;
 
-  color: #fffdf8;
+  box-shadow: none !important;
 
-  box-shadow: none;
+  color: #fffdf8 !important;
 
   cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+.site-header .site-nav .nav-toggle span {
+  display: block !important;
+
+  width: 24px !important;
+  height: 2px !important;
+
+  margin: 5px auto !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  border-radius: 0 !important;
+
+  background: #fffdf8 !important;
+
+  box-shadow: none !important;
 }
 
 @media (max-width: 800px) {
-  .nav-toggle {
-    display: block;
+  .site-header .site-nav .nav-toggle {
+    display: block !important;
   }
 }
