@@ -1,1 +1,43 @@
+<article class="project-card">
 
+  <a href="{{ project.url | relative_url }}">
+
+    <div class="project-card-content">
+
+      <h3>{{ project.title }}</h3>
+
+      {% if project.description %}
+        <p>{{ project.description }}</p>
+      {% endif %}
+
+      <div class="project-card-meta">
+
+        {% if project.format %}
+          <span class="project-format">
+            {{ project.format | replace: "-", " " | capitalize }}
+          </span>
+        {% endif %}
+
+        {% if project.project_types %}
+          <span class="project-types">
+
+            {% for type in project.project_types %}
+              <span class="project-type">
+                {{ type | replace: "-", " " | capitalize }}
+              </span>
+            {% endfor %}
+
+          </span>
+        {% endif %}
+
+      </div>
+
+      <span class="project-card-link">
+        View Project →
+      </span>
+
+    </div>
+
+  </a>
+
+</article>
