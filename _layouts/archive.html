@@ -1,1 +1,23 @@
+---
+layout: default
+---
 
+<div class="archive-page">
+
+  {% if page.title %}
+    <header class="archive-header">
+      <h1>{{ page.title }}</h1>
+
+      {% if page.description %}
+        <p class="archive-description">
+          {{ page.description }}
+        </p>
+      {% endif %}
+    </header>
+  {% endif %}
+
+  <div class="archive-content">
+    {{ content }}
+  </div>
+
+</div>
