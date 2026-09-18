@@ -10,7 +10,7 @@ Explore my professional experience, skills, and qualifications.
 
 <a class="button" href="/resume.pdf">Download My Resume</a>
 
-<a class="button" href="/cv/">Looking For My Academic CV?</a>
+<a class="button" href="/credentials/cv/">Looking For My Academic CV?</a>
 
 ---
 
