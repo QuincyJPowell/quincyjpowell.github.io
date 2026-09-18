@@ -1937,3 +1937,928 @@ li + li {
     box-shadow: none;
   }
 }
+
+/* =========================================================
+   HOMEPAGE 2.0
+   Modern editorial + natural field-guide visual language
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   Homepage foundation
+   --------------------------------------------------------- */
+
+.home-page {
+  --home-cream: #f7f1e3;
+  --home-forest: #1f4d3a;
+  --home-sage: #6b8e6e;
+  --home-light-sage: #e8efe8;
+  --home-warm-white: #fffdf8;
+  --home-brown: #5b4636;
+  --home-dark: #2b2b2b;
+
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  color: var(--home-dark);
+  background: var(--home-cream);
+}
+
+.home-page *,
+.home-page *::before,
+.home-page *::after {
+  box-sizing: border-box;
+}
+
+.home-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-page p {
+  margin-top: 0;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+  font-family: "Cormorant Garamond", serif;
+  color: var(--home-forest);
+}
+
+
+/* ---------------------------------------------------------
+   Small editorial labels
+   --------------------------------------------------------- */
+
+.home-page .section-label {
+  margin: 0 0 0.9rem;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: var(--home-sage);
+}
+
+
+/* ---------------------------------------------------------
+   Text links
+   --------------------------------------------------------- */
+
+.home-page .text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+
+  color: var(--home-forest);
+
+  transition:
+    gap 180ms ease,
+    color 180ms ease;
+}
+
+.home-page .text-link:hover {
+  gap: 0.8rem;
+  color: var(--home-brown);
+}
+
+.home-page .text-link:focus-visible,
+.home-page .button:focus-visible,
+.home-page .home-area:focus-visible,
+.home-page .recent-item:focus-visible {
+  outline: 3px solid var(--home-brown);
+  outline-offset: 5px;
+}
+
+
+/* ---------------------------------------------------------
+   Hero
+   --------------------------------------------------------- */
+
+.home-hero {
+  position: relative;
+
+  min-height: 720px;
+
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: end;
+
+  overflow: hidden;
+
+  background: var(--home-forest);
+}
+
+
+/*
+ * The image is intentionally a separate layer.
+ * Later we can replace its background with your own image.
+ */
+
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(31, 77, 58, 0.15),
+      rgba(31, 77, 58, 0.45)
+    ),
+    radial-gradient(
+      circle at 72% 28%,
+      rgba(255, 253, 248, 0.8) 0 4%,
+      transparent 4.5%
+    ),
+    linear-gradient(
+      155deg,
+      #8da890 0%,
+      #6b8e6e 36%,
+      #496d58 65%,
+      #1f4d3a 100%
+    );
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 78%,
+    96% 80%,
+    92% 78%,
+    87% 81%,
+    81% 78%,
+    76% 82%,
+    70% 79%,
+    63% 83%,
+    57% 79%,
+    50% 82%,
+    43% 78%,
+    36% 81%,
+    29% 78%,
+    22% 82%,
+    15% 79%,
+    8% 82%,
+    0 78%
+  );
+}
+
+.home-hero-copy {
+  position: relative;
+  z-index: 2;
+
+  grid-column: 2;
+
+  padding: 0 7vw 7rem 2rem;
+
+  color: var(--home-warm-white);
+}
+
+.home-hero-copy .section-label {
+  color: rgba(255, 253, 248, 0.75);
+}
+
+.home-hero-copy h1 {
+  margin: 0 0 1rem;
+
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 0.9;
+
+  color: var(--home-warm-white);
+}
+
+.home-hero-tagline {
+  max-width: 31rem;
+
+  margin-bottom: 2rem;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  line-height: 1.7;
+
+  color: rgba(255, 253, 248, 0.9);
+}
+
+.home-hero-copy .text-link {
+  color: var(--home-warm-white);
+}
+
+.home-hero-copy .text-link:hover {
+  color: var(--home-cream);
+}
+
+
+/* ---------------------------------------------------------
+   Shared section spacing
+   --------------------------------------------------------- */
+
+.home-section {
+  position: relative;
+
+  padding: 8rem max(2rem, 7vw);
+}
+
+
+/* ---------------------------------------------------------
+   Introduction
+   --------------------------------------------------------- */
+
+.home-intro {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+  gap: clamp(3rem, 8vw, 9rem);
+
+  align-items: center;
+
+  background: var(--home-cream);
+}
+
+.intro-image {
+  min-height: 430px;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 45%,
+      rgba(107, 142, 110, 0.3) 0 18%,
+      transparent 19%
+    ),
+    radial-gradient(
+      ellipse at 30% 65%,
+      rgba(91, 70, 54, 0.22) 0 14%,
+      transparent 15%
+    ),
+    var(--home-light-sage);
+
+  border-radius: 48% 52% 42% 58% / 58% 43% 57% 42%;
+
+  transform: rotate(-2deg);
+}
+
+.intro-copy {
+  max-width: 680px;
+}
+
+.intro-copy h2 {
+  max-width: 680px;
+
+  margin: 0 0 1.8rem;
+
+  font-size: clamp(2.4rem, 4.5vw, 4.3rem);
+  line-height: 1.02;
+}
+
+.intro-copy p:not(.section-label) {
+  max-width: 600px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: #4b4943;
+}
+
+.intro-copy .text-link {
+  margin-top: 0.8rem;
+}
+
+
+/* ---------------------------------------------------------
+   Areas heading
+   --------------------------------------------------------- */
+
+.home-areas {
+  padding-top: 5rem;
+
+  background: var(--home-warm-white);
+}
+
+.section-heading {
+  max-width: 700px;
+
+  margin: 0 auto 6rem;
+
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: clamp(2.7rem, 5vw, 4.8rem);
+  line-height: 1;
+}
+
+
+/* ---------------------------------------------------------
+   Alternating area sections
+   --------------------------------------------------------- */
+
+.home-area-list {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8rem;
+}
+
+.home-area {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 440px;
+
+  align-items: center;
+
+  color: var(--home-dark);
+
+  transition:
+    transform 220ms ease;
+}
+
+.home-area:hover {
+  transform: translateY(-5px);
+}
+
+.home-area-image {
+  min-height: 430px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--home-light-sage),
+      #d9e4d9
+    );
+
+  overflow: hidden;
+}
+
+.home-area-left .home-area-image {
+  border-radius: 7% 53% 9% 48% / 48% 8% 52% 12%;
+
+  transform: rotate(-2deg);
+}
+
+.home-area-right .home-area-image {
+  border-radius: 51% 8% 48% 10% / 9% 48% 11% 52%;
+
+  transform: rotate(2deg);
+}
+
+.home-area-copy {
+  position: relative;
+  z-index: 2;
+
+  max-width: 500px;
+
+  padding: 3rem;
+}
+
+.home-area-left .home-area-copy {
+  margin-left: -2rem;
+}
+
+.home-area-right .home-area-copy {
+  margin-right: -2rem;
+  justify-self: end;
+}
+
+.home-area-copy h3 {
+  margin: 0 0 1.2rem;
+
+  font-size: clamp(2.3rem, 4vw, 3.7rem);
+  line-height: 0.98;
+}
+
+.home-area-copy p:not(.section-label) {
+  margin-bottom: 1.6rem;
+
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.75;
+
+  color: #55524b;
+}
+
+
+/* ---------------------------------------------------------
+   Quiet areas
+   --------------------------------------------------------- */
+
+.home-area-quiet .home-area-image {
+  background:
+    linear-gradient(
+      135deg,
+      #e8efe8,
+      #f1eadb
+    );
+}
+
+
+/* ---------------------------------------------------------
+   Featured project
+   --------------------------------------------------------- */
+
+.home-featured {
+  position: relative;
+
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+
+  background: var(--home-light-sage);
+
+  clip-path: polygon(
+    0 4%,
+    5% 3%,
+    11% 5%,
+    18% 3%,
+    25% 5%,
+    32% 2%,
+    40% 5%,
+    48% 3%,
+    56% 5%,
+    64% 2%,
+    72% 5%,
+    80% 3%,
+    88% 5%,
+    95% 3%,
+    100% 5%,
+    100% 96%,
+    92% 98%,
+    84% 96%,
+    76% 98%,
+    68% 96%,
+    60% 98%,
+    52% 96%,
+    44% 98%,
+    36% 96%,
+    28% 98%,
+    20% 96%,
+    12% 98%,
+    4% 96%,
+    0 98%
+  );
+}
+
+.featured-inner {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr;
+  grid-template-rows: auto auto;
+
+  gap: 2rem 5rem;
+
+  align-items: center;
+}
+
+.featured-copy {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.featured-copy h2 {
+  margin: 0 0 1.5rem;
+
+  font-size: clamp(3rem, 6vw, 5.8rem);
+  line-height: 0.9;
+}
+
+.featured-copy p:not(.section-label) {
+  max-width: 500px;
+
+  margin-bottom: 2rem;
+
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.8;
+
+  color: #4c534d;
+}
+
+.featured-image {
+  grid-column: 2;
+  grid-row: 1;
+
+  min-height: 420px;
+
+  background:
+    radial-gradient(
+      circle at 60% 40%,
+      rgba(91, 70, 54, 0.2) 0 10%,
+      transparent 11%
+    ),
+    linear-gradient(
+      145deg,
+      #7e9d7e,
+      #c7d7c5 55%,
+      #f0e7d5
+    );
+
+  border-radius: 12% 46% 14% 52% / 50% 12% 48% 10%;
+
+  transform: rotate(2deg);
+}
+
+.tag-stack {
+  grid-column: 2;
+  grid-row: 2;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.6rem;
+}
+
+.tag-stack span {
+  padding: 0.45rem 0.8rem;
+
+  border: 1px solid rgba(31, 77, 58, 0.35);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--home-forest);
+
+  background: rgba(255, 253, 248, 0.55);
+
+  border-radius: 999px;
+}
+
+
+/* ---------------------------------------------------------
+   Recently
+   --------------------------------------------------------- */
+
+.home-discover {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.75fr) minmax(400px, 1.25fr);
+  gap: 6rem;
+
+  background: var(--home-cream);
+}
+
+.discover-intro {
+  align-self: start;
+  position: sticky;
+  top: 2rem;
+}
+
+.discover-intro h2 {
+  margin: 0 0 1.5rem;
+
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+.discover-note {
+  max-width: 360px;
+
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.7;
+
+  color: #68645c;
+}
+
+.recent-list {
+  border-top: 1px solid rgba(91, 70, 54, 0.25);
+}
+
+.recent-item {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 1.5rem;
+
+  align-items: center;
+
+  padding: 1.5rem 0;
+
+  border-bottom: 1px solid rgba(91, 70, 54, 0.25);
+
+  transition:
+    padding 180ms ease,
+    background 180ms ease;
+}
+
+.recent-item:hover {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+
+  background: rgba(232, 239, 232, 0.6);
+}
+
+.recent-date,
+.recent-meta {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--home-sage);
+}
+
+.recent-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+  font-weight: 600;
+
+  color: var(--home-forest);
+}
+
+.recent-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  color: var(--home-brown);
+}
+
+
+/* ---------------------------------------------------------
+   Final callout
+   --------------------------------------------------------- */
+
+.home-more {
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+
+  background: var(--home-warm-white);
+}
+
+.home-more-card {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  padding: clamp(2rem, 6vw, 5rem);
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+
+  align-items: center;
+
+  background: var(--home-forest);
+
+  border-radius: 4px;
+
+  transform: rotate(-0.5deg);
+}
+
+.home-more-card .section-label {
+  color: #b8cdb9;
+}
+
+.home-more-card h2 {
+  margin: 0 0 1.2rem;
+
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 0.95;
+
+  color: var(--home-warm-white);
+}
+
+.home-more-card p:not(.section-label) {
+  max-width: 580px;
+
+  margin-bottom: 0;
+
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.7;
+
+  color: rgba(255, 253, 248, 0.78);
+}
+
+.home-more-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 1.2rem;
+}
+
+.home-more-card .text-link {
+  color: var(--home-warm-white);
+}
+
+.home-more-card .text-link:hover {
+  color: var(--home-cream);
+}
+
+.home-page .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.8rem 1.2rem;
+
+  border: 1px solid var(--home-warm-white);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--home-forest);
+  background: var(--home-warm-white);
+
+  transition:
+    background 180ms ease,
+    color 180ms ease;
+}
+
+.home-page .button:hover {
+  color: var(--home-warm-white);
+  background: transparent;
+}
+
+
+/* ---------------------------------------------------------
+   Responsive homepage
+   --------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+  .home-hero {
+    min-height: 650px;
+
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero-image {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 78%,
+      92% 80%,
+      84% 78%,
+      76% 81%,
+      68% 78%,
+      60% 82%,
+      52% 79%,
+      44% 81%,
+      36% 78%,
+      28% 82%,
+      20% 79%,
+      12% 81%,
+      0 78%
+    );
+  }
+
+  .home-hero-copy {
+    grid-column: 1;
+
+    padding: 0 2rem 6rem;
+  }
+
+  .home-intro,
+  .home-discover {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+
+  .intro-image {
+    min-height: 340px;
+  }
+
+  .discover-intro {
+    position: static;
+  }
+
+  .home-area {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+  .home-area-image {
+    grid-row: 1;
+
+    min-height: 360px;
+  }
+
+  .home-area-copy,
+  .home-area-left .home-area-copy,
+  .home-area-right .home-area-copy {
+    grid-row: 2;
+
+    margin: 0;
+
+    padding: 1rem 0;
+
+    justify-self: start;
+  }
+
+  .featured-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-copy {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .featured-image {
+    grid-column: 1;
+    grid-row: 2;
+
+    min-height: 360px;
+  }
+
+  .tag-stack {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .home-more-card {
+    grid-template-columns: 1fr;
+  }
+
+  .home-more-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .home-section {
+    padding: 5rem 1.4rem;
+  }
+
+  .home-hero {
+    min-height: 570px;
+  }
+
+  .home-hero-copy {
+    padding: 0 1.4rem 4.5rem;
+  }
+
+  .home-hero-copy h1 {
+    font-size: clamp(3.6rem, 18vw, 5.5rem);
+  }
+
+  .home-hero-tagline {
+    font-size: 0.95rem;
+  }
+
+  .home-area-list {
+    gap: 5rem;
+  }
+
+  .home-area-image {
+    min-height: 280px;
+  }
+
+  .home-area-copy {
+    padding: 0;
+  }
+
+  .intro-image {
+    min-height: 280px;
+  }
+
+  .featured-image {
+    min-height: 280px;
+  }
+
+  .recent-item {
+    grid-template-columns: 1fr auto;
+    gap: 0.4rem 1rem;
+  }
+
+  .recent-date {
+    grid-column: 1;
+  }
+
+  .recent-meta {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .recent-title {
+    grid-column: 1;
+  }
+
+  .home-more-card {
+    padding: 2rem 1.5rem;
+  }
+
+}
