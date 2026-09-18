@@ -1,34 +1,65 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper">
+  <div class="header-inner wrapper">
 
-    <a class="site-title" href="{{ '/' | relative_url }}">
-      {{ site.title | escape }}
+    <a class="site-title" href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }} home">
+      <span class="site-title-mark" aria-hidden="true">QP</span>
+      <span class="site-title-text">{{ site.title | escape }}</span>
     </a>
 
-    <nav class="site-nav">
 
-      <input
-        type="checkbox"
-        id="nav-trigger"
-        class="nav-trigger"
-      />
+    <nav class="site-nav" aria-label="Primary navigation">
 
-      <label for="nav-trigger">
-        <span class="menu-icon"></span>
-      </label>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Open navigation menu"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
 
-      <div class="trigger">
 
-        <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
-        <a class="page-link" href="{{ '/academic/' | relative_url }}">Academic</a>
-        <a class="page-link" href="{{ '/professional/' | relative_url }}">Professional</a>
-        <a class="page-link" href="{{ '/writing/' | relative_url }}">Writing</a>
-        <a class="page-link" href="{{ '/development/' | relative_url }}">Development</a>
-        <a class="page-link" href="{{ '/art/' | relative_url }}">Art</a>
-        <a class="page-link" href="{{ '/portfolio/' | relative_url }}">Portfolio &amp; Projects</a>
-        <a class="page-link" href="{{ '/credentials/' | relative_url }}">Credentials</a>
-        <a class="page-link" href="{{ '/contact/' | relative_url }}">Contact</a>
+      <div class="trigger" id="primary-navigation">
+
+        <a class="page-link" href="{{ '/about/' | relative_url }}">
+          About
+        </a>
+
+        <a class="page-link" href="{{ '/academic/' | relative_url }}">
+          Academic
+        </a>
+
+        <a class="page-link" href="{{ '/professional/' | relative_url }}">
+          Professional
+        </a>
+
+        <a class="page-link" href="{{ '/writing/' | relative_url }}">
+          Writing
+        </a>
+
+        <a class="page-link" href="{{ '/development/' | relative_url }}">
+          Development
+        </a>
+
+        <a class="page-link" href="{{ '/art/' | relative_url }}">
+          Art
+        </a>
+
+        <a class="page-link" href="{{ '/portfolio/' | relative_url }}">
+          Portfolio &amp; Projects
+        </a>
+
+        <a class="page-link" href="{{ '/credentials/' | relative_url }}">
+          Credentials
+        </a>
+
+        <a class="page-link" href="{{ '/contact/' | relative_url }}">
+          Contact
+        </a>
 
       </div>
 
