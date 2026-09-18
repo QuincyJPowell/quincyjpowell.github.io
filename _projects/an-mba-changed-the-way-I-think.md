@@ -1,8 +1,18 @@
 ---
-layout: page
+layout: project
 title: An MBA Changed The Way I Think
 permalink: /writing/personal/an-mba-changed-the-way-i-think/
 description: A personal reflection on how graduate study changed the way I approach learning, collaboration, problems, and opportunities.
+project_types:
+  - academic
+  - writing
+topics:
+  - education
+  - learning
+  - problem-solving
+  - business
+format: essay
+featured: false
 ---
 
 # An MBA Changed The Way I Think
