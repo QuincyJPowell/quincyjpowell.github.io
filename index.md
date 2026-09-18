@@ -7,7 +7,11 @@ title: "Home"
 
 ## Building digital experiences people can find, understand, and trust.
 
-I am a digital marketing specialist focused on providing meaningful value to my clients and their potential customers. Leveraging a mixture of tools like more traditional search engine optimization and content strategy with more recent advents in technology such as AI search can help connect businesses to those most likely to convert. I have a keen interest in how the use of AI impacts consumer behavior and trust, and am working to conduct research into that area.
+I am a digital marketing specialist interested in the intersection of people, technology, and information.
+
+My work brings together search engine optimization, content strategy, accessibility, information architecture, marketing research, and emerging technologies such as AI search. I am particularly interested in how technology shapes the ways people find information, make decisions, and develop trust.
+
+I also write, make art, develop websites and games, and continue exploring questions that cross the boundaries between these areas.
 
 ---
 
@@ -15,33 +19,45 @@ I am a digital marketing specialist focused on providing meaningful value to my 
 
 <div class="home-grid">
 
-<a class="home-card" href="/portfolio/">
-<h3>Portfolio</h3>
-<p>Explore my professional projects and academic work to better understand my systematic approach and experience in the field.</p>
-<p><strong>View Portfolio →</strong></p>
+<a class="home-card" href="/academic/">
+<h3>Academic</h3>
+<p>Explore my research, academic writing, investigations, and ongoing work in areas such as information retrieval, consumer behavior, AI, and marketing.</p>
+<p><strong>Explore Academic Work →</strong></p>
+</a>
+
+<a class="home-card" href="/professional/">
+<h3>Professional</h3>
+<p>See how I apply research and technical knowledge to real-world marketing, SEO, accessibility, content, and digital strategy problems.</p>
+<p><strong>Explore Professional Work →</strong></p>
+</a>
+
+<a class="home-card" href="/writing/">
+<h3>Writing</h3>
+<p>Read my essays, personal writing, fiction, poetry, reflections, and other work created simply because I have something to say.</p>
+<p><strong>Read My Writing →</strong></p>
 </a>
 
 <a class="home-card" href="/development/">
 <h3>Development</h3>
-<p>Check out my video game in development: <em>Seven Oaks Farm</em>. A new life is waiting for you. Your next favorite cozy farming game, with a twist!</p>
-<p><strong>Support The Game →</strong></p>
+<p>Follow my work in web development, game development, programming, technical experiments, and the things I am learning to build.</p>
+<p><strong>Explore Development →</strong></p>
 </a>
 
-<a class="home-card" href="/writing/">
-<h3>Professional & Academic Work</h3>
-<p>Read my articles, research, and reflections regarding marketing, AI, business, and the other topics I am exploring.</p>
-<p><strong>Read My Articles →</strong></p>
+<a class="home-card" href="/art/">
+<h3>Art</h3>
+<p>Explore my visual work, creative experiments, illustrations, and artwork created both independently and as part of larger projects.</p>
+<p><strong>Explore My Art →</strong></p>
 </a>
 
-<a class="home-card" href="/creative/">
-<h3>Creative Work</h3>
-<p>Learn more about my creative writing and keep track of my novel progress.</p>
-<p><strong>Support The Publishing Process →</strong></p>
+<a class="home-card" href="/portfolio/">
+<h3>Portfolio &amp; Projects</h3>
+<p>See a curated collection of the projects and work I most want to showcase, across my academic, professional, and creative interests.</p>
+<p><strong>View Portfolio &amp; Projects →</strong></p>
 </a>
 
 <a class="home-card" href="/credentials/">
-<h3>Resume & CV</h3>
-<p>View my professional resume and academic CV to better understand my education, experience, and qualifications.</p>
+<h3>Credentials</h3>
+<p>View my resume and academic CV for a formal overview of my education, experience, skills, and qualifications.</p>
 <p><strong>View Credentials →</strong></p>
 </a>
 
@@ -53,7 +69,9 @@ I am a digital marketing specialist focused on providing meaningful value to my 
 
 Marketing begins with people.
 
-A valuable digital experience balances thoughtful content and user experience with the more technical accessibility and search engine optimization standards that puts your site in front of the right users at the right time.
+A valuable digital experience balances thoughtful content and user experience with the technical foundations that help people find, access, understand, and trust that experience.
+
+That means considering more than rankings or conversions. It means thinking about the people on the other side of the screen, how they discover information, what they need from it, and what makes them trust what they find.
 
 ---
 
@@ -65,14 +83,15 @@ I am continually expanding my skills in:
 - AI Visibility and GEO
 - Website Accessibility
 - Information Architecture
-- Content Optimization
+- Content Strategy and Optimization
 - Web Development
 - Game Development
 - Marketing Research
 - Consumer Behavior
+- Information Retrieval
 
 ## Let’s Work Together
 
-Whether you’re looking for someone to improve your website’s search visibility, optimize content, manage ad campaigns, take care of social media, or just connect, I’d love to hear from you!
+Whether you’re looking for help with search visibility, content, accessibility, digital strategy, or another project, I’d love to hear from you.
 
 <a class="button" href="/contact/">Contact Me</a>
