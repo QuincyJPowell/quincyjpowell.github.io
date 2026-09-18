@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article class="project-page">
+
+  <header class="project-header">
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.description %}
+      <p class="project-description">
+        {{ page.description }}
+      </p>
+    {% endif %}
+
+    {% include project-meta.html project=page %}
+
+  </header>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  {% assign related_projects = site.projects
+    | where_exp: "project", "project.url != page.url"
+    | where_exp: "project", "project.project_types contains page.project_types[0]"
+    | sort: "date"
+    | reverse
+  %}
+
+  {% if related_projects.size > 0 %}
+    <section class="related-projects">
+
+      <h2>Related Projects</h2>
+
+      <div class="project-grid">
+
+        {% for project in related_projects limit: 3 %}
+          {% include project-card.html project=project %}
+        {% endfor %}
+
+      </div>
+
+    </section>
+  {% endif %}
+
+</article>
