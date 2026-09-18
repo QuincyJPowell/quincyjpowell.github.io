@@ -2,37 +2,37 @@
 
   <div class="wrapper">
 
-    <div class="site-header-inner">
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      {{ site.title | escape }}
+    </a>
 
-      <a class="site-title" href="{{ '/' | relative_url }}">
-        {{ site.title | escape }}
-      </a>
+    <nav class="site-nav">
 
-      <nav class="site-nav" aria-label="Main navigation">
+      <input
+        type="checkbox"
+        id="nav-trigger"
+        class="nav-trigger"
+      />
 
-        <a href="{{ '/about/' | relative_url }}">About</a>
+      <label for="nav-trigger">
+        <span class="menu-icon"></span>
+      </label>
 
-        <a href="{{ '/academic/' | relative_url }}">Academic</a>
+      <div class="trigger">
 
-        <a href="{{ '/professional/' | relative_url }}">Professional</a>
+        <a class="page-link" href="{{ '/about/' | relative_url }}">About</a>
+        <a class="page-link" href="{{ '/academic/' | relative_url }}">Academic</a>
+        <a class="page-link" href="{{ '/professional/' | relative_url }}">Professional</a>
+        <a class="page-link" href="{{ '/writing/' | relative_url }}">Writing</a>
+        <a class="page-link" href="{{ '/development/' | relative_url }}">Development</a>
+        <a class="page-link" href="{{ '/art/' | relative_url }}">Art</a>
+        <a class="page-link" href="{{ '/portfolio/' | relative_url }}">Portfolio &amp; Projects</a>
+        <a class="page-link" href="{{ '/credentials/' | relative_url }}">Credentials</a>
+        <a class="page-link" href="{{ '/contact/' | relative_url }}">Contact</a>
 
-        <a href="{{ '/writing/' | relative_url }}">Writing</a>
+      </div>
 
-        <a href="{{ '/development/' | relative_url }}">Development</a>
-
-        <a href="{{ '/art/' | relative_url }}">Art</a>
-
-        <a href="{{ '/portfolio/' | relative_url }}">
-          Portfolio &amp; Projects
-        </a>
-
-        <a href="{{ '/credentials/' | relative_url }}">Credentials</a>
-
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
-
-      </nav>
-
-    </div>
+    </nav>
 
   </div>
 
