@@ -1,97 +1,431 @@
 ---
 layout: home
 title: "Home"
+description: "The personal website of Quincy Powell, exploring academic research, professional work, writing, development, art, and creative projects."
 ---
 
-# Quincy Powell
+<div class="home-page">
 
-## Building digital experiences people can find, understand, and trust.
+  <!-- HERO -->
 
-I am a digital marketing specialist interested in the intersection of people, technology, and information.
+  <section class="home-hero" aria-labelledby="home-hero-title">
 
-My work brings together search engine optimization, content strategy, accessibility, information architecture, marketing research, and emerging technologies such as AI search. I am particularly interested in how technology shapes the ways people find information, make decisions, and develop trust.
+    <div class="home-hero-image image-mountains"
+         role="img"
+         aria-label="Mountain landscape"
+         aria-hidden="true">
+    </div>
 
-I also write, make art, develop websites and games, and continue exploring questions that cross the boundaries between these areas.
+    <div class="home-hero-copy">
 
----
+      <p class="section-label">Research · Build · Create</p>
 
-## Explore My Work
+      <h1 id="home-hero-title">Quincy Powell</h1>
 
-<div class="home-grid">
+      <p class="home-hero-tagline">
+        Curious by nature. Rooted in research. Driven by creativity.
+      </p>
 
-<a class="home-card" href="/academic/">
-<h3>Academic</h3>
-<p>Explore my research, academic writing, investigations, and ongoing work in areas such as information retrieval, consumer behavior, AI, and marketing.</p>
-<p><strong>Explore Academic Work →</strong></p>
-</a>
+      <a class="text-link" href="{{ '/about/' | relative_url }}">
+        Get to know me
+        <span aria-hidden="true">→</span>
+      </a>
 
-<a class="home-card" href="/professional/">
-<h3>Professional</h3>
-<p>See how I apply research and technical knowledge to real-world marketing, SEO, accessibility, content, and digital strategy problems.</p>
-<p><strong>Explore Professional Work →</strong></p>
-</a>
+    </div>
 
-<a class="home-card" href="/writing/">
-<h3>Writing</h3>
-<p>Read my essays, personal writing, fiction, poetry, reflections, and other work created simply because I have something to say.</p>
-<p><strong>Read My Writing →</strong></p>
-</a>
+  </section>
 
-<a class="home-card" href="/development/">
-<h3>Development</h3>
-<p>Follow my work in web development, game development, programming, technical experiments, and the things I am learning to build.</p>
-<p><strong>Explore Development →</strong></p>
-</a>
 
-<a class="home-card" href="/art/">
-<h3>Art</h3>
-<p>Explore my visual work, creative experiments, illustrations, and artwork created both independently and as part of larger projects.</p>
-<p><strong>Explore My Art →</strong></p>
-</a>
+  <!-- INTRODUCTION -->
 
-<a class="home-card" href="/portfolio/">
-<h3>Portfolio &amp; Projects</h3>
-<p>See a curated collection of the projects and work I most want to showcase, across my academic, professional, and creative interests.</p>
-<p><strong>View Portfolio &amp; Projects →</strong></p>
-</a>
+  <section class="home-intro home-section" aria-labelledby="home-intro-title">
 
-<a class="home-card" href="/credentials/">
-<h3>Credentials</h3>
-<p>View my resume and academic CV for a formal overview of my education, experience, skills, and qualifications.</p>
-<p><strong>View Credentials →</strong></p>
-</a>
+    <div class="intro-image image-botanical"
+         role="img"
+         aria-label="Botanical detail"
+         aria-hidden="true">
+    </div>
+
+    <div class="intro-copy">
+
+      <p class="section-label">A little about me</p>
+
+      <h2 id="home-intro-title">
+        A place to explore the questions, work, and ideas I'm most interested in.
+      </h2>
+
+      <p>
+        I'm a digital marketing specialist interested in the intersection
+        of people, technology, and information.
+      </p>
+
+      <p>
+        I research, write, build websites and games, make art, and keep
+        following questions that cross the boundaries between those things.
+      </p>
+
+      <a class="text-link" href="{{ '/about/' | relative_url }}">
+        More about me
+        <span aria-hidden="true">→</span>
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- AREAS OF WORK -->
+
+  <section class="home-areas home-section" aria-labelledby="home-areas-title">
+
+    <div class="section-heading">
+
+      <p class="section-label">Explore</p>
+
+      <h2 id="home-areas-title">
+        Different parts of the same person.
+      </h2>
+
+    </div>
+
+
+    <div class="home-area-list">
+
+
+      <!-- ACADEMIC -->
+
+      <a class="home-area home-area-left"
+         href="{{ '/academic/' | relative_url }}">
+
+        <div class="home-area-image image-books"
+             role="img"
+             aria-label="Books and research notes"
+             aria-hidden="true">
+        </div>
+
+        <div class="home-area-copy">
+
+          <p class="section-label">Academic</p>
+
+          <h3>Research, inquiry, understanding.</h3>
+
+          <p>
+            Research, academic writing, investigations, and questions about
+            information, people, technology, and marketing.
+          </p>
+
+          <span class="text-link">
+            Explore
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- PROFESSIONAL -->
+
+      <a class="home-area home-area-right"
+         href="{{ '/professional/' | relative_url }}">
+
+        <div class="home-area-copy">
+
+          <p class="section-label">Professional</p>
+
+          <h3>Strategy, systems, real-world work.</h3>
+
+          <p>
+            Digital marketing, SEO, accessibility, content, analytics,
+            and the practical problems that connect them.
+          </p>
+
+          <span class="text-link">
+            Explore
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+        <div class="home-area-image image-workspace"
+             role="img"
+             aria-label="Laptop and notebook in a workspace"
+             aria-hidden="true">
+        </div>
+
+      </a>
+
+
+      <!-- WRITING -->
+
+      <a class="home-area home-area-left"
+         href="{{ '/writing/' | relative_url }}">
+
+        <div class="home-area-image image-writing"
+             role="img"
+             aria-label="Notebook and writing materials"
+             aria-hidden="true">
+        </div>
+
+        <div class="home-area-copy">
+
+          <p class="section-label">Writing</p>
+
+          <h3>Stories, ideas, reflection.</h3>
+
+          <p>
+            Essays, personal writing, fiction, poetry, and the things
+            I write because I have something to say.
+          </p>
+
+          <span class="text-link">
+            Explore
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+
+      <!-- DEVELOPMENT -->
+
+      <a class="home-area home-area-right home-area-quiet"
+         href="{{ '/development/' | relative_url }}">
+
+        <div class="home-area-copy">
+
+          <p class="section-label">Development</p>
+
+          <h3>Making things work.</h3>
+
+          <p>
+            Web development, game development, programming experiments,
+            and the things I'm learning to build.
+          </p>
+
+          <span class="text-link">
+            Explore
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+        <div class="home-area-image image-development"
+             role="img"
+             aria-label="Technical workspace"
+             aria-hidden="true">
+        </div>
+
+      </a>
+
+
+      <!-- ART -->
+
+      <a class="home-area home-area-left home-area-quiet"
+         href="{{ '/art/' | relative_url }}">
+
+        <div class="home-area-image image-art"
+             role="img"
+             aria-label="Botanical artwork and art materials"
+             aria-hidden="true">
+        </div>
+
+        <div class="home-area-copy">
+
+          <p class="section-label">Art</p>
+
+          <h3>Making things by hand.</h3>
+
+          <p>
+            Illustration, visual experiments, and artwork made independently
+            or as part of larger projects.
+          </p>
+
+          <span class="text-link">
+            Explore
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURED PROJECT -->
+
+  <section class="home-featured home-section"
+           aria-labelledby="home-featured-title">
+
+    <div class="featured-inner">
+
+      <div class="featured-copy">
+
+        <p class="section-label">Featured work</p>
+
+        <h2 id="home-featured-title">
+          Seven Oaks Farm
+        </h2>
+
+        <p>
+          A cozy farming game with a darker edge, built around storytelling,
+          worldbuilding, and the question of what happens when people learn
+          they can exploit something they don't understand.
+        </p>
+
+        <a class="text-link"
+           href="{{ '/projects/seven-oaks-farm/' | relative_url }}">
+          View project
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+      <div class="featured-image image-seven-oaks"
+           role="img"
+           aria-label="Seven Oaks Farm project artwork"
+           aria-hidden="true">
+      </div>
+
+      <div class="tag-stack" aria-label="Project tags">
+
+        <span>Game</span>
+        <span>Development</span>
+        <span>Pixel Art</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- RECENTLY -->
+
+  <section class="home-discover home-section"
+           aria-labelledby="home-discover-title">
+
+    <div class="discover-intro">
+
+      <p class="section-label">Recently</p>
+
+      <h2 id="home-discover-title">
+        New additions, updates, and things I've been working on.
+      </h2>
+
+      <p class="discover-note">
+        A quick way into what's changed without having to know
+        where everything lives.
+      </p>
+
+    </div>
+
+
+    <div class="recent-list">
+
+      {% assign recent_projects = site.projects | sort: "date" | reverse %}
+
+      {% for project in recent_projects limit: 4 %}
+
+        <a class="recent-item"
+           href="{{ project.url | relative_url }}">
+
+          <span class="recent-date">
+
+            {% if project.date %}
+              {{ project.date | date: "%b %Y" }}
+            {% else %}
+              Project
+            {% endif %}
+
+          </span>
+
+          <span class="recent-title">
+            {{ project.title }}
+          </span>
+
+          <span class="recent-meta">
+
+            {% if project.project_types %}
+              {{ project.project_types | join: " / " }}
+            {% endif %}
+
+            <span aria-hidden="true">→</span>
+
+          </span>
+
+        </a>
+
+      {% endfor %}
+
+
+      <a class="recent-item"
+         href="{{ '/writing/personal/an-mba-changed-the-way-i-think/' | relative_url }}">
+
+        <span class="recent-date">
+          Writing
+        </span>
+
+        <span class="recent-title">
+          An MBA Changed the Way I Think
+        </span>
+
+        <span class="recent-meta">
+          Essay
+          <span aria-hidden="true">→</span>
+        </span>
+
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- MORE TO EXPLORE -->
+
+  <section class="home-more home-section"
+           aria-labelledby="home-more-title">
+
+    <div class="home-more-card">
+
+      <div>
+
+        <p class="section-label">Keep exploring</p>
+
+        <h2 id="home-more-title">
+          There is more here than fits on the homepage.
+        </h2>
+
+        <p>
+          Browse the full portfolio and projects archive, or look at
+          my resume and academic CV.
+        </p>
+
+      </div>
+
+
+      <div class="home-more-links">
+
+        <a class="button"
+           href="{{ '/portfolio/' | relative_url }}">
+          Portfolio &amp; Projects
+        </a>
+
+        <a class="text-link"
+           href="{{ '/credentials/' | relative_url }}">
+          View credentials
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
 
 </div>
-
----
-
-## What I Believe
-
-Marketing begins with people.
-
-A valuable digital experience balances thoughtful content and user experience with the technical foundations that help people find, access, understand, and trust that experience.
-
-That means considering more than rankings or conversions. It means thinking about the people on the other side of the screen, how they discover information, what they need from it, and what makes them trust what they find.
-
----
-
-## Currently Learning
-
-I am continually expanding my skills in:
-
-- Technical SEO
-- AI Visibility and GEO
-- Website Accessibility
-- Information Architecture
-- Content Strategy and Optimization
-- Web Development
-- Game Development
-- Marketing Research
-- Consumer Behavior
-- Information Retrieval
-
-## Let’s Work Together
-
-Whether you’re looking for help with search visibility, content, accessibility, digital strategy, or another project, I’d love to hear from you.
-
-<a class="button" href="/contact/">Contact Me</a>
