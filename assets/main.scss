@@ -3210,3 +3210,72 @@ li + li {
     display: block !important;
   }
 }
+
+/* =========================================================
+   MOBILE NAVIGATION BUTTON
+   ========================================================= */
+
+.site-header .nav-toggle {
+  display: none;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 44px;
+  height: 44px;
+
+  margin: 0;
+  padding: 10px;
+
+  border: none;
+  border-radius: 0;
+
+  background: none;
+  background-color: transparent;
+
+  box-shadow: none;
+
+  color: transparent;
+
+  font: inherit;
+  line-height: 0;
+
+  cursor: pointer;
+}
+
+.site-header .nav-toggle::before,
+.site-header .nav-toggle::after {
+  content: none;
+}
+
+.site-header .nav-toggle .nav-line {
+  display: block;
+
+  width: 24px;
+  height: 2px;
+
+  margin: 5px auto;
+
+  background: #fffdf8;
+
+  border: 0;
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+@media (max-width: 800px) {
+
+  .site-header .nav-toggle {
+    display: block;
+  }
+
+}
+
+@media (min-width: 801px) {
+
+  .site-header .nav-toggle {
+    display: none;
+  }
+
+}
