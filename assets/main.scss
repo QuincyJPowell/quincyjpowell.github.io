@@ -2918,23 +2918,27 @@ li + li {
    Hamburger
    --------------------------------------------------------- */
 
-.nav-toggle {
-  display: none;
+.site-header .site-nav .nav-toggle {
+  all: unset;
 
-  appearance: none;
-  -webkit-appearance: none;
+  display: none;
 
   width: 44px;
   height: 44px;
 
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+
   margin: 0;
   padding: 0;
 
-  border: 0;
-  border-radius: 0;
-
   background: transparent;
   background-color: transparent;
+
+  border: 0;
+  border-radius: 0;
 
   box-shadow: none;
 
@@ -2948,7 +2952,7 @@ li + li {
   -webkit-tap-highlight-color: transparent;
 }
 
-.nav-toggle .nav-line {
+.site-header .site-nav .nav-toggle .nav-line {
   display: block;
 
   width: 24px;
@@ -2957,6 +2961,7 @@ li + li {
   margin: 5px auto;
 
   background: #fffdf8;
+  background-color: #fffdf8;
 
   border: 0;
   border-radius: 0;
@@ -2975,9 +2980,9 @@ li + li {
 
 @media (max-width: 800px) {
 
-  .nav-toggle {
-    display: block;
-  }
+.site-header .site-nav .nav-toggle {
+  display: flex;
+}
 
   .site-nav .trigger {
     position: absolute;
@@ -3052,8 +3057,8 @@ li + li {
 
 @media (min-width: 801px) {
 
-  .nav-toggle {
-    display: none;
-  }
+.site-header .site-nav .nav-toggle {
+  display: none;
+}
 
 }
