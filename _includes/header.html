@@ -6,33 +6,39 @@
       {{ site.title | escape }}
     </a>
 
-    <nav class="site-nav" aria-label="Primary navigation">
+    <nav class="site-nav">
 
-      <button
-        class="nav-toggle"
-        type="button"
-        aria-controls="primary-navigation"
-        aria-expanded="false"
-        aria-label="Open navigation menu"
+      <input
+        type="checkbox"
+        id="nav-trigger"
+        class="nav-trigger"
       >
-        <span class="nav-line"></span>
-        <span class="nav-line"></span>
-        <span class="nav-line"></span>
-      </button>
 
-      <div class="trigger" id="primary-navigation">
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </label>
+
+      <div class="trigger">
 
         {%- if site.header_pages -%}
+
           {%- for path in site.header_pages -%}
+
             {%- assign my_page = site.pages | where: "path", path | first -%}
 
             {%- if my_page.title -%}
+
               <a
                 class="page-link"
                 href="{{ my_page.url | relative_url }}"
               >
                 {{ my_page.title | escape }}
               </a>
+
             {%- endif -%}
 
           {%- endfor -%}
@@ -43,15 +49,18 @@
           {%- assign page_paths = site.header_pages | default: default_paths -%}
 
           {%- for path in page_paths -%}
+
             {%- assign my_page = site.pages | where: "path", path | first -%}
 
             {%- if my_page.title -%}
+
               <a
                 class="page-link"
                 href="{{ my_page.url | relative_url }}"
               >
                 {{ my_page.title | escape }}
               </a>
+
             {%- endif -%}
 
           {%- endfor -%}
