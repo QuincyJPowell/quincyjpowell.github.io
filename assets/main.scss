@@ -3116,3 +3116,216 @@ li + li {
 
 }
 
+/* =========================================================
+   FINAL MOBILE NAVIGATION OVERRIDE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  /* Keep the nav itself small and in the header */
+
+  .site-header .site-nav {
+    position: relative !important;
+
+    width: 44px !important;
+    height: 44px !important;
+
+    margin-left: auto !important;
+    padding: 0 !important;
+
+    overflow: visible !important;
+  }
+
+
+  /* The actual hamburger button */
+
+  .site-header .nav-toggle {
+    display: block !important;
+
+    position: relative !important;
+
+    width: 44px !important;
+    height: 44px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+
+    border: none !important;
+    border-width: 0 !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    appearance: none !important;
+    -webkit-appearance: none !important;
+
+    cursor: pointer !important;
+
+    z-index: 2000 !important;
+  }
+
+
+  /* Kill anything Minima tries to draw on the button */
+
+  .site-header .nav-toggle::before,
+  .site-header .nav-toggle::after {
+    content: none !important;
+    display: none !important;
+  }
+
+
+  /* The three actual lines */
+
+  .site-header .nav-toggle .nav-line {
+    display: block !important;
+
+    position: absolute !important;
+
+    left: 10px !important;
+
+    width: 24px !important;
+    height: 2px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #fffdf8 !important;
+    background-color: #fffdf8 !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    pointer-events: none !important;
+
+    transition:
+      transform 180ms ease,
+      opacity 180ms ease !important;
+  }
+
+  .site-header .nav-toggle .nav-line:nth-child(1) {
+    top: 10px !important;
+  }
+
+  .site-header .nav-toggle .nav-line:nth-child(2) {
+    top: 21px !important;
+  }
+
+  .site-header .nav-toggle .nav-line:nth-child(3) {
+    top: 32px !important;
+  }
+
+
+  /* Hide the navigation links until opened */
+
+  .site-header .site-nav .trigger {
+    display: none !important;
+
+    position: absolute !important;
+
+    top: 44px !important;
+    right: 0 !important;
+
+    width: 260px !important;
+    max-width: calc(100vw - 32px) !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 8px !important;
+
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    background: #1f4d3a !important;
+
+    border: 1px solid rgba(255, 253, 248, 0.2) !important;
+    border-radius: 8px !important;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+
+    overflow: visible !important;
+
+    z-index: 1999 !important;
+  }
+
+
+  /* Open */
+
+  .site-header .site-nav.is-open .trigger {
+    display: flex !important;
+  }
+
+
+  /* Links */
+
+  .site-header .site-nav .trigger .page-link {
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+    padding: 13px 14px !important;
+
+    color: #fffdf8 !important;
+
+    background: transparent !important;
+
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255, 253, 248, 0.12) !important;
+
+    font-size: 0.9rem !important;
+
+    line-height: 1.2 !important;
+
+    white-space: normal !important;
+  }
+
+  .site-header .site-nav .trigger .page-link:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  /* X */
+
+  .site-header .site-nav.is-open .nav-toggle .nav-line:nth-child(1) {
+    top: 21px !important;
+
+    transform: rotate(45deg) !important;
+  }
+
+  .site-header .site-nav.is-open .nav-toggle .nav-line:nth-child(2) {
+    opacity: 0 !important;
+  }
+
+  .site-header .site-nav.is-open .nav-toggle .nav-line:nth-child(3) {
+    top: 21px !important;
+
+    transform: rotate(-45deg) !important;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 801px) {
+
+  .site-header .nav-toggle {
+    display: none !important;
+  }
+
+  .site-header .site-nav .trigger {
+    display: flex !important;
+  }
+}
