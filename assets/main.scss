@@ -2835,13 +2835,13 @@ li + li {
    CUSTOM MOBILE NAVIGATION
    ========================================= */
 
-/* Keep Minima's original navigation machinery out of the way. */
+/* Keep Minima's original navigation machinery out of the way */
 .site-nav .nav-trigger,
 .site-nav .menu-icon {
   display: none !important;
 }
 
-/* Our navigation container */
+/* Navigation container */
 .site-nav {
   position: relative;
 }
@@ -2851,8 +2851,13 @@ li + li {
   display: none;
   appearance: none;
   -webkit-appearance: none;
-  border: 0;
-  background: transparent;
+
+  /* REMOVE THE BOX */
+  border: none !important;
+  outline: none;
+  background: transparent !important;
+  box-shadow: none !important;
+
   padding: 8px;
   margin: 0;
   cursor: pointer;
@@ -2861,10 +2866,12 @@ li + li {
 /* Hamburger lines */
 .site-nav .nav-line {
   display: block;
-  width: 24px;
+  width: 26px;
   height: 2px;
-  margin: 4px 0;
-  background: #000;
+  margin: 5px 0;
+
+  /* WHITE LINES */
+  background: #fff !important;
 }
 
 /* Desktop navigation */
@@ -2880,42 +2887,49 @@ li + li {
 
 @media screen and (max-width: 800px) {
 
-  .site-nav {
+  /* Put the navigation at the right side */
+  .site-header .wrapper {
     position: relative;
   }
 
-  /* Show our hamburger */
+  .site-nav {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  /* Show hamburger */
   .site-nav .nav-toggle {
     display: block;
   }
 
-  /* Hide the links until the button is pressed */
+  /* Hide links until opened */
   .site-nav .trigger {
     display: none;
   }
 
-  /* Show the links when JavaScript adds .is-open */
+  /* Show links when opened */
   .site-nav.is-open .trigger {
     display: block;
-  }
-
-  /* Dropdown */
-  .site-nav.is-open .trigger {
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
+
     min-width: 180px;
     padding: 12px 0;
+
     background: #fff;
     border: 1px solid #ccc;
     z-index: 1000;
   }
 
-  /* Individual links */
+  /* Menu links */
   .site-nav .page-link {
     display: block;
     padding: 10px 16px;
     white-space: nowrap;
+    color: #000;
   }
 
 }
