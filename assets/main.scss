@@ -4897,3 +4897,19 @@ li + li {
     margin: 0 0 2rem;
   }
 }
+
+/* =========================================================
+   FULL-BLEED EDITORIAL PAGES
+   Homepage, About, and Portfolio
+   ========================================================= */
+
+.page-content > .wrapper.wrapper-fullbleed {
+  width: 100%;
+  max-width: none;
+
+  padding: 0;
+
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
