@@ -4907,9 +4907,18 @@ li + li {
   width: 100%;
   max-width: none;
 
-  padding: 0;
+  padding: 0 2rem;
+
+  box-sizing: border-box;
 
   background: transparent;
   border-radius: 0;
   box-shadow: none;
+}
+
+@media screen and (min-width: 801px) {
+  .page-content > .wrapper.wrapper-fullbleed {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
