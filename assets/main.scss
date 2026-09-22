@@ -2831,264 +2831,91 @@ li + li {
   text-decoration: none !important;
 }
 
+/* =========================================
+   CUSTOM MOBILE NAVIGATION
+   ========================================= */
 
-/* ---------------------------------------------------------
-   Navigation
-   --------------------------------------------------------- */
+/* Keep Minima's original navigation machinery out of the way. */
+.site-nav .nav-trigger,
+.site-nav .menu-icon {
+  display: none !important;
+}
 
-.site-header .site-nav {
+/* Our navigation container */
+.site-nav {
   position: relative;
-
-  display: flex;
-  align-items: center;
-
-  margin-left: auto;
-  padding: 0;
 }
 
-.site-header .site-nav .trigger {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  flex-wrap: nowrap;
-  gap: 0;
-
-  margin: 0;
-  padding: 0;
-}
-
-.site-header .site-nav .page-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  flex: 0 0 auto;
-
-  margin: 0;
-  padding: 0.65rem 0.7rem;
-
-  border: 0;
-  border-bottom: 1px solid transparent;
-
-  color: rgba(255, 253, 248, 0.88) !important;
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
-  line-height: 1.2;
-
-  letter-spacing: 0.035em;
-  white-space: nowrap;
-
-  text-decoration: none !important;
-}
-
-.site-header .site-nav .page-link:hover {
-  color: #fffdf8 !important;
-  border-bottom-color: rgba(255, 253, 248, 0.7);
-}
-
-.site-header .site-nav .page-link:visited {
-  color: rgba(255, 253, 248, 0.88) !important;
-}
-
-
-/* ---------------------------------------------------------
-   Hamburger button
-   --------------------------------------------------------- */
-
-.site-header .nav-toggle {
+/* Custom hamburger button */
+.site-nav .nav-toggle {
   display: none;
-
-  position: relative;
-
-  width: 44px;
-  height: 44px;
-
-  margin: 0;
-  padding: 0;
-
   appearance: none;
   -webkit-appearance: none;
-
-  background: transparent;
-  background-image: none;
-
   border: 0;
-  border-radius: 0;
-  box-shadow: none;
-
-  color: transparent;
-
+  background: transparent;
+  padding: 8px;
+  margin: 0;
   cursor: pointer;
-
-  font-size: 0;
-  line-height: 0;
-
-  z-index: 1002;
 }
 
-.site-header .nav-toggle::before,
-.site-header .nav-toggle::after {
-  display: none;
-  content: none;
-}
-
-.site-header .nav-toggle .nav-line {
-  position: absolute;
-
-  left: 10px;
-
+/* Hamburger lines */
+.site-nav .nav-line {
   display: block;
-
   width: 24px;
   height: 2px;
-
-  margin: 0;
-  padding: 0;
-
-  background: #fffdf8;
-
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-
-  pointer-events: none;
-
-  transform: none;
-
-  transition:
-    transform 180ms ease,
-    opacity 180ms ease;
+  margin: 4px 0;
+  background: #000;
 }
 
-.site-header .nav-toggle .nav-line:nth-child(1) {
-  top: 10px;
+/* Desktop navigation */
+.site-nav .trigger {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.site-header .nav-toggle .nav-line:nth-child(2) {
-  top: 21px;
-}
+/* =========================================
+   MOBILE
+   ========================================= */
 
-.site-header .nav-toggle .nav-line:nth-child(3) {
-  top: 32px;
-}
+@media screen and (max-width: 800px) {
 
-
-/* ---------------------------------------------------------
-   Mobile navigation
-   --------------------------------------------------------- */
-
-@media (max-width: 800px) {
-
-  .site-header .wrapper {
-    min-height: 72px;
+  .site-nav {
+    position: relative;
   }
 
-  .site-header .site-nav {
-    width: 44px;
-    height: 44px;
-
-    margin-left: auto;
-  }
-
-  .site-header .nav-toggle {
+  /* Show our hamburger */
+  .site-nav .nav-toggle {
     display: block;
   }
 
-  .site-header .site-nav .trigger {
+  /* Hide the links until the button is pressed */
+  .site-nav .trigger {
     display: none;
+  }
 
+  /* Show the links when JavaScript adds .is-open */
+  .site-nav.is-open .trigger {
+    display: block;
+  }
+
+  /* Dropdown */
+  .site-nav.is-open .trigger {
     position: absolute;
-
-    top: calc(100% + 0.75rem);
+    top: calc(100% + 8px);
     right: 0;
-
-    width: min(280px, calc(100vw - 2rem));
-
-    flex-direction: column;
-    align-items: stretch;
-
-    margin: 0;
-    padding: 0.6rem;
-
-    background: #1f4d3a;
-
-    border: 1px solid rgba(255, 253, 248, 0.18);
-    border-radius: 8px;
-
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
-
-    z-index: 1001;
+    min-width: 180px;
+    padding: 12px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
   }
 
-  .site-header .site-nav.is-open .trigger {
-    display: flex;
+  /* Individual links */
+  .site-nav .page-link {
+    display: block;
+    padding: 10px 16px;
+    white-space: nowrap;
   }
 
-  .site-header .site-nav .page-link {
-    display: flex;
-
-    align-items: center;
-    justify-content: flex-start;
-
-    width: 100%;
-
-    margin: 0;
-    padding: 0.85rem 0.9rem;
-
-    color: rgba(255, 253, 248, 0.92) !important;
-
-    border: 0;
-    border-bottom: 1px solid rgba(255, 253, 248, 0.1);
-
-    font-size: 0.9rem;
-    line-height: 1.2;
-
-    white-space: normal;
-  }
-
-  .site-header .site-nav .page-link:last-child {
-    border-bottom: 0;
-  }
-
-  .site-header .site-nav .page-link:hover,
-  .site-header .site-nav .page-link:focus-visible {
-    color: #fffdf8 !important;
-    background: rgba(255, 253, 248, 0.08);
-  }
-
-
-  /* Hamburger becomes X when open */
-
-  .site-header .site-nav.is-open .nav-toggle .nav-line:nth-child(1) {
-    top: 21px;
-    transform: rotate(45deg);
-  }
-
-  .site-header .site-nav.is-open .nav-toggle .nav-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .site-header .site-nav.is-open .nav-toggle .nav-line:nth-child(3) {
-    top: 21px;
-    transform: rotate(-45deg);
-  }
-}
-
-
-/* ---------------------------------------------------------
-   Desktop
-   --------------------------------------------------------- */
-
-@media (min-width: 801px) {
-
-  .site-header .nav-toggle {
-    display: none;
-  }
-
-  .site-header .site-nav .trigger {
-    display: flex;
-  }
 }
