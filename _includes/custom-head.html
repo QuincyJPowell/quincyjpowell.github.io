@@ -1,0 +1,158 @@
+<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+<style>
+.site-header .site-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.site-header .site-nav .trigger {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .site-nav .page-link {
+  margin-left: 1.25rem;
+  color: #2b2b2b;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.site-header .site-nav .page-link:hover,
+.site-header .site-nav .page-link:focus-visible {
+  color: #6b8e6e;
+}
+
+.site-header .nav-toggle {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.site-header .nav-toggle:hover,
+.site-header .nav-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.site-header .nav-toggle:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.site-header .nav-line {
+  position: absolute;
+  left: 10px;
+  width: 24px;
+  height: 2px;
+  border-radius: 2px;
+  background: currentColor;
+  transition: transform 160ms ease, opacity 160ms ease, top 160ms ease;
+}
+
+.site-header .nav-line:nth-child(1) {
+  top: 13px;
+}
+
+.site-header .nav-line:nth-child(2) {
+  top: 21px;
+}
+
+.site-header .nav-line:nth-child(3) {
+  top: 29px;
+}
+
+.site-header .site-nav.is-open .nav-line:nth-child(1) {
+  top: 21px;
+  transform: rotate(45deg);
+}
+
+.site-header .site-nav.is-open .nav-line:nth-child(2) {
+  opacity: 0;
+}
+
+.site-header .site-nav.is-open .nav-line:nth-child(3) {
+  top: 21px;
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 800px) {
+  .site-header .site-nav {
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+  }
+
+  .site-header .nav-toggle {
+    display: block;
+  }
+
+  .site-header .site-nav .trigger {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    width: min(280px, calc(100vw - 2rem));
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    margin: 0;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 253, 248, 0.14);
+    border-radius: 10px;
+    background: #1f4d3a;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+
+  .site-header .site-nav.is-open .trigger {
+    display: flex;
+  }
+
+  .site-header .site-nav .page-link {
+    display: block;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    color: #fffdf8;
+  }
+
+  .site-header .site-nav .page-link:hover,
+  .site-header .site-nav .page-link:focus-visible {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fffdf8;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .site-header .site-nav .trigger {
+    display: flex;
+  }
+}
+</style>
+
+<script src="{{ '/assets/js/navigation.js' | relative_url }}" defer></script>
+
+<meta name="author" content="Quincy Powell">
+
+<meta name="robots" content="index, follow">
+
+<meta name="keywords" content="SEO, digital marketing, content strategy, portfolio, Quincy Powell">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
