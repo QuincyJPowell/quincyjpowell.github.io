@@ -22,9 +22,17 @@ permalink: /about/
 
   <section class="about-introduction">
 
-    <div class="about-section-label">
-      <span>01</span>
-      <p>Who I am</p>
+  <div class="about-section-label">
+    <span>01</span>
+    <p>Who I am</p>
+  </div>
+
+  <div class="about-introduction-content">
+
+    <div class="about-photo-placeholder">
+      <div class="about-photo-inner">
+        <span>Headshot</span>
+      </div>
     </div>
 
     <div class="about-introduction-copy">
@@ -51,7 +59,9 @@ permalink: /about/
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
   <section class="about-interests">
@@ -64,7 +74,7 @@ permalink: /about/
     <div class="about-interest-grid">
 
       <div class="about-interest-card">
-        <span>01</span>
+        
         <h2>Business &amp; Marketing</h2>
         <p>
           Digital marketing, consumer psychology, business strategy,
@@ -74,7 +84,7 @@ permalink: /about/
       </div>
 
       <div class="about-interest-card">
-        <span>02</span>
+        
         <h2>Research &amp; Analysis</h2>
         <p>
           Understanding information, identifying patterns, working
@@ -84,7 +94,7 @@ permalink: /about/
       </div>
 
       <div class="about-interest-card">
-        <span>03</span>
+        
         <h2>Technology</h2>
         <p>
           Web development, data visualization, artificial intelligence,
@@ -93,7 +103,7 @@ permalink: /about/
       </div>
 
       <div class="about-interest-card">
-        <span>04</span>
+        
         <h2>Creative Work</h2>
         <p>
           Writing, storytelling, game development, worldbuilding,
@@ -174,24 +184,22 @@ permalink: /about/
 
   <section class="about-closing">
 
-    <p class="about-eyebrow">Keep exploring</p>
+  <p class="about-eyebrow">More here than an About page</p>
 
-    <h2>
-      There's more to see than an About page.
-    </h2>
+  <h2>
+    Keep exploring.
+  </h2>
 
-    <div class="about-closing-links">
+  <div class="about-closing-links">
 
-      <a href="{{ "/portfolio/" | relative_url }}">
-        Explore my work <span aria-hidden="true">↝</span>
-      </a>
+    <a href="{{ "/portfolio/" | relative_url }}">
+      Explore my work <span aria-hidden="true">↝</span>
+    </a>
 
-      <a href="{{ "/credentials/" | relative_url }}">
-        View my credentials <span aria-hidden="true">↝</span>
-      </a>
+    <a href="{{ "/credentials/" | relative_url }}">
+      View my credentials <span aria-hidden="true">↝</span>
+    </a>
 
-    </div>
+  </div>
 
-  </section>
-
-</div>
+</section>
