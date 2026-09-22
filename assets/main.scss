@@ -2868,24 +2868,21 @@ li + li {
 
 @media screen and (min-width: 801px) {
   .site-header .wrapper {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 3rem;
   }
 
   .site-header .site-title {
-    grid-column: 1;
-    justify-self: start;
+    flex: 0 0 auto;
   }
 
   .site-header .site-nav {
-    grid-column: 2;
-    justify-self: center;
-
     position: static;
-    transform: none;
     margin-left: 0;
+    transform: none;
+    flex: 0 0 auto;
   }
 }
 
