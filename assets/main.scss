@@ -2898,6 +2898,20 @@ li + li {
   gap: 20px;
 }
 
+.site-header .site-nav .page-link {
+  margin-left: 1.25rem;
+
+  color: #fffdf8 !important;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  text-decoration: none !important;
+}
+
 /* =========================================
    MOBILE
    ========================================= */
