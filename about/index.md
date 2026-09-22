@@ -182,23 +182,39 @@ permalink: /about/
   </section>
 
 
-  <section class="about-closing">
+<section class="about-closing home-more" aria-labelledby="about-more-title">
 
-  <p class="about-eyebrow">More here than an About page</p>
+  <div class="home-more-card">
 
-  <h2>
-    Keep exploring.
-  </h2>
+    <div>
 
-  <div class="about-closing-links">
+      <p class="section-label">Keep exploring</p>
 
-    <a href="{{ "/portfolio/" | relative_url }}">
-      Explore my work <span aria-hidden="true">↝</span>
-    </a>
+      <h2 id="about-more-title">
+        There is more here than an About page.
+      </h2>
 
-    <a href="{{ "/credentials/" | relative_url }}">
-      View my credentials <span aria-hidden="true">↝</span>
-    </a>
+      <p>
+        Browse the full portfolio and projects archive, or look at
+        my resume and academic CV.
+      </p>
+
+    </div>
+
+    <div class="home-more-links">
+
+      <a class="button"
+         href="{{ '/portfolio/' | relative_url }}">
+        Portfolio &amp; Projects
+      </a>
+
+      <a class="text-link"
+         href="{{ '/credentials/' | relative_url }}">
+        View credentials
+        <span aria-hidden="true">→</span>
+      </a>
+
+    </div>
 
   </div>
 
