@@ -4567,17 +4567,20 @@ li + li {
 @media screen and (max-width: 800px) {
 
   .portfolio-project-controls {
-    align-items: stretch;
-    flex-direction: column;
-    gap: 1.25rem;
+    display: block;
   }
 
   .portfolio-project-search {
+    display: block;
+    width: 100%;
     max-width: none;
+    margin-bottom: 1.25rem;
   }
 
   .portfolio-project-filters {
+    display: flex;
     justify-content: flex-start;
+    gap: 0.45rem;
   }
 
 }
