@@ -116,7 +116,6 @@ description: A curated look at the work I research, build, write, and create.
               <span class="portfolio-card-link">
   View project <span aria-hidden="true">↝</span>
 </span>
-              </span>
 
             </div>
 
