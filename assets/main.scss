@@ -4584,3 +4584,257 @@ li + li {
   }
 
 }
+
+/* =========================================
+   About page
+   ========================================= */
+
+.about-page {
+  padding-bottom: 5rem;
+}
+
+
+/* Hero */
+
+.about-hero {
+  max-width: 900px;
+  padding: 5rem 0 7rem;
+}
+
+.about-eyebrow {
+  margin: 0 0 1rem;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--portfolio-sage);
+}
+
+.about-hero h1 {
+  margin: 0;
+
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+}
+
+.about-lead {
+  max-width: 700px;
+  margin: 2rem 0 0;
+
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
+  line-height: 1.5;
+}
+
+
+/* Shared section structure */
+
+.about-introduction,
+.about-interests,
+.about-approach,
+.about-direction {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.28fr) minmax(0, 1fr);
+  gap: 4rem;
+
+  padding: 5rem 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.about-section-label {
+  align-self: start;
+}
+
+.about-section-label span {
+  display: block;
+
+  margin-bottom: 0.5rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  color: var(--portfolio-sage);
+}
+
+.about-section-label p {
+  margin: 0;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+/* Introduction */
+
+.about-introduction-copy {
+  max-width: 760px;
+}
+
+.about-introduction-copy p {
+  max-width: 700px;
+}
+
+.about-large-copy {
+  margin-top: 0;
+
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  line-height: 1.45;
+}
+
+
+/* Interests */
+
+.about-interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.about-interest-card {
+  min-height: 240px;
+  padding: 2rem;
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.about-interest-card > span {
+  display: block;
+
+  margin-bottom: 3rem;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  color: var(--portfolio-sage);
+}
+
+.about-interest-card h2 {
+  margin: 0 0 0.75rem;
+
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.about-interest-card p {
+  max-width: 32rem;
+  margin: 0;
+
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+
+/* Approach */
+
+.about-approach-content {
+  max-width: 760px;
+}
+
+.about-approach-content h2,
+.about-direction-content h2 {
+  margin-top: 0;
+
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.about-approach-content p,
+.about-direction-content p {
+  max-width: 700px;
+}
+
+
+/* Direction */
+
+.about-direction-content {
+  max-width: 760px;
+}
+
+
+/* Closing */
+
+.about-closing {
+  margin-top: 5rem;
+  padding: 5rem 0;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.about-closing h2 {
+  max-width: 700px;
+  margin: 0 0 2rem;
+
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.about-closing-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about-closing-links a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-closing-links a span {
+  display: inline-block;
+  margin-left: 0.35rem;
+
+  transition: transform 0.2s ease;
+}
+
+.about-closing-links a:hover span {
+  transform: translateX(0.25rem);
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 800px) {
+
+  .about-hero {
+    padding: 3.5rem 0 5rem;
+  }
+
+  .about-introduction,
+  .about-interests,
+  .about-approach,
+  .about-direction {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    padding: 3.5rem 0;
+  }
+
+  .about-interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-interest-card {
+    min-height: 0;
+  }
+
+  .about-interest-card > span {
+    margin-bottom: 2rem;
+  }
+
+  .about-closing {
+    margin-top: 3rem;
+    padding: 3.5rem 0;
+  }
+
+}
