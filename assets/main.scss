@@ -4783,6 +4783,26 @@ li + li {
   line-height: 1.65;
 }
 
+.about-interests {
+  background: var(--warm-white);
+}
+
+.about-interest-grid {
+  border-color: rgba(107, 142, 110, 0.25);
+}
+
+.about-interest-card {
+  border-color: rgba(107, 142, 110, 0.25);
+  background: var(--light-sage);
+}
+
+.about-interest-card > span {
+  color: var(--sage);
+}
+
+.about-interest-card h2 {
+  color: var(--forest);
+}
 
 /* Approach */
 
