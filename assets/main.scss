@@ -4455,3 +4455,129 @@ li + li {
   }
 
 }
+
+/* =========================================
+   Portfolio project search + filters
+   ========================================= */
+
+.portfolio-project-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-project-search {
+  flex: 1 1 20rem;
+  max-width: 26rem;
+}
+
+.portfolio-project-search input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 0.75rem 0;
+  border: 0;
+  border-bottom: 1px solid currentColor;
+
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: inherit;
+
+  outline: none;
+}
+
+.portfolio-project-search input::placeholder {
+  opacity: 0.6;
+}
+
+.portfolio-project-search input:focus {
+  border-bottom-width: 2px;
+}
+
+.portfolio-project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem;
+}
+
+.portfolio-filter {
+  appearance: none;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+
+  padding: 0.4rem 0.75rem;
+
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+
+  color: inherit;
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.portfolio-filter:hover,
+.portfolio-filter:focus-visible {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.portfolio-filter.is-active {
+  background: currentColor;
+  color: var(--background-color);
+}
+
+.portfolio-all-project.is-hidden {
+  display: none;
+}
+
+.portfolio-no-results {
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.portfolio-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 800px) {
+
+  .portfolio-project-controls {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .portfolio-project-search {
+    max-width: none;
+  }
+
+  .portfolio-project-filters {
+    justify-content: flex-start;
+  }
+
+}
