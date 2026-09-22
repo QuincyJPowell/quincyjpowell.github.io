@@ -2831,6 +2831,26 @@ li + li {
   text-decoration: none !important;
 }
 
+/* Desktop navigation links */
+.site-header .site-nav .page-link {
+  margin-left: 1.25rem;
+
+  color: #fffdf8 !important;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  text-decoration: none !important;
+}
+
+.site-header .site-nav .page-link:hover,
+.site-header .site-nav .page-link:focus-visible,
+.site-header .site-nav .page-link:visited {
+  color: #fffdf8 !important;
+  text-decoration: none !important;
+}
+
 /* =========================================
    CUSTOM MOBILE NAVIGATION
    ========================================= */
@@ -2844,6 +2864,7 @@ li + li {
 /* Navigation container */
 .site-nav {
   position: relative;
+  margin-left: auto;
 }
 
 .site-nav .nav-toggle {
@@ -2924,7 +2945,11 @@ li + li {
   display: block;
   padding: 10px 16px;
   white-space: nowrap;
+
   color: #fff !important;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
 }
    
 }
