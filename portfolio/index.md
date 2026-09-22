@@ -321,7 +321,7 @@ description: A curated look at the work I research, build, write, and create.
         <a class="portfolio-recent-card" href="{{ project.url | relative_url }}">
 
           <div class="portfolio-recent-index">
-  {{ project.date | date: "%B %Y" }}
+  {{ project.date | date: "%m-%d" }}
 </div>
 
           <div class="portfolio-recent-main">
