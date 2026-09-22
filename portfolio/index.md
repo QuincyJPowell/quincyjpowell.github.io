@@ -359,74 +359,138 @@ description: A curated look at the work I research, build, write, and create.
   </section>
 
 
-  <section class="portfolio-archive" aria-labelledby="archive-title">
+  <section class="portfolio-archive" id="all-projects">
 
-    <div class="portfolio-archive-inner">
+  <div class="portfolio-section-heading">
+    <p class="portfolio-eyebrow">The full archive</p>
+    <h2>All Projects</h2>
+  </div>
 
-      <div class="portfolio-section-heading portfolio-archive-heading">
+  <div class="portfolio-project-controls">
 
-        <p class="portfolio-eyebrow">The whole collection</p>
+    <label class="portfolio-project-search">
+      <span class="portfolio-sr-only">Search projects</span>
+      <input
+        type="search"
+        id="portfolio-project-search"
+        placeholder="Search projects..."
+        autocomplete="off"
+      >
+    </label>
 
-        <h2 id="archive-title">All Projects</h2>
+    <div class="portfolio-project-filters" aria-label="Filter projects">
+      <button
+        type="button"
+        class="portfolio-filter is-active"
+        data-filter="all"
+        aria-pressed="true"
+      >
+        All
+      </button>
 
-        <p>
-          Everything in one place. Projects can belong to more than one area,
-          so there isn't just one way to find them.
-        </p>
+      <button
+        type="button"
+        class="portfolio-filter"
+        data-filter="academic"
+        aria-pressed="false"
+      >
+        Academic
+      </button>
 
-      </div>
+      <button
+        type="button"
+        class="portfolio-filter"
+        data-filter="professional"
+        aria-pressed="false"
+      >
+        Professional
+      </button>
 
+      <button
+        type="button"
+        class="portfolio-filter"
+        data-filter="writing"
+        aria-pressed="false"
+      >
+        Writing
+      </button>
 
-      <div class="portfolio-all-projects">
+      <button
+        type="button"
+        class="portfolio-filter"
+        data-filter="development"
+        aria-pressed="false"
+      >
+        Development
+      </button>
 
-        {% assign all_projects = site.projects | sort: "date" | reverse %}
-
-        {% for project in all_projects %}
-
-          <a class="portfolio-all-project"
-             href="{{ project.url | relative_url }}">
-
-            <div class="portfolio-all-project-title">
-
-              <h3>{{ project.title }}</h3>
-
-              {% if project.description %}
-                <p>{{ project.description }}</p>
-              {% endif %}
-
-            </div>
-
-            <div class="portfolio-all-project-meta">
-
-              {% if project.format %}
-                <span>{{ project.format }}</span>
-              {% endif %}
-
-              {% if project.project_types %}
-
-                {% for type in project.project_types limit: 2 %}
-
-                  <span>{{ type | replace: "-", " " }}</span>
-
-                {% endfor %}
-
-              {% endif %}
-
-            </div>
-
-            <span class="portfolio-all-project-arrow" aria-hidden="true">
-              ↝
-            </span>
-
-          </a>
-
-        {% endfor %}
-
-      </div>
-
+      <button
+        type="button"
+        class="portfolio-filter"
+        data-filter="art"
+        aria-pressed="false"
+      >
+        Art
+      </button>
     </div>
 
-  </section>
+  </div>
+
+  <div class="portfolio-all-projects" id="portfolio-project-list">
+
+    {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+
+    {% for project in sorted_projects %}
+
+      {% assign project_types_string = project.project_types | join: " " %}
+      {% assign topics_string = project.topics | join: " " %}
+
+      <a
+        class="portfolio-all-project"
+        href="{{ project.url | relative_url }}"
+        data-project-types="{{ project_types_string | downcase }}"
+        data-project-search="{{ project.title | downcase }} {{ project.description | downcase }} {{ project_types_string | downcase }} {{ topics_string | downcase }}"
+      >
+
+        <div class="portfolio-all-project-main">
+
+          <h3 class="portfolio-all-project-title">
+            {{ project.title }}
+          </h3>
+
+          {% if project.description %}
+            <p class="portfolio-all-project-description">
+              {{ project.description }}
+            </p>
+          {% endif %}
+
+          <div class="portfolio-all-project-meta">
+            {% for type in project.project_types %}
+              <span>{{ type | capitalize }}</span>
+            {% endfor %}
+          </div>
+
+        </div>
+
+        <span class="portfolio-all-project-arrow" aria-hidden="true">
+          ↝
+        </span>
+
+      </a>
+
+    {% endfor %}
+
+  </div>
+
+  <p
+    class="portfolio-no-results"
+    id="portfolio-no-results"
+    hidden
+  >
+    No projects match your search.
+  </p>
+
+</section>
 
 
   <section class="portfolio-closing" aria-label="Portfolio closing">
@@ -445,3 +509,69 @@ description: A curated look at the work I research, build, write, and create.
   </section>
 
 </div>
+
+<script>
+(() => {
+  const searchInput = document.querySelector("#portfolio-project-search");
+  const filterButtons = document.querySelectorAll(".portfolio-filter");
+  const projects = document.querySelectorAll(".portfolio-all-project");
+  const noResults = document.querySelector("#portfolio-no-results");
+
+  if (!searchInput || !projects.length) return;
+
+  let activeFilter = "all";
+
+  const updateProjects = () => {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    projects.forEach((project) => {
+      const projectTypes = project.dataset.projectTypes || "";
+      const searchableText = project.dataset.projectSearch || "";
+
+      const matchesFilter =
+        activeFilter === "all" ||
+        projectTypes.split(/\s+/).includes(activeFilter);
+
+      const matchesSearch =
+        searchTerm === "" ||
+        searchableText.includes(searchTerm);
+
+      const isVisible = matchesFilter && matchesSearch;
+
+      project.classList.toggle("is-hidden", !isVisible);
+
+      if (isVisible) {
+        visibleCount += 1;
+      }
+    });
+
+    noResults.hidden = visibleCount !== 0;
+  };
+
+  searchInput.addEventListener("input", updateProjects);
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeFilter = button.dataset.filter;
+
+      filterButtons.forEach((filterButton) => {
+        const isActive =
+          filterButton === button;
+
+        filterButton.classList.toggle(
+          "is-active",
+          isActive
+        );
+
+        filterButton.setAttribute(
+          "aria-pressed",
+          String(isActive)
+        );
+      });
+
+      updateProjects();
+    });
+  });
+})();
+</script>
