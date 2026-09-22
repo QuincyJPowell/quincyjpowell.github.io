@@ -30,9 +30,9 @@ description: A curated look at the work I research, build, write, and create.
         that happen somewhere in between.
       </p>
 
-      <a class="portfolio-hero-link" href="#featured-work">
-        Start exploring <span aria-hidden="true">↓</span>
-      </a>
+<a class="portfolio-hero-link" href="#featured-work">
+  Start exploring <span aria-hidden="true">⌄</span>
+</a>
 
     </div>
 
@@ -114,7 +114,8 @@ description: A curated look at the work I research, build, write, and create.
 
 
               <span class="portfolio-card-link">
-                View project <span aria-hidden="true">↗</span>
+  View project <span aria-hidden="true">↝</span>
+</span>
               </span>
 
             </div>
@@ -151,7 +152,7 @@ description: A curated look at the work I research, build, write, and create.
       <a class="portfolio-area-card portfolio-area-card-large"
          href="{{ '/academic/' | relative_url }}">
 
-        <span class="portfolio-area-number">01</span>
+        
 
         <div class="portfolio-area-art portfolio-area-art-academic" aria-hidden="true">
           <span></span>
@@ -168,7 +169,7 @@ description: A curated look at the work I research, build, write, and create.
           </p>
 
           <span class="portfolio-area-link">
-            Explore Academic <span aria-hidden="true">↗</span>
+            Explore Academic <span aria-hidden="true">↝</span>
           </span>
 
         </div>
@@ -179,7 +180,7 @@ description: A curated look at the work I research, build, write, and create.
       <a class="portfolio-area-card"
          href="{{ '/professional/' | relative_url }}">
 
-        <span class="portfolio-area-number">02</span>
+        
 
         <div class="portfolio-area-art portfolio-area-art-professional" aria-hidden="true">
           <span></span>
@@ -196,7 +197,7 @@ description: A curated look at the work I research, build, write, and create.
           </p>
 
           <span class="portfolio-area-link">
-            Explore Professional <span aria-hidden="true">↗</span>
+            Explore Professional <span aria-hidden="true">↝</span>
           </span>
 
         </div>
@@ -207,7 +208,7 @@ description: A curated look at the work I research, build, write, and create.
       <a class="portfolio-area-card"
          href="{{ '/writing/' | relative_url }}">
 
-        <span class="portfolio-area-number">03</span>
+        
 
         <div class="portfolio-area-art portfolio-area-art-writing" aria-hidden="true">
           <span></span>
@@ -224,7 +225,7 @@ description: A curated look at the work I research, build, write, and create.
           </p>
 
           <span class="portfolio-area-link">
-            Explore Writing <span aria-hidden="true">↗</span>
+            Explore Writing <span aria-hidden="true">↝</span>
           </span>
 
         </div>
@@ -235,7 +236,7 @@ description: A curated look at the work I research, build, write, and create.
       <a class="portfolio-area-card"
          href="{{ '/development/' | relative_url }}">
 
-        <span class="portfolio-area-number">04</span>
+        
 
         <div class="portfolio-area-art portfolio-area-art-development" aria-hidden="true">
           <span></span>
@@ -252,7 +253,7 @@ description: A curated look at the work I research, build, write, and create.
           </p>
 
           <span class="portfolio-area-link">
-            Explore Development <span aria-hidden="true">↗</span>
+            Explore Development <span aria-hidden="true">↝</span>
           </span>
 
         </div>
@@ -263,7 +264,7 @@ description: A curated look at the work I research, build, write, and create.
       <a class="portfolio-area-card portfolio-area-card-wide"
          href="{{ '/art/' | relative_url }}">
 
-        <span class="portfolio-area-number">05</span>
+        
 
         <div class="portfolio-area-art portfolio-area-art-art" aria-hidden="true">
           <span></span>
@@ -281,7 +282,7 @@ description: A curated look at the work I research, build, write, and create.
           </p>
 
           <span class="portfolio-area-link">
-            Explore Art <span aria-hidden="true">↗</span>
+            Explore Art <span aria-hidden="true">↝</span>
           </span>
 
         </div>
@@ -321,8 +322,8 @@ description: A curated look at the work I research, build, write, and create.
         <a class="portfolio-recent-card" href="{{ project.url | relative_url }}">
 
           <div class="portfolio-recent-index">
-            {{ forloop.index | prepend: "0" }}
-          </div>
+  {{ project.date | date: "%B %Y" }}
+</div>
 
           <div class="portfolio-recent-main">
 
@@ -348,7 +349,7 @@ description: A curated look at the work I research, build, write, and create.
 
           </div>
 
-          <span class="portfolio-recent-arrow" aria-hidden="true">↗</span>
+          <span class="portfolio-recent-arrow" aria-hidden="true">↝</span>
 
         </a>
 
@@ -415,7 +416,7 @@ description: A curated look at the work I research, build, write, and create.
             </div>
 
             <span class="portfolio-all-project-arrow" aria-hidden="true">
-              ↗
+              ↝
             </span>
 
           </a>
@@ -439,7 +440,7 @@ description: A curated look at the work I research, build, write, and create.
     </h2>
 
     <a href="{{ '/contact/' | relative_url }}">
-      Get in touch <span aria-hidden="true">↗</span>
+      Get in touch <span aria-hidden="true">↝</span>
     </a>
 
   </section>
