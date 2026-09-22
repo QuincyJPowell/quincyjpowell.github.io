@@ -2846,13 +2846,11 @@ li + li {
   position: relative;
 }
 
-/* Custom hamburger button */
 .site-nav .nav-toggle {
   display: none;
   appearance: none;
   -webkit-appearance: none;
 
-  /* REMOVE THE BOX */
   border: none !important;
   outline: none;
   background: transparent !important;
@@ -2863,17 +2861,15 @@ li + li {
   cursor: pointer;
 }
 
-/* Hamburger lines */
 .site-nav .nav-line {
   display: block;
   width: 26px;
   height: 2px;
   margin: 5px 0;
 
-  /* WHITE LINES */
-  background: #fff !important;
+  background: #234d3c !important;
 }
-
+   
 /* Desktop navigation */
 .site-nav .trigger {
   display: flex;
@@ -2910,26 +2906,24 @@ li + li {
   }
 
   /* Show links when opened */
-  .site-nav.is-open .trigger {
-    display: block;
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 0;
+.site-nav.is-open .trigger {
+  display: block;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
 
-    min-width: 180px;
-    padding: 12px 0;
+  min-width: 180px;
+  padding: 12px 0;
 
-    background: #fff;
-    border: 1px solid #ccc;
-    z-index: 1000;
-  }
-
-  /* Menu links */
-  .site-nav .page-link {
-    display: block;
-    padding: 10px 16px;
-    white-space: nowrap;
-    color: #000;
-  }
-
+  background: #234d3c;
+  border: 1px solid #234d3c;
+  z-index: 1000;
 }
+
+.site-nav .page-link {
+  display: block;
+  padding: 10px 16px;
+  white-space: nowrap;
+  color: #fff !important;
+}
+   
