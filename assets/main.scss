@@ -2867,10 +2867,20 @@ li + li {
 }
 
 @media screen and (min-width: 801px) {
-  .site-nav {
+  .site-header .wrapper {
+    position: relative;
+  }
+
+  .site-header .site-nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    margin-left: 0;
+  }
+
+  .site-header .site-title {
+    position: relative;
+    z-index: 2;
   }
 }
 
