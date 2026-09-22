@@ -4838,3 +4838,62 @@ li + li {
   }
 
 }
+
+/* About page accents */
+
+.about-photo-placeholder {
+  width: min(100%, 360px);
+  aspect-ratio: 4 / 5;
+
+  margin-bottom: 3rem;
+  margin-left: auto;
+
+  background: var(--portfolio-sage);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-photo-inner {
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1.5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+
+  color: white;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-introduction-content {
+  max-width: 800px;
+}
+
+@media screen and (min-width: 801px) {
+  .about-introduction-content {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1fr);
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-photo-placeholder {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-photo-placeholder {
+    width: min(100%, 280px);
+    margin: 0 0 2rem;
+  }
+}
