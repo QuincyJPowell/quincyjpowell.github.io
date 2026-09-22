@@ -4839,6 +4839,24 @@ li + li {
   padding: 5rem 0;
 
   border-top: 1px solid rgba(0, 0, 0, 0.12);
+
+  background: var(--warm-white);
+}
+
+.about-closing {
+  margin-left: -7vw;
+  margin-right: -7vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
+}
+
+@media screen and (max-width: 800px) {
+  .about-closing {
+    margin-left: -1.4rem;
+    margin-right: -1.4rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
 }
 
 .about-closing h2 {
