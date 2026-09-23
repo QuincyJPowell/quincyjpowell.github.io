@@ -5041,3 +5041,20 @@ li + li {
   }
 
 }
+
+/* =========================================================
+   FULL-BLEED EDITORIAL PAGES
+   Homepage, About, and Portfolio
+   ========================================================= */
+.page-content > .wrapper.wrapper-fullbleed {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+/* About page: override the generic page-title treatment */
+.about-page .about-hero h1 {
+  text-align: left;
+}
