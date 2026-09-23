@@ -8,6 +8,14 @@ permalink: /about/
 
   <section class="about-hero">
 
+  <div class="about-hero-decoration" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="about-hero-copy">
+
     <p class="about-eyebrow">A little about me</p>
 
     <h1>I'm Quincy Powell.</h1>
@@ -17,8 +25,9 @@ permalink: /about/
       the way they do, and finding better ways to make them work.
     </p>
 
-  </section>
+  </div>
 
+</section>
 
   <section class="about-introduction">
 
@@ -152,6 +161,17 @@ permalink: /about/
 
   </section>
 
+  </section>
+
+
+  <div class="about-section-transition" aria-hidden="true">
+    <span class="about-transition-orbit"></span>
+    <span class="about-transition-dot about-transition-dot-one"></span>
+    <span class="about-transition-dot about-transition-dot-two"></span>
+  </div>
+
+
+  <section class="about-direction">
 
   <section class="about-direction">
 
