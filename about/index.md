@@ -161,8 +161,6 @@ permalink: /about/
 
   </section>
 
-  </section>
-
 
   <div class="about-section-transition" aria-hidden="true">
     <span class="about-transition-orbit"></span>
