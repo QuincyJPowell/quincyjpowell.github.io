@@ -5092,7 +5092,15 @@ li + li {
    The green card itself retains the same basic treatment
    as the homepage.
 */
+.about-direction {
+  position: relative;
+  z-index: 1;
+}
 
+.about-closing {
+  position: relative;
+  z-index: 2;
+}
 .about-closing {
   margin-top: 5rem;
 
