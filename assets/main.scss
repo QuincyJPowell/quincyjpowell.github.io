@@ -4585,51 +4585,25 @@ li + li {
 
 }
 
-/* =========================================
-   About page
-   ========================================= */
-
 .about-page {
-  --portfolio-sage: var(--sage);
+  --about-cream: #f7f1e3;
+  --about-forest: #1f4d3a;
+  --about-sage: #6b8e6e;
+  --about-light-sage: #e8efe8;
+  --about-warm-white: #fffdf8;
+  --about-brown: #5b4636;
+  --about-dark: #2b2b2b;
 
-  --home-cream: #f7f1e3;
-  --home-forest: #1f4d3a;
-  --home-sage: #6b8e6e;
-  --home-light-sage: #e8efe8;
-  --home-warm-white: #fffdf8;
-  --home-brown: #5b4636;
-  --home-dark: #2b2b2b;
+  color: var(--about-dark);
+  background: var(--about-cream);
 
-  padding-bottom: 5rem;
+  padding-bottom: 0;
 }
 
-.about-page .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
-  padding: 0.8rem 1.2rem;
-
-  border: 1px solid var(--home-warm-white);
-
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-
-  color: var(--home-forest);
-  background: var(--home-warm-white);
-
-  transition:
-    background 180ms ease,
-    color 180ms ease;
-}
-
-.about-page .button:hover {
-  color: var(--home-warm-white);
-  background: transparent;
-}
+/* =========================================================
+   PAGE GUTTERS
+   ========================================================= */
 
 @media screen and (min-width: 801px) {
   .about-page {
@@ -4645,7 +4619,10 @@ li + li {
   }
 }
 
-/* Hero */
+
+/* =========================================================
+   HERO
+   ========================================================= */
 
 .about-hero {
   max-width: 900px;
@@ -4660,7 +4637,7 @@ li + li {
   letter-spacing: 0.14em;
   text-transform: uppercase;
 
-  color: var(--portfolio-sage);
+  color: var(--about-sage);
 }
 
 .about-hero h1 {
@@ -4680,7 +4657,9 @@ li + li {
 }
 
 
-/* Shared section structure */
+/* =========================================================
+   SHARED SECTION STRUCTURE
+   ========================================================= */
 
 .about-introduction,
 .about-interests,
@@ -4701,14 +4680,13 @@ li + li {
 
 .about-section-label span {
   display: block;
-
   margin-bottom: 0.5rem;
 
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.12em;
 
-  color: var(--portfolio-sage);
+  color: var(--about-sage);
 }
 
 .about-section-label p {
@@ -4721,10 +4699,12 @@ li + li {
 }
 
 
-/* Introduction */
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
 
 .about-introduction-copy {
-  max-width: 760px;
+  max-width: 800px;
 }
 
 .about-introduction-copy p {
@@ -4739,75 +4719,104 @@ li + li {
 }
 
 
-/* Interests */
+/* Photo */
 
-.about-interest-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
+.about-photo-placeholder {
+  width: min(100%, 360px);
+  aspect-ratio: 4 / 5;
 
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-left: auto;
+
+  background: var(--about-sage);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about-interest-card {
-  min-height: 240px;
-  padding: 2rem;
+.about-photo-inner {
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1.5rem);
 
-  border: 1px solid rgba(0, 0, 0, 0.12);
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.about-interest-card > span {
-  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.55);
 
-  margin-bottom: 3rem;
+  color: white;
 
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-
-  color: var(--portfolio-sage);
+  text-transform: uppercase;
 }
 
-.about-interest-card h2 {
-  margin: 0 0 0.75rem;
+@media screen and (min-width: 801px) {
+  .about-introduction-content {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1fr);
+    gap: 4rem;
 
-  font-size: 1.35rem;
-  line-height: 1.15;
+    align-items: start;
+  }
+
+  .about-photo-placeholder {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
 }
 
-.about-interest-card p {
-  max-width: 32rem;
-  margin: 0;
 
-  font-size: 0.95rem;
-  line-height: 1.65;
-}
+/* =========================================================
+   WHAT INTERESTS ME
+   ========================================================= */
+
+/*
+   The section background extends beyond the normal About-page
+   gutters to reach both sides of the viewport.
+*/
 
 .about-interests {
-  background: var(--warm-white);
-}
-
-.about-interests {
-  background: var(--warm-white);
   margin-left: -7vw;
   margin-right: -7vw;
+
   padding-left: 7vw;
   padding-right: 7vw;
+
+  background: var(--about-warm-white);
 }
+
+
+/*
+   The content itself stays inside the normal page width.
+*/
 
 .about-interest-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+
   gap: 1.5rem;
+
   border: 0;
 }
 
+
+/*
+   Organic sage shapes.
+*/
+
 .about-interest-card {
   min-height: 240px;
+
   padding: 2.5rem;
+
   border: 0;
-  background: var(--light-sage);
+
+  background: var(--about-light-sage);
+
   border-radius: 42% 58% 55% 45% / 48% 42% 58% 52%;
+
   transition:
     transform 180ms ease,
     border-radius 180ms ease;
@@ -4843,17 +4852,25 @@ li + li {
 
 .about-interest-card h2 {
   margin: 0 0 0.75rem;
-  color: var(--forest);
+
+  font-size: 1.35rem;
+  line-height: 1.15;
+
+  color: var(--about-forest);
 }
 
 .about-interest-card p {
   max-width: 32rem;
   margin: 0;
+
   font-size: 0.95rem;
   line-height: 1.65;
 }
 
-/* Approach */
+
+/* =========================================================
+   HOW I WORK
+   ========================================================= */
 
 .about-approach-content {
   max-width: 760px;
@@ -4874,94 +4891,120 @@ li + li {
 }
 
 
-/* Direction */
+/* =========================================================
+   WHERE I'M GOING
+   ========================================================= */
 
 .about-direction-content {
   max-width: 760px;
 }
 
 
-/* Closing */
+/* =========================================================
+   KEEP EXPLORING
+   ========================================================= */
+
+/*
+   The white background reaches the viewport edges.
+   The green card itself retains the same basic treatment
+   as the homepage.
+*/
 
 .about-closing {
   margin-top: 5rem;
-  padding: 5rem 0;
+
+  margin-left: -7vw;
+  margin-right: -7vw;
+
+  padding: 5rem 7vw;
 
   border-top: 1px solid rgba(0, 0, 0, 0.12);
 
-  background: var(--warm-white);
+  background: var(--about-warm-white);
 }
 
-.about-closing {
-  margin-left: -7vw;
-  margin-right: -7vw;
-  padding-left: 7vw;
-  padding-right: 7vw;
+
+/*
+   Make sure the About-page button gets the same treatment
+   as the homepage button.
+*/
+
+.about-page .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.8rem 1.2rem;
+
+  border: 1px solid var(--about-warm-white);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--about-forest);
+  background: var(--about-warm-white);
+
+  transition:
+    background 180ms ease,
+    color 180ms ease;
 }
+
+.about-page .button:hover {
+  color: var(--about-warm-white);
+  background: transparent;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
 
 @media screen and (max-width: 800px) {
-  .about-closing {
-    margin-left: -1.4rem;
-    margin-right: -1.4rem;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-  }
-     .about-interests {
-    margin-left: -1.4rem;
-    margin-right: -1.4rem;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
+
+  /* Hero */
+
+  .about-hero {
+    padding: 3.5rem 0 5rem;
   }
 
-  .about-interest-grid {
+
+  /* Shared sections */
+
+  .about-introduction,
+  .about-interests,
+  .about-approach,
+  .about-direction {
     grid-template-columns: 1fr;
+    gap: 2rem;
+
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
-  .about-interest-card {
-    min-height: 0;
-    padding: 2.25rem;
+
+  /* Introduction */
+
+  .about-photo-placeholder {
+    width: min(100%, 280px);
+
+    margin: 0 0 2rem;
   }
-}
-
-.about-closing h2 {
-  max-width: 700px;
-  margin: 0 0 2rem;
-
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
-  line-height: 1;
-  letter-spacing: -0.035em;
-}
-
-.about-closing-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.about-closing-links a {
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.about-closing-links a span {
-  display: inline-block;
-  margin-left: 0.35rem;
-
-  transition: transform 0.2s ease;
-}
-
-.about-closing-links a:hover span {
-  transform: translateX(0.25rem);
-}
 
 
-/* Mobile */
+  /* What Interests Me */
 
-@media screen and (max-width: 800px) {
+  /*
+     Keep the white background full-width while restoring
+     the normal mobile content gutters.
+  */
 
   .about-interests {
     margin-left: -1.4rem;
     margin-right: -1.4rem;
+
     padding-left: 1.4rem;
     padding-right: 1.4rem;
   }
@@ -4975,10 +5018,20 @@ li + li {
     padding: 2.25rem;
   }
 
+
+  /* Keep Exploring */
+
+  /*
+     White background reaches the screen edges.
+     Green card sits inside it with visible white space.
+  */
+
   .about-closing {
     margin-top: 3rem;
+
     margin-left: -1.4rem;
     margin-right: -1.4rem;
+
     padding: 3.5rem 1.4rem;
   }
 
@@ -4987,78 +5040,4 @@ li + li {
     margin-right: 1rem;
   }
 
-}
-/* About page accents */
-
-.about-photo-placeholder {
-  width: min(100%, 360px);
-  aspect-ratio: 4 / 5;
-
-  margin-bottom: 3rem;
-  margin-left: auto;
-
-  background: var(--portfolio-sage);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-photo-inner {
-  width: calc(100% - 1.5rem);
-  height: calc(100% - 1.5rem);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 1px solid rgba(255, 255, 255, 0.55);
-
-  color: white;
-
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.about-introduction-content {
-  max-width: 800px;
-}
-
-@media screen and (min-width: 801px) {
-  .about-introduction-content {
-    display: grid;
-    grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1fr);
-    gap: 4rem;
-    align-items: start;
-  }
-
-  .about-photo-placeholder {
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .about-photo-placeholder {
-    width: min(100%, 280px);
-    margin: 0 0 2rem;
-  }
-}
-
-/* =========================================================
-   FULL-BLEED EDITORIAL PAGES
-   Homepage, About, and Portfolio
-   ========================================================= */
-
-.page-content > .wrapper.wrapper-fullbleed {
-  width: 100%;
-  max-width: none;
-
-  padding: 0;
-
-  background: transparent;
-  border-radius: 0;
-  box-shadow: none;
 }
