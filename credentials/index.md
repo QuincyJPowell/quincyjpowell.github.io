@@ -5,22 +5,72 @@ permalink: /credentials/
 description: Professional resume and academic curriculum vitae.
 ---
 
-# Credentials
+<div class="credentials-page">
 
-Explore my professional experience, education, skills, and academic background.
+  <section class="credentials-intro">
 
-<div class="home-grid">
+    <p class="credentials-eyebrow">Professional + Academic</p>
 
-<a class="home-card" href="{{ '/credentials/resume/' | relative_url }}">
-<h3>Resume</h3>
-<p>View my professional experience, skills, education, and qualifications.</p>
-<p><strong>View Resume →</strong></p>
-</a>
+    <h1>Credentials</h1>
 
-<a class="home-card" href="{{ '/credentials/cv/' | relative_url }}">
-<h3>Academic CV</h3>
-<p>Explore my academic background, research interests, writing, and professional development.</p>
-<p><strong>View Academic CV →</strong></p>
-</a>
+    <p class="credentials-lead">
+      Explore my professional experience, education, skills, and academic background.
+    </p>
+
+  </section>
+
+
+  <div class="credentials-grid">
+
+    <a
+      class="credentials-card credentials-card-resume"
+      href="{{ '/credentials/resume/' | relative_url }}"
+    >
+
+      <div class="credentials-card-heading">
+
+        <p class="credentials-card-label">Professional</p>
+
+        <h2>Resume</h2>
+
+      </div>
+
+      <p class="credentials-card-description">
+        View my professional experience, skills, education, and qualifications.
+      </p>
+
+      <span class="credentials-card-link">
+        View Resume
+        <span aria-hidden="true">→</span>
+      </span>
+
+    </a>
+
+
+    <a
+      class="credentials-card credentials-card-cv"
+      href="{{ '/credentials/cv/' | relative_url }}"
+    >
+
+      <div class="credentials-card-heading">
+
+        <p class="credentials-card-label">Academic</p>
+
+        <h2>Academic CV</h2>
+
+      </div>
+
+      <p class="credentials-card-description">
+        Explore my academic background, research interests, writing, and professional development.
+      </p>
+
+      <span class="credentials-card-link">
+        View Academic CV
+        <span aria-hidden="true">→</span>
+      </span>
+
+    </a>
+
+  </div>
 
 </div>
