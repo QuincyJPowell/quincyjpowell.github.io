@@ -5092,18 +5092,24 @@ li + li {
    The green card itself retains the same basic treatment
    as the homepage.
 */
+
+.about-direction-content {
+  max-width: 760px;
+}
+
 .about-direction {
+  display: grid;
   position: relative;
-  z-index: 1;
+
+  margin-bottom: 0;
 }
 
 .about-closing {
   position: relative;
-  z-index: 2;
-}
-.about-closing {
+
+  clear: both;
+
   margin-top: 5rem;
-
   margin-left: -7vw;
   margin-right: -7vw;
 
@@ -5113,7 +5119,6 @@ li + li {
 
   background: var(--about-warm-white);
 }
-
 .about-closing .home-more-card {
   background: var(--about-forest);
 }
