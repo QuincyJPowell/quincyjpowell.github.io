@@ -4959,18 +4959,11 @@ li + li {
 
 @media screen and (max-width: 800px) {
 
-  .about-hero {
-    padding: 3.5rem 0 5rem;
-  }
-
-  .about-introduction,
-  .about-interests,
-  .about-approach,
-  .about-direction {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-
-    padding: 3.5rem 0;
+  .about-interests {
+    margin-left: -1.4rem;
+    margin-right: -1.4rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
   }
 
   .about-interest-grid {
@@ -4979,25 +4972,22 @@ li + li {
 
   .about-interest-card {
     min-height: 0;
-  }
-
-  .about-interest-card > span {
-    margin-bottom: 2rem;
+    padding: 2.25rem;
   }
 
   .about-closing {
-  margin-top: 3rem;
-  margin-left: 0;
-  margin-right: 0;
-  padding: 3.5rem 0;
-}
-     .about-closing .home-more-card {
+    margin-top: 3rem;
+    margin-left: -1.4rem;
+    margin-right: -1.4rem;
+    padding: 3.5rem 1.4rem;
+  }
+
+  .about-closing .home-more-card {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
 }
-
 /* About page accents */
 
 .about-photo-placeholder {
