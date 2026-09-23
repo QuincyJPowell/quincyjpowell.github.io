@@ -168,9 +168,6 @@ permalink: /about/
     <span class="about-transition-dot about-transition-dot-two"></span>
   </div>
 
-
-  <section class="about-direction">
-
   <section class="about-direction">
 
     <div class="about-section-label">
