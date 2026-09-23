@@ -5613,7 +5613,8 @@ li + li {
 
 .credentials-page {
   width: 100%;
-  padding: 5.5rem 7vw 6rem;
+
+  padding: 5.5rem max(2rem, 7vw) 6rem;
 
   background: var(--warm-white);
 }
