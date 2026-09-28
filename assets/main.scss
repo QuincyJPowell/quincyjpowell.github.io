@@ -6146,3 +6146,601 @@ li + li {
   }
 
 }
+
+/* =========================================================
+   CATEGORY PAGES
+   Academic, Professional, Writing, Development, Art
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   CATEGORY PAGE FOUNDATION
+--------------------------------------------------------- */
+
+.category-page {
+  width: 100%;
+  overflow: hidden;
+}
+
+.category-page h1,
+.category-page h2,
+.category-page h3 {
+  font-family: var(--font-heading);
+}
+
+.category-eyebrow {
+  margin: 0 0 0.9rem;
+
+  color: var(--sage);
+
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.category-section {
+  width: min(1100px, calc(100% - 4rem));
+  margin: 0 auto;
+  padding: 7rem 0;
+}
+
+.category-section-intro {
+  max-width: 720px;
+  margin-bottom: 3.5rem;
+}
+
+.category-section-intro h2,
+.category-section-heading h2 {
+  margin: 0 0 1.25rem;
+
+  color: var(--forest);
+
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+}
+
+.category-section-intro p:last-child {
+  max-width: 650px;
+  margin-bottom: 0;
+
+  color: var(--brown);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   CATEGORY HERO
+--------------------------------------------------------- */
+
+.category-hero {
+  position: relative;
+
+  min-height: 620px;
+  padding: 8rem max(2rem, 9vw);
+
+  display: flex;
+  align-items: center;
+
+  background: var(--warm-white);
+
+  overflow: hidden;
+}
+
+.category-hero-copy {
+  position: relative;
+  z-index: 2;
+
+  width: min(760px, 100%);
+}
+
+.category-hero h1 {
+  margin: 0 0 1.75rem;
+  padding: 0;
+
+  color: var(--forest);
+
+  font-size: clamp(4rem, 8vw, 7rem);
+  font-weight: 700;
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+
+  text-align: left;
+}
+
+.category-hero h1::before,
+.category-hero h1::after {
+  display: none;
+}
+
+.category-lead {
+  max-width: 680px;
+  margin: 0;
+
+  color: var(--brown);
+
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   HERO DECORATION
+--------------------------------------------------------- */
+
+.category-hero-shape {
+  position: absolute;
+
+  width: clamp(300px, 40vw, 560px);
+  height: clamp(300px, 40vw, 560px);
+
+  right: -8%;
+  top: 50%;
+
+  transform: translateY(-50%) rotate(14deg);
+
+  border-radius: 48% 52% 57% 43% / 43% 47% 53% 57%;
+
+  background: var(--light-sage);
+
+  opacity: 0.9;
+}
+
+.category-hero-shape::before {
+  content: "";
+
+  position: absolute;
+
+  width: 70%;
+  height: 70%;
+
+  left: -18%;
+  top: 12%;
+
+  border-radius: 57% 43% 48% 52% / 49% 55% 45% 51%;
+
+  background: var(--sage);
+
+  opacity: 0.28;
+}
+
+
+/* ---------------------------------------------------------
+   ACADEMIC AREAS
+--------------------------------------------------------- */
+
+.academic-areas {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.academic-area-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+}
+
+.academic-area-card {
+  position: relative;
+
+  padding: 2.5rem;
+
+  background: var(--warm-white);
+
+  border: 1px solid rgba(31, 77, 58, 0.12);
+  border-radius: var(--radius-medium);
+
+  box-shadow: var(--shadow-soft);
+}
+
+.academic-area-card:nth-child(2) {
+  transform: translateY(2rem);
+}
+
+.academic-area-card:nth-child(3) {
+  transform: translateY(-1rem);
+}
+
+.academic-area-card:nth-child(4) {
+  transform: translateY(1rem);
+}
+
+.academic-area-card-wide {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  gap: 3rem;
+  align-items: center;
+
+  background: var(--light-sage);
+
+  transform: none !important;
+}
+
+.academic-area-card h3 {
+  margin: 0 0 1rem;
+
+  color: var(--forest);
+
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 0.95;
+}
+
+.academic-area-card > p {
+  margin: 0 0 1.75rem;
+
+  color: var(--brown);
+
+  line-height: 1.7;
+}
+
+.academic-area-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.academic-area-topics span {
+  display: inline-block;
+
+  padding: 0.35rem 0.7rem;
+
+  border-radius: 999px;
+
+  background: var(--light-sage);
+
+  color: var(--forest);
+
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.academic-area-card-wide .academic-area-topics span {
+  background: var(--warm-white);
+}
+
+
+/* ---------------------------------------------------------
+   LANGUAGES
+--------------------------------------------------------- */
+
+.academic-languages {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 0.75rem;
+}
+
+.academic-language {
+  padding: 1.25rem;
+
+  background: var(--warm-white);
+
+  border-radius: var(--radius-small);
+}
+
+.academic-language strong {
+  display: block;
+
+  margin-bottom: 0.3rem;
+
+  color: var(--forest);
+
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.academic-language span {
+  display: block;
+
+  color: var(--brown);
+
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------
+   FEATURED + RECENT WORK
+--------------------------------------------------------- */
+
+.academic-featured {
+  padding-top: 6rem;
+}
+
+.academic-recent {
+  padding-top: 4rem;
+}
+
+.category-section-heading {
+  margin-bottom: 3rem;
+}
+
+.category-projects {
+  margin: 0;
+}
+
+
+/* ---------------------------------------------------------
+   RESEARCH NOTEBOOK
+--------------------------------------------------------- */
+
+.academic-notebook {
+  position: relative;
+
+  width: 100%;
+
+  padding: 8rem max(2rem, 9vw);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.35fr);
+  gap: 4rem;
+  align-items: center;
+
+  background: var(--forest);
+
+  overflow: hidden;
+}
+
+.academic-notebook-copy {
+  position: relative;
+  z-index: 2;
+
+  max-width: 720px;
+}
+
+.academic-notebook .category-eyebrow {
+  color: #b8cdb9;
+}
+
+.academic-notebook h2 {
+  margin: 0 0 1.25rem;
+
+  color: var(--warm-white);
+
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+
+.academic-notebook p:not(.category-eyebrow) {
+  max-width: 650px;
+
+  color: rgba(255, 253, 248, 0.78);
+
+  line-height: 1.75;
+}
+
+.academic-notebook-mark {
+  position: relative;
+
+  width: 220px;
+  height: 220px;
+
+  justify-self: center;
+
+  transform: rotate(-8deg);
+}
+
+.academic-notebook-mark span {
+  position: absolute;
+
+  display: block;
+
+  width: 150px;
+  height: 185px;
+
+  border: 2px solid rgba(255, 253, 248, 0.3);
+  border-radius: 3px;
+
+  background: rgba(255, 253, 248, 0.04);
+}
+
+.academic-notebook-mark span:nth-child(1) {
+  left: 10px;
+  top: 25px;
+
+  transform: rotate(-9deg);
+}
+
+.academic-notebook-mark span:nth-child(2) {
+  left: 35px;
+  top: 10px;
+
+  transform: rotate(1deg);
+}
+
+.academic-notebook-mark span:nth-child(3) {
+  left: 60px;
+  top: 0;
+
+  transform: rotate(10deg);
+}
+
+
+/* ---------------------------------------------------------
+   CATEGORY CLOSING
+--------------------------------------------------------- */
+
+.category-closing {
+  width: 100%;
+
+  padding: 7rem max(2rem, 7vw);
+
+  background: var(--warm-white);
+}
+
+.category-closing-card {
+  width: min(1050px, 100%);
+
+  margin: 0 auto;
+  padding: clamp(2.5rem, 6vw, 5rem);
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 3rem;
+  align-items: center;
+
+  background: var(--sage);
+
+  border-radius: 4px;
+
+  transform: rotate(-0.5deg);
+}
+
+.category-closing-card .category-eyebrow {
+  color: var(--forest);
+}
+
+.category-closing-card h2 {
+  margin: 0 0 1.25rem;
+
+  color: var(--warm-white);
+
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+
+.category-closing-card p:not(.category-eyebrow) {
+  max-width: 580px;
+
+  margin-bottom: 0;
+
+  color: rgba(255, 253, 248, 0.82);
+
+  line-height: 1.7;
+}
+
+.category-closing-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.8rem;
+}
+
+.category-closing-links .button {
+  margin: 0;
+}
+
+.category-closing-explore {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  color: var(--warm-white);
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.category-closing-explore:hover,
+.category-closing-explore:focus-visible {
+  color: var(--warm-white);
+}
+
+.category-closing-explore span {
+  transition: transform var(--transition-fast);
+}
+
+.category-closing-explore:hover span,
+.category-closing-explore:focus-visible span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   CATEGORY RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+  .category-hero {
+    min-height: 560px;
+
+    padding: 6rem 1.4rem 5rem;
+  }
+
+  .category-hero h1 {
+    font-size: clamp(3.5rem, 15vw, 5.5rem);
+  }
+
+  .category-hero-shape {
+    width: 300px;
+    height: 300px;
+
+    right: -22%;
+    top: 72%;
+
+    opacity: 0.65;
+  }
+
+  .category-section {
+    width: calc(100% - 2.8rem);
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .academic-area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-area-card:nth-child(2),
+  .academic-area-card:nth-child(3),
+  .academic-area-card:nth-child(4) {
+    transform: none;
+  }
+
+  .academic-area-card-wide {
+    grid-column: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+  }
+
+  .academic-languages {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-notebook {
+    padding: 5rem 1.4rem;
+
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .academic-notebook-mark {
+    justify-self: start;
+    margin-left: 1rem;
+  }
+
+  .category-closing {
+    padding: 4rem 1.4rem;
+  }
+
+  .category-closing-card {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    padding: 2.5rem;
+  }
+
+  .category-closing-links {
+    align-items: flex-start;
+  }
+
+}
