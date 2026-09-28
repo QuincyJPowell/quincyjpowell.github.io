@@ -9535,3 +9535,24 @@ li + li {
   }
 
 }
+
+/* =========================================================
+   404 LINK COLOR FIX
+========================================================= */
+
+.not-found-page .not-found-links .button,
+.not-found-page .not-found-links .button:visited,
+.not-found-page .not-found-links .button:hover,
+.not-found-page .not-found-links .button:focus {
+  color: var(--warm-white);
+}
+
+.not-found-page .not-found-secondary-link,
+.not-found-page .not-found-secondary-link:visited {
+  color: var(--forest);
+}
+
+.not-found-page .not-found-secondary-link:hover,
+.not-found-page .not-found-secondary-link:focus {
+  color: var(--sage);
+}
