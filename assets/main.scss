@@ -9096,3 +9096,19 @@ li + li {
   }
 
 }
+
+/* =========================================================
+   ART VISUAL DESIGN TEXT FIX
+========================================================= */
+
+.art-area-card-wide p:not(.art-area-type) {
+  color: rgba(255, 253, 248, 0.82);
+}
+
+.art-area-card-wide h3 {
+  color: var(--warm-white);
+}
+
+.art-area-card-wide .art-area-type {
+  color: var(--light-sage);
+}
