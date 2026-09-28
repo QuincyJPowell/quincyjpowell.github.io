@@ -7388,3 +7388,511 @@ li + li {
   }
 
 }
+
+/* =========================================================
+   WRITING PAGE
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   WRITING INTRO
+--------------------------------------------------------- */
+
+.writing-intro {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+
+/* ---------------------------------------------------------
+   WRITING AREAS
+--------------------------------------------------------- */
+
+.writing-areas {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.writing-area-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+
+  align-items: stretch;
+}
+
+.writing-area-card {
+  position: relative;
+
+  min-height: 360px;
+  padding: 2.75rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: var(--warm-white);
+
+  border: 1px solid rgba(31, 77, 58, 0.12);
+  border-radius: var(--radius-medium);
+
+  box-shadow: var(--shadow-soft);
+
+  overflow: hidden;
+
+  transition:
+    transform var(--transition-standard),
+    box-shadow var(--transition-standard),
+    border-color var(--transition-standard);
+}
+
+
+/* Organic corner decoration */
+
+.writing-area-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  right: -85px;
+  top: -80px;
+
+  border-radius: 56% 44% 48% 52% / 43% 55% 45% 57%;
+
+  background: var(--light-sage);
+
+  opacity: 0.85;
+
+  transition:
+    transform var(--transition-standard),
+    opacity var(--transition-standard);
+}
+
+.writing-area-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 42px;
+  height: 42px;
+
+  right: 28px;
+  top: 28px;
+
+  border-radius: 50%;
+
+  background: rgba(107, 142, 110, 0.12);
+}
+
+.writing-area-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Card hover */
+
+.writing-area-card:hover {
+  border-color: rgba(31, 77, 58, 0.22);
+
+  box-shadow: var(--shadow-card);
+
+  transform: translateY(-4px);
+}
+
+.writing-area-card:hover::before {
+  opacity: 1;
+
+  transform: scale(1.08) rotate(7deg);
+}
+
+
+/* Alternating surfaces */
+
+.writing-area-card:nth-child(2) {
+  background: var(--cream);
+}
+
+.writing-area-card:nth-child(3) {
+  background: var(--light-sage);
+}
+
+
+/* Card typography */
+
+.writing-area-card h3 {
+  max-width: 440px;
+
+  margin: 0 0 1.2rem;
+
+  color: var(--forest);
+
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+
+.writing-area-card p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: var(--brown);
+
+  line-height: 1.75;
+}
+
+
+/* Area links */
+
+.writing-area-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+
+  width: fit-content;
+
+  margin-top: 2rem;
+
+  color: var(--forest);
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.writing-area-card a span {
+  transition: transform var(--transition-fast);
+}
+
+.writing-area-card a:hover {
+  color: var(--sage);
+}
+
+.writing-area-card a:hover span,
+.writing-area-card a:focus-visible span {
+  transform: translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   WIDE POETRY CARD
+--------------------------------------------------------- */
+
+.writing-area-card-wide {
+  grid-column: 1 / -1;
+
+  min-height: 260px;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) auto;
+
+  gap: 4rem;
+
+  align-items: center;
+
+  background: var(--forest);
+
+  transform: none;
+}
+
+.writing-area-card-wide::before {
+  width: 300px;
+  height: 300px;
+
+  right: -115px;
+  top: -125px;
+
+  background: var(--sage);
+
+  opacity: 0.22;
+}
+
+.writing-area-card-wide::after {
+  background: rgba(255, 253, 248, 0.08);
+}
+
+.writing-area-card-wide:hover {
+  transform: translateY(-4px);
+}
+
+.writing-area-card-wide h3 {
+  color: var(--warm-white);
+}
+
+.writing-area-card-wide p {
+  max-width: 650px;
+
+  color: rgba(255, 253, 248, 0.78);
+}
+
+.writing-area-card-wide a {
+  padding: 0.8rem 1.15rem;
+
+  border: 1px solid rgba(255, 253, 248, 0.4);
+  border-radius: var(--radius-small);
+
+  color: var(--warm-white);
+
+  white-space: nowrap;
+}
+
+.writing-area-card-wide a:hover,
+.writing-area-card-wide a:focus-visible {
+  border-color: var(--warm-white);
+
+  color: var(--warm-white);
+}
+
+
+/* ---------------------------------------------------------
+   FEATURED + RECENT WRITING
+--------------------------------------------------------- */
+
+.writing-featured {
+  padding-top: 6rem;
+}
+
+.writing-recent {
+  padding-top: 4rem;
+}
+
+
+/* ---------------------------------------------------------
+   WRITING IN PROGRESS
+--------------------------------------------------------- */
+
+.writing-practice {
+  position: relative;
+
+  width: 100%;
+
+  padding: 8rem max(2rem, 9vw);
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.35fr);
+
+  gap: 4rem;
+
+  align-items: center;
+
+  background: var(--cream);
+
+  overflow: hidden;
+}
+
+.writing-practice-copy {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+}
+
+.writing-practice-copy h2 {
+  max-width: 760px;
+
+  margin: 0 0 1.5rem;
+
+  color: var(--forest);
+
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.03em;
+}
+
+.writing-practice-copy p:not(.category-eyebrow) {
+  max-width: 680px;
+
+  color: var(--brown);
+
+  line-height: 1.75;
+}
+
+
+/* Organic writing mark */
+
+.writing-practice-mark {
+  position: relative;
+
+  width: 240px;
+  height: 240px;
+
+  justify-self: center;
+
+  transform: rotate(-7deg);
+}
+
+
+/* Large loose circle */
+
+.writing-practice-mark::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 8%;
+
+  border: 1px solid rgba(31, 77, 58, 0.22);
+
+  border-radius: 54% 46% 49% 51% / 46% 53% 47% 54%;
+}
+
+
+/* Inner shape */
+
+.writing-practice-mark::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 25%;
+
+  border: 1px solid rgba(107, 142, 110, 0.4);
+
+  border-radius: 48% 52% 56% 44% / 54% 45% 55% 46%;
+
+  transform: rotate(18deg);
+}
+
+
+/* Floating dots */
+
+.writing-practice-mark span {
+  position: absolute;
+
+  display: block;
+
+  border-radius: 50%;
+
+  background: var(--sage);
+}
+
+.writing-practice-mark span:nth-child(1) {
+  width: 18px;
+  height: 18px;
+
+  left: 13%;
+  top: 25%;
+}
+
+.writing-practice-mark span:nth-child(2) {
+  width: 11px;
+  height: 11px;
+
+  right: 15%;
+  top: 17%;
+
+  background: var(--forest);
+}
+
+.writing-practice-mark span:nth-child(3) {
+  width: 14px;
+  height: 14px;
+
+  right: 17%;
+  bottom: 21%;
+
+  background: var(--sage);
+}
+
+
+/* ---------------------------------------------------------
+   WRITING CLOSING
+--------------------------------------------------------- */
+
+.writing-closing {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+
+/* =========================================================
+   WRITING RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+  .writing-intro {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .writing-areas {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .writing-area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-area-card {
+    min-height: 0;
+
+    padding: 2rem;
+  }
+
+  .writing-area-card-wide {
+    grid-column: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    padding: 2rem;
+  }
+
+  .writing-area-card::before {
+    width: 130px;
+    height: 130px;
+
+    right: -60px;
+    top: -60px;
+  }
+
+  .writing-area-card-wide a {
+    width: fit-content;
+  }
+
+  .writing-practice {
+    padding: 5rem 1.4rem;
+
+    grid-template-columns: 1fr;
+
+    gap: 3rem;
+  }
+
+  .writing-practice-mark {
+    justify-self: start;
+
+    margin-left: 1rem;
+  }
+
+  .writing-closing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .writing-page .category-closing {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .writing-page .category-closing-card {
+    padding: 2.5rem;
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+}
