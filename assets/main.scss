@@ -7597,7 +7597,7 @@ li + li {
 
   align-items: center;
 
-  background: var(--forest);
+  background: var(--light-sage);
 
   transform: none;
 }
@@ -7615,7 +7615,7 @@ li + li {
 }
 
 .writing-area-card-wide::after {
-  background: rgba(255, 253, 248, 0.08);
+  background: rgba(31, 77, 58, 0.08);
 }
 
 .writing-area-card-wide:hover {
@@ -7623,33 +7623,32 @@ li + li {
 }
 
 .writing-area-card-wide h3 {
-  color: var(--warm-white);
+  color: var(--forest);
 }
 
 .writing-area-card-wide p {
   max-width: 650px;
 
-  color: rgba(255, 253, 248, 0.78);
+  color: var(--brown);
 }
 
 .writing-area-card-wide a {
   padding: 0.8rem 1.15rem;
 
-  border: 1px solid rgba(255, 253, 248, 0.4);
+  border: 1px solid rgba(31, 77, 58, 0.22);
   border-radius: var(--radius-small);
 
-  color: var(--warm-white);
+  color: var(--forest);
 
   white-space: nowrap;
 }
 
 .writing-area-card-wide a:hover,
 .writing-area-card-wide a:focus-visible {
-  border-color: var(--warm-white);
+  border-color: var(--forest);
 
-  color: var(--warm-white);
+  color: var(--sage);
 }
-
 
 /* ---------------------------------------------------------
    FEATURED + RECENT WRITING
