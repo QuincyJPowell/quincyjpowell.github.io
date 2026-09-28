@@ -8524,6 +8524,19 @@ li + li {
   grid-column: span 7;
   min-height: 290px;
   background: var(--forest);
+  color: var(--warm-white);
+}
+
+.art-area-card-wide .art-area-type {
+  color: var(--light-sage);
+}
+
+.art-area-card-wide h3 {
+  color: var(--warm-white);
+}
+
+.art-area-card-wide p:not(.art-area-type) {
+  color: rgba(255, 253, 248, 0.82);
 }
 
 .art-area-card-practice {
@@ -8584,24 +8597,6 @@ li + li {
 
 .art-area-card-wide::after {
   border-color: rgba(255, 253, 248, 0.18);
-}
-
-.art-area-card-wide h3,
-.art-area-card-wide p,
-.art-area-card-wide .art-area-type,
-.art-area-card-wide .art-area-number {
-  color: var(--warm-white);
-}
-
-.art-area-number {
-  position: absolute;
-  right: 2rem;
-  bottom: 1.5rem;
-  color: rgba(31, 77, 58, 0.14);
-  font-family: var(--font-heading);
-  font-size: 5rem;
-  font-weight: 700;
-  line-height: 0.8;
 }
 
 .art-area-type {
@@ -9019,12 +9014,6 @@ li + li {
   .art-area-card:nth-child(2):hover,
   .art-area-card-practice:hover {
     transform: translateY(-3px);
-  }
-
-  .art-area-number {
-    right: 1.5rem;
-    bottom: 1.25rem;
-    font-size: 4rem;
   }
 
   .art-featured {
