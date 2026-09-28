@@ -7895,3 +7895,578 @@ li + li {
   }
 
 }
+
+/* =========================================================
+   DEVELOPMENT PAGE
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   DEVELOPMENT INTRO
+--------------------------------------------------------- */
+
+.development-intro {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+
+/* ---------------------------------------------------------
+   DEVELOPMENT AREAS
+--------------------------------------------------------- */
+
+.development-areas {
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.development-area-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 1.5rem;
+
+  align-items: stretch;
+}
+
+.development-area-card {
+  position: relative;
+
+  min-height: 380px;
+  padding: 2.75rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: var(--warm-white);
+
+  border: 1px solid rgba(31, 77, 58, 0.12);
+  border-radius: var(--radius-medium);
+
+  box-shadow: var(--shadow-soft);
+
+  overflow: hidden;
+
+  transition:
+    transform var(--transition-standard),
+    box-shadow var(--transition-standard),
+    border-color var(--transition-standard);
+}
+
+
+/* Constructed corner decoration */
+
+.development-area-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  right: -85px;
+  top: -80px;
+
+  border-radius: 18% 82% 32% 68% / 67% 24% 76% 33%;
+
+  background: var(--light-sage);
+
+  opacity: 0.9;
+
+  transform: rotate(18deg);
+
+  transition:
+    transform var(--transition-standard),
+    opacity var(--transition-standard);
+}
+
+.development-area-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 46px;
+  height: 46px;
+
+  right: 29px;
+  top: 29px;
+
+  border: 1px solid rgba(31, 77, 58, 0.15);
+
+  border-radius: 6px;
+
+  background: rgba(107, 142, 110, 0.08);
+
+  transform: rotate(18deg);
+}
+
+.development-area-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Card hover */
+
+.development-area-card:hover {
+  border-color: rgba(31, 77, 58, 0.22);
+
+  box-shadow: var(--shadow-card);
+
+  transform: translateY(-4px);
+}
+
+.development-area-card:hover::before {
+  opacity: 1;
+
+  transform: rotate(28deg) scale(1.08);
+}
+
+
+/* Alternating surfaces */
+
+.development-area-card:nth-child(2) {
+  background: var(--cream);
+}
+
+
+/* Card typography */
+
+.development-area-card h3 {
+  max-width: 440px;
+
+  margin: 0 0 1.2rem;
+
+  color: var(--forest);
+
+  font-size: clamp(2rem, 3.5vw, 3rem);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.02em;
+}
+
+.development-area-card p {
+  max-width: 510px;
+
+  margin: 0;
+
+  color: var(--brown);
+
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   DEVELOPMENT TOPIC TAGS
+--------------------------------------------------------- */
+
+.development-area-topics {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.45rem;
+
+  margin-top: 2rem;
+}
+
+.development-area-topics span {
+  display: inline-block;
+
+  padding: 0.35rem 0.65rem;
+
+  border: 1px solid rgba(31, 77, 58, 0.16);
+
+  border-radius: 4px;
+
+  background: rgba(255, 253, 248, 0.72);
+
+  color: var(--forest);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+
+/* ---------------------------------------------------------
+   WIDE EXPERIMENTS CARD
+--------------------------------------------------------- */
+
+.development-area-card-wide {
+  grid-column: 1 / -1;
+
+  min-height: 280px;
+
+  display: grid;
+
+  grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.2fr);
+
+  gap: 3rem;
+
+  align-items: center;
+
+  padding: 3rem;
+
+  background: var(--forest);
+}
+
+.development-area-card-wide::before {
+  width: 300px;
+  height: 300px;
+
+  right: -110px;
+  top: -125px;
+
+  border-radius: 28% 72% 40% 60% / 70% 30% 70% 30%;
+
+  background: var(--sage);
+
+  opacity: 0.2;
+}
+
+.development-area-card-wide::after {
+  width: 52px;
+  height: 52px;
+
+  border-color: rgba(255, 253, 248, 0.12);
+
+  background: rgba(255, 253, 248, 0.06);
+}
+
+.development-area-card-wide:hover {
+  transform: translateY(-4px);
+}
+
+.development-area-card-wide h3 {
+  color: var(--warm-white);
+}
+
+.development-area-card-wide > div:first-child p {
+  max-width: 520px;
+
+  margin: 0;
+
+  color: rgba(255, 253, 248, 0.78);
+
+  line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   EXPERIMENT PROCESS
+--------------------------------------------------------- */
+
+.development-experiment-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 0.75rem;
+}
+
+.development-experiment {
+  min-height: 135px;
+
+  padding: 1.35rem 1.4rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: var(--radius-small);
+
+  background: rgba(255, 253, 248, 0.96);
+}
+
+.development-experiment strong {
+  display: block;
+
+  margin-bottom: 0.4rem;
+
+  color: var(--forest);
+
+  font-family: var(--font-heading);
+
+  font-size: 1.65rem;
+
+  line-height: 1;
+}
+
+.development-experiment span {
+  display: block;
+
+  color: var(--brown);
+
+  font-size: 0.8rem;
+
+  line-height: 1.45;
+}
+
+
+/* ---------------------------------------------------------
+   FEATURED + RECENT DEVELOPMENT
+--------------------------------------------------------- */
+
+.development-featured {
+  padding-top: 6rem;
+}
+
+.development-recent {
+  padding-top: 4rem;
+}
+
+
+/* ---------------------------------------------------------
+   DEVELOPMENT IN PROGRESS
+--------------------------------------------------------- */
+
+.development-practice {
+  position: relative;
+
+  width: 100%;
+
+  padding: 8rem max(2rem, 9vw);
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.35fr);
+
+  gap: 4rem;
+
+  align-items: center;
+
+  background: var(--light-sage);
+
+  overflow: hidden;
+}
+
+.development-practice-copy {
+  position: relative;
+  z-index: 2;
+
+  max-width: 760px;
+}
+
+.development-practice-copy h2 {
+  max-width: 760px;
+
+  margin: 0 0 1.5rem;
+
+  color: var(--forest);
+
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
+
+  line-height: 0.92;
+
+  letter-spacing: -0.03em;
+}
+
+.development-practice-copy p:not(.category-eyebrow) {
+  max-width: 680px;
+
+  color: var(--brown);
+
+  line-height: 1.75;
+}
+
+
+/* ---------------------------------------------------------
+   DEVELOPMENT MARK
+--------------------------------------------------------- */
+
+.development-practice-mark {
+  position: relative;
+
+  width: 240px;
+  height: 240px;
+
+  justify-self: center;
+
+  transform: rotate(-5deg);
+}
+
+
+/* Outer construction shape */
+
+.development-practice-mark::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 7%;
+
+  border: 1px solid rgba(31, 77, 58, 0.25);
+
+  border-radius: 10% 90% 18% 82% / 82% 18% 72% 28%;
+
+  transform: rotate(12deg);
+}
+
+
+/* Inner construction shape */
+
+.development-practice-mark::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 25%;
+
+  border: 1px solid rgba(107, 142, 110, 0.45);
+
+  border-radius: 6px;
+
+  transform: rotate(45deg);
+}
+
+
+/* Floating components */
+
+.development-practice-mark span {
+  position: absolute;
+
+  display: block;
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid var(--sage);
+
+  border-radius: 4px;
+
+  background: var(--light-sage);
+}
+
+.development-practice-mark span:nth-child(1) {
+  left: 11%;
+  top: 24%;
+
+  transform: rotate(18deg);
+}
+
+.development-practice-mark span:nth-child(2) {
+  right: 12%;
+  top: 18%;
+
+  width: 12px;
+  height: 12px;
+
+  border-color: var(--forest);
+
+  transform: rotate(45deg);
+}
+
+.development-practice-mark span:nth-child(3) {
+  right: 15%;
+  bottom: 19%;
+
+  width: 15px;
+  height: 15px;
+
+  transform: rotate(12deg);
+}
+
+
+/* ---------------------------------------------------------
+   DEVELOPMENT CLOSING
+--------------------------------------------------------- */
+
+.development-closing {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+
+/* =========================================================
+   DEVELOPMENT RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 900px) {
+
+  .development-intro {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .development-areas {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  .development-area-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .development-area-card {
+    min-height: 0;
+
+    padding: 2rem;
+  }
+
+  .development-area-card::before {
+    width: 130px;
+    height: 130px;
+
+    right: -60px;
+    top: -60px;
+  }
+
+  .development-area-card-wide {
+    grid-column: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    padding: 2rem;
+  }
+
+  .development-experiment-list {
+    grid-template-columns: 1fr;
+
+    gap: 0.75rem;
+  }
+
+  .development-experiment {
+    min-height: 0;
+
+    padding: 1.25rem;
+  }
+
+  .development-practice {
+    padding: 5rem 1.4rem;
+
+    grid-template-columns: 1fr;
+
+    gap: 3rem;
+  }
+
+  .development-practice-mark {
+    justify-self: start;
+
+    margin-left: 1rem;
+  }
+
+  .development-closing {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .development-page .category-closing {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .development-page .category-closing-card {
+    padding: 2.5rem;
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+  }
+
+}
