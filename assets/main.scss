@@ -5878,11 +5878,23 @@ li + li {
   align-items: center;
   gap: 0.55rem;
   margin-top: 1.5rem;
-  color: var(--forest);
   font-weight: 700;
   text-decoration: none;
 }
 
+.contact-primary-link {
+  color: var(--forest);
+}
+
+.contact-closing-explore {
+  color: var(--warm-white) !important;
+  font-weight: 700;
+}
+
+.contact-closing-explore:hover,
+.contact-closing-explore:focus-visible {
+  color: var(--warm-white) !important;
+}
 .contact-primary-link span,
 .contact-closing-explore span {
   transition: transform var(--transition-fast);
@@ -6076,4 +6088,48 @@ li + li {
   background: var(--sage);
   border-radius: 4px;
   transform: rotate(-0.5deg);
+}
+
+/* =========================================================
+   CONTACT RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 800px) {
+
+  .contact-hero {
+    min-height: 560px;
+    padding: 4rem 1.4rem 5rem;
+  }
+
+  .contact-email-section,
+  .contact-social-section,
+  .contact-support-section {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+  .contact-social-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-closing {
+    padding: 3.5rem 1.4rem;
+  }
+
+  .contact-closing-card {
+    width: 100%;
+    padding: 2.25rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .contact-closing-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
 }
