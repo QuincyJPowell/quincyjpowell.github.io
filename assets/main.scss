@@ -6754,24 +6754,26 @@ li + li {
 
   .category-hero {
     min-height: 560px;
+
     padding: 6rem 1.4rem 5rem;
   }
 
   .archive-page:has(.academic-page) .archive-header {
     width: calc(100% - 2.8rem);
     max-width: 680px;
-    margin: 0 auto 2rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
   }
 
   .archive-page:has(.academic-page) .archive-description {
     max-width: 100%;
     margin: 0;
     padding: 0 0.15rem;
+
     line-height: 1.6;
   }
-
-  ...
-}
 
   .category-hero h1 {
     font-size: clamp(3.5rem, 15vw, 5.5rem);
@@ -6798,7 +6800,6 @@ li + li {
     grid-template-columns: 1fr;
   }
 
-
   .academic-area-card {
     min-height: 0;
     padding: 2rem;
@@ -6810,6 +6811,16 @@ li + li {
     grid-template-columns: 1fr;
 
     gap: 1rem;
+  }
+
+  .academic-area-card-wide .academic-languages {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .academic-language {
+    min-height: 0;
+    padding: 1.25rem;
   }
 
   .academic-area-card::before {
@@ -6828,11 +6839,13 @@ li + li {
     padding: 5rem 1.4rem;
 
     grid-template-columns: 1fr;
+
     gap: 3rem;
   }
 
   .academic-notebook-mark {
     justify-self: start;
+
     margin-left: 1rem;
   }
 
