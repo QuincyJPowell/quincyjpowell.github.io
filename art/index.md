@@ -66,10 +66,6 @@ description: Visual work, experiments, and the creative practice that runs under
 
       <article class="art-area-card">
 
-        <span class="art-area-number" aria-hidden="true">
-          01
-        </span>
-
         <p class="art-area-type">
           Drawing · Illustration
         </p>
@@ -86,10 +82,6 @@ description: Visual work, experiments, and the creative practice that runs under
 
 
       <article class="art-area-card">
-
-        <span class="art-area-number" aria-hidden="true">
-          02
-        </span>
 
         <p class="art-area-type">
           Images · Observation
@@ -108,10 +100,6 @@ description: Visual work, experiments, and the creative practice that runs under
 
       <article class="art-area-card">
 
-        <span class="art-area-number" aria-hidden="true">
-          03
-        </span>
-
         <p class="art-area-type">
           Process · Materials
         </p>
@@ -129,10 +117,6 @@ description: Visual work, experiments, and the creative practice that runs under
 
       <article class="art-area-card art-area-card-wide">
 
-        <span class="art-area-number" aria-hidden="true">
-          04
-        </span>
-
         <p class="art-area-type">
           Design · Communication
         </p>
@@ -149,10 +133,6 @@ description: Visual work, experiments, and the creative practice that runs under
 
 
       <article class="art-area-card art-area-card-practice">
-
-        <span class="art-area-number" aria-hidden="true">
-          05
-        </span>
 
         <p class="art-area-type">
           Studies · Play · Process
