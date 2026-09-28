@@ -6308,7 +6308,6 @@ li + li {
   opacity: 0.28;
 }
 
-
 /* ---------------------------------------------------------
    ACADEMIC AREAS
 --------------------------------------------------------- */
@@ -6324,12 +6323,18 @@ li + li {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 
   gap: 1.5rem;
+
+  align-items: stretch;
 }
 
 .academic-area-card {
   position: relative;
 
+  min-height: 360px;
   padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
 
   background: var(--warm-white);
 
@@ -6337,31 +6342,105 @@ li + li {
   border-radius: var(--radius-medium);
 
   box-shadow: var(--shadow-soft);
+
+  overflow: hidden;
+
+  transition:
+    transform var(--transition-standard),
+    box-shadow var(--transition-standard),
+    border-color var(--transition-standard);
 }
 
-.academic-area-card:nth-child(2) {
-  transform: translateY(2rem);
+/* Organic corner shape */
+
+.academic-area-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  right: -65px;
+  top: -65px;
+
+  border-radius: 47% 53% 61% 39% / 43% 44% 56% 57%;
+
+  background: var(--light-sage);
+
+  opacity: 0.85;
+
+  transition: transform var(--transition-standard);
 }
 
-.academic-area-card:nth-child(3) {
-  transform: translateY(-1rem);
+.academic-area-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 55px;
+  height: 55px;
+
+  right: 20px;
+  top: 20px;
+
+  border-radius: 50%;
+
+  background: rgba(107, 142, 110, 0.12);
 }
 
-.academic-area-card:nth-child(4) {
-  transform: translateY(1rem);
+.academic-area-card > * {
+  position: relative;
+  z-index: 1;
 }
+
+.academic-area-card:hover {
+  border-color: rgba(31, 77, 58, 0.22);
+
+  box-shadow: var(--shadow-card);
+
+  transform: translateY(-4px);
+}
+
+.academic-area-card:hover::before {
+  transform: scale(1.08) rotate(8deg);
+}
+
+/* Wide language card */
 
 .academic-area-card-wide {
   grid-column: 1 / -1;
+
+  min-height: 0;
 
   display: grid;
   grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
   gap: 3rem;
   align-items: center;
 
-  background: var(--light-sage);
+  background: var(--sage);
 
-  transform: none !important;
+  transform: none;
+}
+
+.academic-area-card-wide::before {
+  width: 260px;
+  height: 260px;
+
+  right: -100px;
+  top: -110px;
+
+  background: var(--warm-white);
+
+  opacity: 0.12;
+}
+
+.academic-area-card-wide::after {
+  background: rgba(255, 253, 248, 0.08);
+}
+
+.academic-area-card-wide:hover {
+  transform: translateY(-4px);
 }
 
 .academic-area-card h3 {
@@ -6382,6 +6461,8 @@ li + li {
 }
 
 .academic-area-topics {
+  margin-top: auto;
+
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
@@ -6392,9 +6473,10 @@ li + li {
 
   padding: 0.35rem 0.7rem;
 
+  border: 1px solid rgba(31, 77, 58, 0.1);
   border-radius: 999px;
 
-  background: var(--light-sage);
+  background: rgba(255, 253, 248, 0.72);
 
   color: var(--forest);
 
@@ -6403,10 +6485,14 @@ li + li {
   line-height: 1.35;
 }
 
-.academic-area-card-wide .academic-area-topics span {
-  background: var(--warm-white);
+.academic-area-card-wide h3,
+.academic-area-card-wide > p {
+  color: var(--warm-white);
 }
 
+.academic-area-card-wide .academic-area-topics span {
+  background: rgba(255, 253, 248, 0.95);
+}
 
 /* ---------------------------------------------------------
    LANGUAGES
@@ -6632,6 +6718,13 @@ li + li {
 
 .category-closing-links .button {
   margin: 0;
+
+  color: var(--warm-white);
+}
+
+.category-closing-links .button:hover,
+.category-closing-links .button:focus-visible {
+  color: var(--warm-white);
 }
 
 .category-closing-explore {
@@ -6639,7 +6732,7 @@ li + li {
   align-items: center;
   gap: 0.55rem;
 
-  color: var(--warm-white);
+  color: var(--warm-white) !important;
 
   font-weight: 700;
   text-decoration: none;
@@ -6647,7 +6740,7 @@ li + li {
 
 .category-closing-explore:hover,
 .category-closing-explore:focus-visible {
-  color: var(--warm-white);
+  color: var(--warm-white) !important;
 }
 
 .category-closing-explore span {
@@ -6670,6 +6763,15 @@ li + li {
     min-height: 560px;
 
     padding: 6rem 1.4rem 5rem;
+       .archive-page:has(.academic-page) .archive-header {
+    width: calc(100% - 2.8rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .archive-page:has(.academic-page) .archive-description {
+    max-width: 100%;
+  }
   }
 
   .category-hero h1 {
@@ -6697,10 +6799,10 @@ li + li {
     grid-template-columns: 1fr;
   }
 
-  .academic-area-card:nth-child(2),
-  .academic-area-card:nth-child(3),
-  .academic-area-card:nth-child(4) {
-    transform: none;
+
+  .academic-area-card {
+    min-height: 0;
+    padding: 2rem;
   }
 
   .academic-area-card-wide {
@@ -6709,6 +6811,14 @@ li + li {
     grid-template-columns: 1fr;
 
     gap: 1rem;
+  }
+
+  .academic-area-card::before {
+    width: 120px;
+    height: 120px;
+
+    right: -55px;
+    top: -55px;
   }
 
   .academic-languages {
