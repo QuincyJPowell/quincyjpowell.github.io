@@ -6067,7 +6067,6 @@ li + li {
   bottom: 14%;
 }
 
-
 /* =========================================================
    CLOSING / KEEP EXPLORING
 ========================================================= */
@@ -6089,6 +6088,22 @@ li + li {
   border-radius: 4px;
   transform: rotate(-0.5deg);
 }
+
+.contact-closing-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.contact-closing-links .button {
+  margin: 0.25rem 0;
+}
+
+.contact-closing-links .contact-closing-explore {
+  margin-top: 0;
+}
+
 
 /* =========================================================
    CONTACT RESPONSIVE
@@ -6120,16 +6135,14 @@ li + li {
     width: 100%;
     padding: 2.25rem;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.25rem;
     align-items: start;
   }
 
   .contact-closing-links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
   }
 
 }
