@@ -9309,3 +9309,17 @@ li + li {
   }
 
 }
+
+/* =========================================================
+   FOOTER NAME COLOR FIX
+========================================================= */
+
+.site-footer .site-footer-name,
+.site-footer .site-footer-name:visited {
+  color: var(--warm-white);
+}
+
+.site-footer .site-footer-name:hover,
+.site-footer .site-footer-name:focus {
+  color: var(--warm-white);
+}
